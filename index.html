@@ -1,908 +1,1059 @@
-
 <!DOCTYPE html>
 <html lang="zh-cn">
-    
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="Simple Life">
-    <title>Simple Life</title>
-    <meta name="author" content="Simple">
-    
-        <meta name="keywords" content="前端,javascript,">
-    
-    
-        <link rel="icon" href="http://www.x2hy.com/assets/images/favicon.ico">
-    
-    
-        <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
-    
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"Website","@id":"http://www.x2hy.com","author":{"@type":"Person","name":"Simple","sameAs":["https://github.com/406892700","mailto:simplexhy1992@gmail.com"],"image":"avatar.jpeg"},"name":"Simple Life","description":null,"url":"http://www.x2hy.com","keywords":"前端, javascript"}</script>
-    <meta name="keywords" content="前端,javascript">
-<meta property="og:type" content="blog">
-<meta property="og:title" content="Simple Life">
-<meta property="og:url" content="http://www.x2hy.com/index.html">
-<meta property="og:site_name" content="Simple Life">
-<meta property="og:locale" content="zh-cn">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Simple Life">
-    
-    
-        
-    
-    
-        <meta property="og:image" content="http://www.x2hy.com/assets/images/avatar.jpeg"/>
-    
-    
-    
-    
-    <!--STYLES-->
-    <link rel="stylesheet" href="/assets/css/style-1udptkpril81ozu8ifd8zpujn7ipu7lefxsiu5gxx0dpnzntdx6dusvki3ao.min.css">
-    <!--STYLES END-->
-    
-
-    
-    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
-</head>
-
-    <body>
-        <div id="blog">
-            <!-- Define author's picture -->
-
-
-    
-        
-            
-        
-    
-
-<header id="header" data-behavior="1">
-    <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
-    <div class="header-title">
-        <a class="header-title-link" href="/ ">Simple Life</a>
-    </div>
-    
-        
-            <a  class="header-right-picture "
-                href="#about">
-        
-        
-            <img class="header-picture" src="/assets/images/avatar.jpeg" alt="作者的图片"/>
-        
-        </a>
-    
-</header>
-
-            <!-- Define author's picture -->
-
-
-
-        
-    
-
-<nav id="sidebar" data-behavior="1">
-    <div class="sidebar-container">
-        
-            <div class="sidebar-profile">
-                <a href="/#about">
-                    <img class="sidebar-profile-picture" src="/assets/images/avatar.jpeg" alt="作者的图片"/>
-                </a>
-                <h4 class="sidebar-profile-name">Simple</h4>
-                
-                    <h5 class="sidebar-profile-bio"><p>爱读历史的渣渣前端</p></h5>
-                
-            </div>
-        
-        
-            <ul class="sidebar-buttons">
-            
-                <li class="sidebar-button">
-                    
-                        <a  class="sidebar-button-link "
-                             href="/ "
-                            
-                            title="Simple Life"
-                        >
-                    
-                        <i class="sidebar-button-icon fa fa-lg fa-home" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Simple Life</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a  class="sidebar-button-link "
-                             href="/all-categories"
-                            
-                            title="分类"
-                        >
-                    
-                        <i class="sidebar-button-icon fa fa-lg fa-bookmark" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">分类</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a  class="sidebar-button-link "
-                             href="/all-tags"
-                            
-                            title="标签"
-                        >
-                    
-                        <i class="sidebar-button-icon fa fa-lg fa-tags" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">标签</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a  class="sidebar-button-link "
-                             href="#about"
-                            
-                            title="关于我"
-                        >
-                    
-                        <i class="sidebar-button-icon fa fa-lg fa-question" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">关于我</span>
-                    </a>
-            </li>
-            
-        </ul>
-        
-            <ul class="sidebar-buttons">
-            
-                <li class="sidebar-button">
-                    
-                        <a  class="sidebar-button-link " href="https://github.com/406892700" target="_blank" rel="noopener" title="github">
-                    
-                        <i class="sidebar-button-icon fa fa-lg fa-github" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">github</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a  class="sidebar-button-link " href="mailto:simplexhy1992@gmail.com" target="_blank" rel="noopener" title="邮箱">
-                    
-                        <i class="sidebar-button-icon fa fa-lg fa-envelope-o" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">邮箱</span>
-                    </a>
-            </li>
-            
-        </ul>
-        
-    </div>
-</nav>
-
-            
-            <div id="main" data-behavior="1"
-                 class="
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="generator" content="Simple Life" />
+		<title>Simple Life</title>
+		<meta name="author" content="Simple" />
+		<meta name="keywords" content="前端,javascript," />
+		<link rel="icon" href="http://www.x2hy.com/assets/images/favicon.ico" />
+		<link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml" />
+		<script type="application/ld+json">
+			{
+				"@context": "http://schema.org",
+				"@type": "Website",
+				"@id": "http://www.x2hy.com",
+				"author": {
+					"@type": "Person",
+					"name": "Simple",
+					"sameAs": ["https://github.com/406892700", "mailto:simplexhy1992@gmail.com"],
+					"image": "avatar.jpeg"
+				},
+				"name": "Simple Life",
+				"description": null,
+				"url": "http://www.x2hy.com",
+				"keywords": "前端, javascript"
+			}
+		</script>
+		<meta name="keywords" content="前端,javascript" />
+		<meta property="og:type" content="blog" />
+		<meta property="og:title" content="Simple Life" />
+		<meta property="og:url" content="http://www.x2hy.com/index.html" />
+		<meta property="og:site_name" content="Simple Life" />
+		<meta property="og:locale" content="zh-cn" />
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:title" content="Simple Life" />
+		<meta property="og:image" content="http://www.x2hy.com/assets/images/avatar.jpeg" />
+		<!--STYLES-->
+		<link rel="stylesheet"
+			href="/assets/css/style-1udptkpril81ozu8ifd8zpujn7ipu7lefxsiu5gxx0dpnzntdx6dusvki3ao.min.css" />
+		<!--STYLES END-->
+		<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+		<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+	</head>
+	<body>
+		<div id="blog">
+			<!-- Define author's picture -->
+			<header id="header" data-behavior="1">
+				<i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+				<div class="header-title">
+					<a class="header-title-link" href="/ ">Simple Life</a>
+				</div>
+				<a class="header-right-picture " href="#about"> <img class="header-picture"
+						src="/assets/images/avatar.jpeg" alt="作者的图片" /> </a>
+			</header>
+			<!-- Define author's picture -->
+			<nav id="sidebar" data-behavior="1">
+				<div class="sidebar-container">
+					<div class="sidebar-profile">
+						<a href="/#about"> <img class="sidebar-profile-picture" src="/assets/images/avatar.jpeg"
+								alt="作者的图片" /> </a>
+						<h4 class="sidebar-profile-name">Simple</h4>
+						<h5 class="sidebar-profile-bio">
+							<p>爱读历史的渣渣前端</p>
+						</h5>
+					</div>
+					<ul class="sidebar-buttons">
+						<li class="sidebar-button"> <a class="sidebar-button-link " href="/ " title="Simple Life"> <i
+									class="sidebar-button-icon fa fa-lg fa-home" aria-hidden="true"></i> <span
+									class="sidebar-button-desc">Simple Life</span> </a> </li>
+						<li class="sidebar-button"> <a class="sidebar-button-link " href="/all-categories" title="分类">
+								<i class="sidebar-button-icon fa fa-lg fa-bookmark" aria-hidden="true"></i> <span
+									class="sidebar-button-desc">分类</span> </a> </li>
+						<li class="sidebar-button"> <a class="sidebar-button-link " href="/all-tags" title="标签"> <i
+									class="sidebar-button-icon fa fa-lg fa-tags" aria-hidden="true"></i> <span
+									class="sidebar-button-desc">标签</span> </a> </li>
+						<li class="sidebar-button"> <a class="sidebar-button-link " href="#about" title="关于我"> <i
+									class="sidebar-button-icon fa fa-lg fa-question" aria-hidden="true"></i> <span
+									class="sidebar-button-desc">关于我</span> </a> </li>
+					</ul>
+					<ul class="sidebar-buttons">
+						<li class="sidebar-button"> <a class="sidebar-button-link " href="https://github.com/406892700"
+								target="_blank" rel="noopener" title="github"> <i
+									class="sidebar-button-icon fa fa-lg fa-github" aria-hidden="true"></i> <span
+									class="sidebar-button-desc">github</span> </a> </li>
+						<li class="sidebar-button"> <a class="sidebar-button-link "
+								href="mailto:simplexhy1992@gmail.com" target="_blank" rel="noopener" title="邮箱"> <i
+									class="sidebar-button-icon fa fa-lg fa-envelope-o" aria-hidden="true"></i> <span
+									class="sidebar-button-desc">邮箱</span> </a> </li>
+					</ul>
+				</div>
+			</nav>
+			<div id="main" data-behavior="1" class="
                         hasCoverMetaIn
                         ">
-                <section class="postShorten-group main-content-wrap">
-    
-    
-    <article class="postShorten postShorten--thumbnailimg-bottom">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title">
-                    
-                        <a class="link-unstyled" href="/2018/10/19/一些命令行交互相关的npm包/">
-                            一些命令行交互相关的npm包
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time datetime="2018-10-19T10:30:28+08:00">
-	
-		    10月 19, 2018
-    	
-    </time>
-    
-</div>
-
-            </div>
-            
-                <div class="postShorten-content">
-                    <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>最近在写nodejs命令交互，自己写出来的交互效果惨不忍睹，这次参考了一些成熟的构建工具的源码(<code>vue-cli</code>、<code>create-react-app</code>,公司大佬写的<code>abc-cli</code>等)，整理了一些比较有用的npm包</p>
-<h3 id="命令行相关"><a href="#命令行相关" class="headerlink" title="命令行相关"></a>命令行相关</h3><h4 id="commander"><a href="#commander" class="headerlink" title="commander"></a>commander</h4><blockquote>
-<p>地址 <a href="https://github.com/tj/commander.js" target="_blank" rel="noopener">https://github.com/tj/commander.js</a></p>
-</blockquote>
-<p>一个完整的nodejs命令行解决方案</p>
-<h4 id="inquirer"><a href="#inquirer" class="headerlink" title="inquirer"></a>inquirer</h4><blockquote>
-<p>地址 <a href="https://github.com/SBoudrias/Inquirer.js" target="_blank" rel="noopener">https://github.com/SBoudrias/Inquirer.js</a></p>
-</blockquote>
-<p>一个用以处理输入交互的命令行工具</p>
-<h4 id="chalk"><a href="#chalk" class="headerlink" title="chalk"></a>chalk</h4><blockquote>
-<p>地址 <a href="https://github.com/chalk/chalk" target="_blank" rel="noopener">https://github.com/chalk/chalk</a></p>
-</blockquote>
-<p>用以处理命令行输出的样式等功能的工具</p>
-<h4 id="listr"><a href="#listr" class="headerlink" title="listr"></a>listr</h4><blockquote>
-<p>地址 <a href="https://github.com/SamVerschueren/listr" target="_blank" rel="noopener">https://github.com/SamVerschueren/listr</a></p>
-</blockquote>
-<p> 命令行任务处理列表工具</p>
-<h4 id="figlet"><a href="#figlet" class="headerlink" title="figlet"></a>figlet</h4><blockquote>
-<p>地址 <a href="https://github.com/patorjk/figlet.js#" target="_blank" rel="noopener">https://github.com/patorjk/figlet.js</a></p>
-</blockquote>
-<p>命令行字符横幅生成工具</p>
-<h4 id="ora"><a href="#ora" class="headerlink" title="ora"></a>ora</h4><blockquote>
-<p>地址<br><a href="https://github.com/sindresorhus/ora" target="_blank" rel="noopener">https://github.com/sindresorhus/ora</a></p>
-</blockquote>
-<p>优雅处理命令行loading</p>
-<h4 id="rimraf"><a href="#rimraf" class="headerlink" title="rimraf"></a>rimraf</h4><blockquote>
-<p>地址<br><a href="https://github.com/isaacs/rimraf" target="_blank" rel="noopener">https://github.com/isaacs/rimraf</a></p>
-</blockquote>
-<p>更好地处理<code>rm -rf</code></p>
-<h4 id="execa"><a href="#execa" class="headerlink" title="execa"></a>execa</h4><blockquote>
-<p>地址 <a href="https://github.com/sindresorhus/execa" target="_blank" rel="noopener">https://github.com/sindresorhus/execa</a></p>
-</blockquote>
-<p>一个更好的<code>child_process</code></p>
-<h4 id="yargs"><a href="#yargs" class="headerlink" title="yargs"></a>yargs</h4><blockquote>
-<p>地址 <a href="https://github.com/yargs/yargs" target="_blank" rel="noopener">https://github.com/yargs/yargs</a></p>
-</blockquote>
-<p>友好地处理命令参数工具</p>
-<h4 id="shelljs"><a href="#shelljs" class="headerlink" title="shelljs"></a>shelljs</h4><blockquote>
-<p>地址 <a href="https://github.com/shelljs/shelljs" target="_blank" rel="noopener">https://github.com/shelljs/shelljs</a></p>
-</blockquote>
-<p>一个方便的nodejs unix shell命令工具</p>
-<h4 id="semver"><a href="#semver" class="headerlink" title="semver"></a>semver</h4><blockquote>
-<p>地址 <a href="https://github.com/npm/node-semver" target="_blank" rel="noopener">https://github.com/npm/node-semver</a></p>
-</blockquote>
-<p>处理版本号语义的(感觉有点鸡肋)</p>
-<h4 id="left-pad"><a href="#left-pad" class="headerlink" title="left-pad"></a>left-pad</h4><blockquote>
-<p>地址 <a href="https://github.com/stevemao/left-pad" target="_blank" rel="noopener">https://github.com/stevemao/left-pad</a></p>
-</blockquote>
-<p>处理左对齐的…</p>
-<h4 id="fs-extra"><a href="#fs-extra" class="headerlink" title="fs-extra"></a>fs-extra</h4><blockquote>
-<p>地址 <a href="https://www.npmjs.com/package/fs-extra" target="_blank" rel="noopener">https://www.npmjs.com/package/fs-extra</a></p>
-</blockquote>
-<p>添加了一些原生的<code>fs</code>模块所不存在的方法，并且添加promise支持。使用<code>graceful-fs</code>阻止<code>EMFILE</code>错误</p>
-<h4 id="cross-spawn"><a href="#cross-spawn" class="headerlink" title="cross-spawn"></a>cross-spawn</h4><blockquote>
-<p>地址 <a href="https://www.npmjs.com/package/cross-spawn" target="_blank" rel="noopener">https://www.npmjs.com/package/cross-spawn</a></p>
-</blockquote>
-<p>一个跨平台的nodejs <code>spawn</code>和<code>spawnSync</code>解决方案</p>
-<h4 id="tmp"><a href="#tmp" class="headerlink" title="tmp"></a>tmp</h4><blockquote>
-<p>地址 <a href="https://www.npmjs.com/package/tmp" target="_blank" rel="noopener">https://www.npmjs.com/package/tmp</a></p>
-</blockquote>
-<p>一个简单的工具用来生成临时文件或目录</p>
-<h4 id="envinfo"><a href="#envinfo" class="headerlink" title="envinfo"></a>envinfo</h4><blockquote>
-<p>地址 <a href="https://www.npmjs.com/package/envinfo" target="_blank" rel="noopener">https://www.npmjs.com/package/envinfo</a></p>
-</blockquote>
-<p>一次性获取所有的系统环境相关信息，快速，无痛苦</p>
-<h3 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h3><blockquote>
-<p>待续…</p>
-</blockquote>
-
-                    
-                        
-
-                    
-                    
-                        <p>
-                            <a href="/2018/10/19/一些命令行交互相关的npm包/#post-footer" class="postShorten-excerpt_link link">
-                                评论和共享
-                            </a>
-                        </p>
-                    
-                </div>
-            
-        </div>
-        
-    </article>
-    
-    
-    <article class="postShorten postShorten--thumbnailimg-bottom">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title">
-                    
-                        <a class="link-unstyled" href="/2018/09/27/React16升级注意事项/">
-                            React16升级注意事项
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time datetime="2018-09-27T19:36:16+08:00">
-	
-		    9月 27, 2018
-    	
-    </time>
-    
-</div>
-
-            </div>
-            
-                <div class="postShorten-content">
-                    <p>最近将webim项目的react版本,升级到了16.x,版本升级后存在一些api的更迭，需要慢慢迁移，在此列出一些注意事项。</p>
-<h2 id="生命周期钩子的改变"><a href="#生命周期钩子的改变" class="headerlink" title="生命周期钩子的改变"></a>生命周期钩子的改变</h2><p>react16.x修复了一些以往版本的bug，并对一些api做出了调整，原来的<code>UNSAFE_conponentWillMount</code> <code>UNSAFE_conponentWillReceiveProps</code><br><code>UNSAFE_componentWillUpdate</code>将在17.x版本后移除，因此在本次升级后，我们应该有意识得去把老代码中的这些钩子用新的方式替换掉</p>
-<h4 id="装配期"><a href="#装配期" class="headerlink" title="装配期"></a>装配期</h4><ul>
-<li>constructor()</li>
-<li>getDerivedStateFromProps()</li>
-<li>UNSAFE_conponentWillMount() // 不推荐使用</li>
-<li>render()</li>
-<li>componentDidMount()</li>
-</ul>
-<h4 id="更新期"><a href="#更新期" class="headerlink" title="更新期"></a>更新期</h4><ul>
-<li>UNSAFE_conponentWillReceiveProps() // 不推荐使用</li>
-<li>getDerivedStateFromProps() // 功能与componentWillReceiveProps类似</li>
-<li>shouldComponentUpdate()</li>
-<li>UNSAFE_componentWillUpdate() // 不推荐使用</li>
-<li>render()</li>
-<li>getSnapshotBeforeUpdate() // 获取改变前的快照，该钩子的返回值将作为componentDidUpdate的第三个参数</li>
-<li>componentDidUpdate()</li>
-</ul>
-<h4 id="销毁期"><a href="#销毁期" class="headerlink" title="销毁期"></a>销毁期</h4><ul>
-<li>componentWillUnmount()</li>
-</ul>
-<h4 id="错误处理"><a href="#错误处理" class="headerlink" title="错误处理"></a>错误处理</h4><ul>
-<li>componentDidCatch() // 错误边界钩子函数</li>
-</ul>
-<h2 id="ref的改变"><a href="#ref的改变" class="headerlink" title="ref的改变"></a>ref的改变</h2><p>16.x之前，ref可以有<code>字符串ref</code>和<code>回调ref</code>两种形式，但是16.x版本将不再支持<code>字符串ref</code>，并且提供了全新的api–<br>React.createRef()</p>
-<p>使用方式如下:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyComponent</span> <span class="keyword">extends</span> <span class="title">React</span>.<span class="title">Component</span> </span>&#123;</span><br><span class="line">  <span class="keyword">constructor</span>(props) &#123;</span><br><span class="line">    <span class="keyword">super</span>(props);</span><br><span class="line">    <span class="keyword">this</span>.myRef = React.createRef();</span><br><span class="line">  &#125;</span><br><span class="line">  render() &#123;</span><br><span class="line">    <span class="keyword">return</span> &lt;div ref=&#123;this.myRef&#125; /&gt;;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p><strong> 但是，在不到万不得已的情况下还是尽量少用<code>ref</code></strong></p>
-<h2 id="props-types"><a href="#props-types" class="headerlink" title="props-types"></a>props-types</h2><p>新版本的react将<code>prop-types</code>从react中移除了，需要单独引入</p>
-<h2 id="错误边界的使用"><a href="#错误边界的使用" class="headerlink" title="错误边界的使用"></a>错误边界的使用</h2><p><a href="https://react.docschina.org/docs/error-boundaries.html" target="_blank" rel="noopener">什么事错误边界</a><br>react从16.x开始，定义了UncaughtError错误的新行为。</p>
-<blockquote>
-<p><strong> 自 React 16 开始，任何未被错误边界捕获的错误将会卸载整个 React 组件树。 </strong></p>
-</blockquote>
-<p>这么一来，可能一个小组件的运行时异常也会导致整个webApp的崩溃，对代码的容错率和健壮性提出了更高的要求。</p>
-<p><code>Error Boundary</code>可以<strong>用于捕获其子组件树 JavaScript 异常，记录错误并展示一个回退的 UI </strong></p>
-<h2 id="多余的代码嵌套"><a href="#多余的代码嵌套" class="headerlink" title="多余的代码嵌套"></a>多余的代码嵌套</h2><p>16.x版本前，一个组件无法但会多个元素，于是大家都会在多个圆度的外部包裹一个没有意义的<code>div</code>或者其他元素<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line">render() &#123;</span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    &lt;div&gt; &#123;<span class="comment">/*没有意义的嵌套*/</span>&#125;</span><br><span class="line">      &lt;Comp1/&gt;</span><br><span class="line">      &lt;Comp2/&gt;</span><br><span class="line">      &lt;Comp3/&gt;</span><br><span class="line">    &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">  )</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br><span class="line"><span class="regexp">...</span></span><br></pre></td></tr></table></figure></p>
-<p>现在可以使用<code>Fragment</code>来规避这样的问题<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line">render() &#123;</span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    &lt;&gt;</span><br><span class="line">      &lt;Comp1/&gt;</span><br><span class="line">      &lt;Comp2/&gt;</span><br><span class="line">      &lt;Comp3/&gt;</span><br><span class="line">    &lt;<span class="regexp">/&gt;</span></span><br><span class="line"><span class="regexp">  )</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br><span class="line"><span class="regexp">...</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">/</span><span class="regexp">/ 或者</span></span><br><span class="line"><span class="regexp">...</span></span><br><span class="line"><span class="regexp">render() &#123;</span></span><br><span class="line"><span class="regexp">  return (</span></span><br><span class="line"><span class="regexp">    &lt;React.Fragment&gt;</span></span><br><span class="line"><span class="regexp">      &lt;Comp1/</span>&gt;</span><br><span class="line">      &lt;Comp2/&gt;</span><br><span class="line">      &lt;Comp3/&gt;</span><br><span class="line">    &lt;React.Fragment/&gt;</span><br><span class="line">  )</span><br><span class="line">&#125;</span><br><span class="line">...</span><br></pre></td></tr></table></figure></p>
-<p><code>Fragment</code>将不会生成额外的标签，与<code>DocumentFragment</code>有一定程度上的类似</p>
-<h2 id="Portals的使用"><a href="#Portals的使用" class="headerlink" title="Portals的使用"></a>Portals的使用</h2><p>在日常开发中，相信大家都会经常碰到这样的情况<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div style=&#123;&#123;<span class="attr">color</span>: <span class="string">'#0078d8'</span>, <span class="attr">fontSize</span>: <span class="string">'40px'</span>&#125;&#125;&gt;</span><br><span class="line">  &lt;Dialog show=&#123;<span class="keyword">this</span>.state.showDialog&#125;/&gt;</span><br><span class="line">&lt;<span class="regexp">/div&gt;</span></span><br></pre></td></tr></table></figure></p>
-<p>因为父组件上带有了一些样式，导致Dialog组件继承了父组件样式而造成了错乱</p>
-<p>使用portal后代码如下<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Tips</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>&#123;</span><br><span class="line">  <span class="keyword">constructor</span>() &#123;</span><br><span class="line">    <span class="keyword">super</span>()</span><br><span class="line">    <span class="keyword">this</span>.dom = <span class="literal">null</span></span><br><span class="line">  &#125;</span><br><span class="line">  componentWillMount() &#123;</span><br><span class="line">    <span class="keyword">this</span>.dom = <span class="built_in">document</span>.createElement(<span class="string">'div'</span>)</span><br><span class="line">    <span class="keyword">this</span>.dom.id = <span class="string">`portal-<span class="subst">$&#123;<span class="built_in">Date</span>.now()&#125;</span>`</span></span><br><span class="line">    <span class="built_in">document</span>.body.appendChild(<span class="keyword">this</span>.dom);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  componentWillUnmount() &#123;</span><br><span class="line">    <span class="built_in">document</span>.body.removeChild(<span class="keyword">this</span>.dom);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  render() &#123;</span><br><span class="line">    <span class="keyword">return</span> ReactDOM.createPortal(</span><br><span class="line">      &lt;div className=&#123;styles.portalTips&#125;&gt;</span><br><span class="line">        显示弹窗</span><br><span class="line"></span><br><span class="line">        &lt;button onClick=&#123;<span class="keyword">this</span>.props.onClose&#125;&gt;关闭&lt;<span class="regexp">/button&gt;</span></span><br><span class="line"><span class="regexp">      &lt;/</span>div&gt;,</span><br><span class="line">      <span class="keyword">this</span>.dom</span><br><span class="line">    )</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>既保证了样式不会受父元素的污染，又保留了完整的事件冒泡</p>
-<h2 id="严格模式的使用"><a href="#严格模式的使用" class="headerlink" title="严格模式的使用"></a>严格模式的使用</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> StrictModeComp = <span class="function"><span class="params">()</span> =&gt;</span> (</span><br><span class="line">  &lt;React.Fragment&gt;</span><br><span class="line">    &lt;Comp1/&gt;</span><br><span class="line">    &lt;React.StrictMode&gt;</span><br><span class="line">      &lt;Comp2/&gt;</span><br><span class="line">    &lt;<span class="regexp">/React.StrictMode&gt;</span></span><br><span class="line"><span class="regexp">    &lt;Comp3/</span>&gt;</span><br><span class="line">  &lt;React.Fragment/&gt;</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-<p>上述代码中的<code>React.StrictMode</code>是一个<strong>标记出应用中潜在问题的工具</strong>，不会生成额外的dom结构，并且只在开发环境中有效</p>
-<p>他会帮助你做以下几件事情</p>
-<ul>
-<li>对不安全的声明周期钩子提出警告</li>
-<li>对<code>字符串方式的ref</code>提出警告</li>
-<li>监测意外的副作用</li>
-</ul>
-<p><strong>在刚迁移到16.x的情况下，可以多多使用这个新特性</strong></p>
-<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="react协调算法"><a href="#react协调算法" class="headerlink" title="react协调算法"></a>react协调算法</h3><p>react16对react的核心算法进行了一次重构，由原来的<code>stack reconciler</code> 转为 <code>fiber reconciler</code>,<br><a href="http://www.ayqy.net/blog/dive-into-react-fiber/" target="_blank" rel="noopener">fiber架构拓展阅读1</a><br><a href="https://juejin.im/entry/5b0245486fb9a07ac23b08ab" target="_blank" rel="noopener">fiber架构拓展阅读2</a></p>
-<h3 id="待续…"><a href="#待续…" class="headerlink" title="待续…"></a>待续…</h3>
-                    
-                        
-
-                    
-                    
-                        <p>
-                            <a href="/2018/09/27/React16升级注意事项/#post-footer" class="postShorten-excerpt_link link">
-                                评论和共享
-                            </a>
-                        </p>
-                    
-                </div>
-            
-        </div>
-        
-    </article>
-    
-    
-    <article class="postShorten postShorten--thumbnailimg-bottom">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title">
-                    
-                        <a class="link-unstyled" href="/2018/09/27/Portals/">
-                            Portals
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time datetime="2018-09-27T10:45:19+08:00">
-	
-		    9月 27, 2018
-    	
-    </time>
-    
-</div>
-
-            </div>
-            
-                <div class="postShorten-content">
-                    <h2 id="官方定义"><a href="#官方定义" class="headerlink" title="官方定义"></a>官方定义</h2><p>Portals 提供了一种很好的将子节点渲染到父组件以外的 DOM 节点的方式。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ReactDOM.createPortal(child, container)</span><br></pre></td></tr></table></figure>
-<p>第一个参数（child）是任何可渲染的 React 子元素，例如一个元素，字符串或碎片。第二个参数（container）则是一个 DOM 元素。</p>
-<h2 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h2><p>在日常开发中，相信大家都会经常碰到这样的情况<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div style=&#123;&#123;<span class="attr">color</span>: <span class="string">'#0078d8'</span>, <span class="attr">fontSize</span>: <span class="string">'40px'</span>&#125;&#125;&gt;</span><br><span class="line">  &lt;Dialog show=&#123;<span class="keyword">this</span>.state.showDialog&#125;/&gt;</span><br><span class="line">&lt;<span class="regexp">/div&gt;</span></span><br></pre></td></tr></table></figure></p>
-<p>因为父组件上带有了一些样式，导致Dialog组件继承了父组件样式而造成了错乱</p>
-<h2 id="老的解决方案"><a href="#老的解决方案" class="headerlink" title="老的解决方案"></a>老的解决方案</h2><p>这样的情况肯定是难不倒大家的,相信很多人都有自己的处理方案</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">DiyPortalTips</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>&#123;</span><br><span class="line">  <span class="keyword">constructor</span>() &#123;</span><br><span class="line">    <span class="keyword">super</span>()</span><br><span class="line">    <span class="keyword">this</span>.dom = <span class="literal">null</span></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  componentWillMount() &#123;</span><br><span class="line">    <span class="keyword">this</span>.dom = <span class="built_in">document</span>.createElement(<span class="string">'div'</span>)</span><br><span class="line">    <span class="keyword">this</span>.dom.id = <span class="string">`diy-portal-<span class="subst">$&#123;<span class="built_in">Date</span>.now()&#125;</span>`</span></span><br><span class="line"></span><br><span class="line">    <span class="built_in">document</span>.body.appendChild(<span class="keyword">this</span>.dom)</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  componentDidMount() &#123;</span><br><span class="line">    <span class="keyword">this</span>.renderToPortal()</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  renderToPortal = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">    ReactDOM.render(</span><br><span class="line">      &lt;div className=&#123;styles.portalTips&#125;&gt;</span><br><span class="line">        显示弹窗</span><br><span class="line"></span><br><span class="line">        &lt;button onClick=&#123;<span class="keyword">this</span>.props.onClose&#125;&gt;关闭&lt;<span class="regexp">/button&gt;</span></span><br><span class="line"><span class="regexp">      &lt;/</span>div&gt;,</span><br><span class="line">      <span class="keyword">this</span>.dom</span><br><span class="line">    )</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  render() &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">null</span></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  componentWillUnmount() &#123;</span><br><span class="line">    <span class="built_in">document</span>.body.removeChild(<span class="keyword">this</span>.dom)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="老的方案存在的问题"><a href="#老的方案存在的问题" class="headerlink" title="老的方案存在的问题"></a>老的方案存在的问题</h2><p>这样的方案能解决掉样式的问题，但是因为将组件渲染到了一个新DOM结构中，会导致父子组件间的包含结构被破坏。这样一来，子组件的事件无法冒泡至父组件上，这个时候我们该怎么办呢</p>
-<p>…<br>是时候让portal出场了！！！</p>
-<h2 id="portal的方式实现"><a href="#portal的方式实现" class="headerlink" title="portal的方式实现"></a>portal的方式实现</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Tips</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>&#123;</span><br><span class="line">  <span class="keyword">constructor</span>() &#123;</span><br><span class="line">    <span class="keyword">super</span>()</span><br><span class="line">    <span class="keyword">this</span>.dom = <span class="literal">null</span></span><br><span class="line">  &#125;</span><br><span class="line">  componentWillMount() &#123;</span><br><span class="line">    <span class="keyword">this</span>.dom = <span class="built_in">document</span>.createElement(<span class="string">'div'</span>)</span><br><span class="line">    <span class="keyword">this</span>.dom.id = <span class="string">`portal-<span class="subst">$&#123;<span class="built_in">Date</span>.now()&#125;</span>`</span></span><br><span class="line">    <span class="built_in">document</span>.body.appendChild(<span class="keyword">this</span>.dom);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  componentWillUnmount() &#123;</span><br><span class="line">    <span class="built_in">document</span>.body.removeChild(<span class="keyword">this</span>.dom);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  render() &#123;</span><br><span class="line">    <span class="keyword">return</span> ReactDOM.createPortal(</span><br><span class="line">      &lt;div className=&#123;styles.portalTips&#125;&gt;</span><br><span class="line">        显示弹窗</span><br><span class="line"></span><br><span class="line">        &lt;button onClick=&#123;<span class="keyword">this</span>.props.onClose&#125;&gt;关闭&lt;<span class="regexp">/button&gt;</span></span><br><span class="line"><span class="regexp">      &lt;/</span>div&gt;,</span><br><span class="line">      <span class="keyword">this</span>.dom</span><br><span class="line">    )</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line">render() &#123;</span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">      &lt;div style=&#123;&#123;<span class="attr">overflow</span>: <span class="string">'hidden'</span>, <span class="attr">color</span>: <span class="string">'#0078d8'</span>, <span class="attr">fontSize</span>: <span class="string">'40px'</span>&#125;&#125; onClick=&#123;(e) =&gt; &#123;</span><br><span class="line">        e.target.tagName.toLowerCase() ==<span class="string">'button'</span> &amp;&amp; !e.target.getAttribute(<span class="string">'data-trigger'</span>) &amp;&amp; alert(<span class="string">'我的儿被关闭啦~'</span>)</span><br><span class="line">      &#125;&#125;&gt;</span><br><span class="line">        &lt;p&gt;两种方式对比&lt;<span class="regexp">/p&gt;</span></span><br><span class="line"><span class="regexp">        &lt;button onClick=&#123;() =&gt; this.setState(&#123; showTips: true &#125;)&#125; data-trigger=&#123;true&#125;&gt;出现portal弹窗&lt;/</span>button&gt;</span><br><span class="line">        &lt;button onClick=&#123;() =&gt; <span class="keyword">this</span>.setState(&#123; <span class="attr">showNormalTips</span>: <span class="literal">true</span> &#125;)&#125; data-trigger=&#123;<span class="literal">true</span>&#125;&gt;出现普通弹窗&lt;<span class="regexp">/button&gt;</span></span><br><span class="line"><span class="regexp">        &lt;button onClick=&#123;() =&gt; this.setState(&#123; showDiyTips: true &#125;)&#125; data-trigger=&#123;true&#125;&gt;出现diy portal弹窗&lt;/</span>button&gt;</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="keyword">this</span>.state.showTips &amp;&amp; &lt;Tips onClose=&#123;this.onClose&#125;/&gt;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        &#123;</span><br><span class="line">          this.state.showNormalTips &amp;&amp; &lt;NormalTips onClose=&#123;this.onNormalClose&#125;/&gt;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        &#123;</span><br><span class="line">          this.state.showDiyTips &amp;&amp; &lt;DiyPortalTips onClose=&#123;this.onDiyClose&#125;/&gt;</span><br><span class="line">        &#125;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">    )</span><br><span class="line">  &#125;</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
-<h3 id="使用portal"><a href="#使用portal" class="headerlink" title="使用portal"></a>使用portal</h3><p><img src="http://blog.x2hy.com/cdn/WX20180927-110150.png" alt="1"><br>样式未被污染，且正确冒泡</p>
-<h3 id="不使用protal"><a href="#不使用protal" class="headerlink" title="不使用protal"></a>不使用protal</h3><p><img src="http://blog.x2hy.com/cdn/WX20180927-110211.png" alt="1"><br>样式被污染，但是正确冒泡</p>
-<h3 id="使用老的方案"><a href="#使用老的方案" class="headerlink" title="使用老的方案"></a>使用老的方案</h3><p><img src="http://blog.x2hy.com/cdn/WX20180927-110305.png" alt="1"><br>样式未被污染，但是没有正确冒泡</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>总的来说，createPortal是一个很有用的api，在上述场景中解决以往比较麻烦的问题。</p>
-
-                    
-                        
-
-                    
-                    
-                        <p>
-                            <a href="/2018/09/27/Portals/#post-footer" class="postShorten-excerpt_link link">
-                                评论和共享
-                            </a>
-                        </p>
-                    
-                </div>
-            
-        </div>
-        
-    </article>
-    
-    
-    <article class="postShorten postShorten--thumbnailimg-bottom">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title">
-                    
-                        <a class="link-unstyled" href="/2018/07/03/SpriteJS学习/">
-                            SpriteJS学习
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time datetime="2018-07-03T10:53:20+08:00">
-	
-		    7月 03, 2018
-    	
-    </time>
-    
-</div>
-
-            </div>
-            
-                <div class="postShorten-content">
-                    <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>sprite.js 是跨平台的2D绘图对象模型库，它能够支持web、node、桌面应用和微信小程序的图形绘制和实现各种动画效果。</p>
-<h2 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h2><ul>
-<li>像<strong>[操作DOM对象]</strong>一样操作画布上的图形元素</li>
-<li>通过智能缓存大大提升渲染性能</li>
-<li>支持多图层处理图形、文本、图像渲染</li>
-<li>支持DOM事件代理、自定义事件派发</li>
-<li>使用ES6+语法和面向对象编程</li>
-<li>结构化对象树，对d3引擎友好，能够无缝使用</li>
-<li>支持服务端渲染</li>
-<li>支持微信小程序</li>
-</ul>
-<h2 id="架构"><a href="#架构" class="headerlink" title="架构"></a>架构</h2><p><img src="http://blog.x2hy.com/cdn/WechatIMG101.jpeg" alt="架构图"></p>
-<h2 id="基础用法"><a href="#基础用法" class="headerlink" title="基础用法"></a>基础用法</h2><h3 id="坐标"><a href="#坐标" class="headerlink" title="坐标"></a>坐标</h3><h4 id="绘图尺寸-resolution、viewport"><a href="#绘图尺寸-resolution、viewport" class="headerlink" title="绘图尺寸 resolution、viewport"></a>绘图尺寸 resolution、viewport</h4><ul>
-<li><strong>resolution</strong> 画布的宽高(类似canvas的props中指定的width和height)</li>
-<li><strong>viewport</strong> canvas在文档中的宽高(类似canvas的css中指定的width和height)</li>
-</ul>
-<p>viewport不设置的时候，将会自适应外容器的大小。如果需要动态自适应大小，则设置<code>viewport: [&#39;auto&#39;, &#39;auto&#39;]</code></p>
-<h4 id="锚点-anchor"><a href="#锚点-anchor" class="headerlink" title="锚点 anchor"></a>锚点 anchor</h4><ul>
-<li><strong>anchor</strong> 与transform-origin 类型功能</li>
-</ul>
-<h3 id="元素"><a href="#元素" class="headerlink" title="元素"></a>元素</h3><h4 id="精灵-Sprite"><a href="#精灵-Sprite" class="headerlink" title="精灵 Sprite"></a>精灵 Sprite</h4><p>精灵是最重要的一个类，相当于在dom中的一个element元素，类似的他也具有自己的盒子模型，并且有自己的属性。</p>
-<blockquote>
-<p>所有可能的属性<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">anchor: [<span class="number">0</span>, <span class="number">0</span>],</span><br><span class="line">      x: <span class="number">0</span>,</span><br><span class="line">      y: <span class="number">0</span>,</span><br><span class="line">      opacity: <span class="number">1</span>,</span><br><span class="line">      width: <span class="string">''</span>,</span><br><span class="line">      height: <span class="string">''</span>,</span><br><span class="line">      bgcolor: <span class="string">''</span>,</span><br><span class="line">      rotate: <span class="number">0</span>,</span><br><span class="line">      scale: [<span class="number">1</span>, <span class="number">1</span>],</span><br><span class="line">      translate: [<span class="number">0</span>, <span class="number">0</span>],</span><br><span class="line">      skew: [<span class="number">0</span>, <span class="number">0</span>],</span><br><span class="line">      transform: <span class="string">'matrix(1,0,0,1,0,0)'</span>,</span><br><span class="line">      transformOrigin: <span class="string">''</span>,</span><br><span class="line">      transformMatrix: [<span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>],</span><br><span class="line">      border: &#123;</span><br><span class="line">        width: <span class="number">0</span>,</span><br><span class="line">        color: <span class="string">'rgba(0,0,0,0)'</span>,</span><br><span class="line">        style: <span class="string">'solid'</span>,</span><br><span class="line">      &#125;,</span><br><span class="line">      <span class="comment">// border: [0, 'rgba(0,0,0,0)'],</span></span><br><span class="line">      borderRadius: <span class="number">0</span>,</span><br><span class="line">      dashOffset: <span class="number">0</span>,</span><br><span class="line">      padding: [<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>],</span><br><span class="line">      zIndex: <span class="number">0</span>,</span><br><span class="line">      offsetRotate: <span class="string">'auto'</span>,</span><br><span class="line">      gradients: &#123;&#125;,</span><br><span class="line">      offsetDistance: <span class="number">0</span>,</span><br><span class="line">      filter: <span class="string">''</span>, <span class="comment">// filter: &#123;blur, ...&#125;</span></span><br><span class="line">      shadow: <span class="string">''</span>, <span class="comment">// shadow: &#123;color = 'rgba(0,0,0,1)', blur = 1[, offset]&#125;</span></span><br><span class="line">    &#125;, &#123;</span><br><span class="line">      pos() &#123;</span><br><span class="line">        <span class="keyword">return</span> [<span class="keyword">this</span>.x, <span class="keyword">this</span>.y]</span><br><span class="line">      &#125;,</span><br><span class="line">      size() &#123;</span><br><span class="line">        <span class="keyword">return</span> [<span class="keyword">this</span>.width, <span class="keyword">this</span>.height]</span><br><span class="line">      &#125;,</span><br><span class="line">      linearGradients() &#123;</span><br><span class="line">        <span class="comment">/* istanbul ignore next  */</span></span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.gradients</span><br><span class="line">      &#125;,</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<h4 id="文字-Label"><a href="#文字-Label" class="headerlink" title="文字 Label"></a>文字 Label</h4><h4 id="路径-Path"><a href="#路径-Path" class="headerlink" title="路径 Path"></a>路径 Path</h4><h4 id="分组-Group"><a href="#分组-Group" class="headerlink" title="分组 Group"></a>分组 Group</h4>
-                    
-                        
-
-                    
-                    
-                        <p>
-                            <a href="/2018/07/03/SpriteJS学习/#post-footer" class="postShorten-excerpt_link link">
-                                评论和共享
-                            </a>
-                        </p>
-                    
-                </div>
-            
-        </div>
-        
-    </article>
-    
-    
-    <article class="postShorten postShorten--thumbnailimg-bottom">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title">
-                    
-                        <a class="link-unstyled" href="/2018/06/27/webpack的各种sourcemap选择/">
-                            webpack的各种sourcemap选择
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time datetime="2018-06-27T16:47:14+08:00">
-	
-		    6月 27, 2018
-    	
-    </time>
-    
-</div>
-
-            </div>
-            
-                <div class="postShorten-content">
-                    <h1 id="webpack的各种sourcemap"><a href="#webpack的各种sourcemap" class="headerlink" title="webpack的各种sourcemap"></a>webpack的各种sourcemap</h1><blockquote>
-<p>对webpack配置中sourcemap的选择一直感觉有点概念不清楚，今天来整理一下，主要参照的是webpack的官方文档</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">devtool</th>
-<th style="text-align:left">首次构建速度</th>
-<th style="text-align:left">重新构建速度</th>
-<th style="text-align:left">是否生产环境专用</th>
-<th style="text-align:left">质量</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">(none)</td>
-<td style="text-align:left">极快</td>
-<td style="text-align:left">极快</td>
-<td style="text-align:left">是</td>
-<td style="text-align:left">bundled code</td>
-</tr>
-<tr>
-<td style="text-align:left">eval</td>
-<td style="text-align:left">极快</td>
-<td style="text-align:left">极快</td>
-<td style="text-align:left">否</td>
-<td style="text-align:left">generated code</td>
-</tr>
-<tr>
-<td style="text-align:left">cheap-eval-source-map</td>
-<td style="text-align:left">较快</td>
-<td style="text-align:left">快</td>
-<td style="text-align:left">否</td>
-<td style="text-align:left">transformed code(单行)</td>
-</tr>
-<tr>
-<td style="text-align:left">cheap-module-eval-source-map</td>
-<td style="text-align:left">普通</td>
-<td style="text-align:left">快</td>
-<td style="text-align:left">否</td>
-<td style="text-align:left">original source(单行)）</td>
-</tr>
-<tr>
-<td style="text-align:left">eval-source-map</td>
-<td style="text-align:left">慢</td>
-<td style="text-align:left">较快</td>
-<td style="text-align:left">否</td>
-<td style="text-align:left">original source</td>
-</tr>
-<tr>
-<td style="text-align:left">cheap-source-map</td>
-<td style="text-align:left">较快</td>
-<td style="text-align:left">普通</td>
-<td style="text-align:left">否</td>
-<td style="text-align:left">transformed code(单行)</td>
-</tr>
-<tr>
-<td style="text-align:left">cheap-module-source-map</td>
-<td style="text-align:left">普通</td>
-<td style="text-align:left">较慢</td>
-<td style="text-align:left">否</td>
-<td style="text-align:left">original source(单行)</td>
-</tr>
-<tr>
-<td style="text-align:left">inline-cheap-source-map</td>
-<td style="text-align:left">较快</td>
-<td style="text-align:left">普通</td>
-<td style="text-align:left">否</td>
-<td style="text-align:left">transformed code(单行)</td>
-</tr>
-<tr>
-<td style="text-align:left">inline-cheap-module-source-map</td>
-<td style="text-align:left">普通</td>
-<td style="text-align:left">较慢</td>
-<td style="text-align:left">否</td>
-<td style="text-align:left">original source(单行)</td>
-</tr>
-<tr>
-<td style="text-align:left">source-map</td>
-<td style="text-align:left">慢</td>
-<td style="text-align:left">慢</td>
-<td style="text-align:left">是</td>
-<td style="text-align:left">original source</td>
-</tr>
-<tr>
-<td style="text-align:left">inline-source-map</td>
-<td style="text-align:left">慢</td>
-<td style="text-align:left">慢</td>
-<td style="text-align:left">否</td>
-<td style="text-align:left">original source</td>
-</tr>
-<tr>
-<td style="text-align:left">hidden-source-map</td>
-<td style="text-align:left">慢</td>
-<td style="text-align:left">慢</td>
-<td style="text-align:left">是</td>
-<td style="text-align:left">original source</td>
-</tr>
-<tr>
-<td style="text-align:left">nosources-source-map</td>
-<td style="text-align:left">慢</td>
-<td style="text-align:left">慢</td>
-<td style="text-align:left">是</td>
-<td style="text-align:left">没有源代码</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p><strong>速度衡量:</strong>  极快 &gt; 快 &gt; 较快 &gt; 普通 &gt; 较慢 &gt; 慢</p>
-</blockquote>
-<blockquote>
-<p><strong>质量衡量</strong></p>
-<ul>
-<li><strong>bundled code</strong> - 生成的代码是大文件对象形式的，模块互相之间没有分离开 ？</li>
-<li><strong>generated code</strong> - 每一个模块互相分离，并且用模块名字注释，生产的代码类似<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//before</span></span><br><span class="line"><span class="keyword">import</span> &#123;test&#125; <span class="keyword">from</span> <span class="string">"module"</span>; test();</span><br><span class="line"><span class="comment">//after</span></span><br><span class="line"><span class="keyword">var</span> module__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(<span class="number">42</span>);</span><br><span class="line"> module__WEBPACK_IMPORTED_MODULE_1__.a();</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-</blockquote>
-<ul>
-<li><p><strong>transformed code</strong> - 每一个模块互相分离，并且用模块名字注释，你看到的代码是loader执行后，但是webpack转译前</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// before</span></span><br><span class="line"><span class="keyword">import</span> &#123;test&#125; <span class="keyword">from</span> <span class="string">"module"</span>; <span class="class"><span class="keyword">class</span> <span class="title">A</span> <span class="keyword">extends</span> <span class="title">test</span> </span>&#123;&#125;<span class="keyword">import</span> &#123;test&#125; <span class="keyword">from</span> <span class="string">"module"</span>; <span class="class"><span class="keyword">class</span> <span class="title">A</span> <span class="keyword">extends</span> <span class="title">test</span> </span>&#123;&#125;</span><br><span class="line"><span class="comment">// after</span></span><br><span class="line"><span class="keyword">import</span> &#123;test&#125; <span class="keyword">from</span> <span class="string">"module"</span>; <span class="keyword">var</span> A = <span class="function"><span class="keyword">function</span>(<span class="params">_test</span>) </span>&#123; ... &#125;(test);</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><strong>original source</strong> - 每一个模块互相分离，并且用模块名字注释，你看到的是在webpack转译以前，保持你在写的时候的样子，他需要依赖loader的支持</p>
-</li>
-<li><strong>without source content</strong> - 打包后的文件不包含sourcemap,浏览器通常会会通过webserver或者文件系统去加载它，所以你必须保证output.devtoolModuleFilenameTemplate是正确匹配了资源文件的地址</li>
-<li><strong>(lines only)</strong> - sourcemap被简化为每一行一个映射。这通常意味着每个语句只有单个映射（假设你就是这么写的）。这会妨碍你在语句级别上调试执行，也会妨碍你在每行的一些列上设置断点。与压缩后的代码组合后，映射关系是不可能实现的，因为压缩工具通常只会输出一行</li>
-</ul>
-
-                    
-                        
-
-                    
-                    
-                        <p>
-                            <a href="/2018/06/27/webpack的各种sourcemap选择/#post-footer" class="postShorten-excerpt_link link">
-                                评论和共享
-                            </a>
-                        </p>
-                    
-                </div>
-            
-        </div>
-        
-    </article>
-    
-    
-    <article class="postShorten postShorten--thumbnailimg-bottom">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title">
-                    
-                        <a class="link-unstyled" href="/2018/06/24/灵魂不朽/">
-                            灵魂不朽
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time datetime="2018-06-24T12:37:36+08:00">
-	
-		    6月 24, 2018
-    	
-    </time>
-    
-</div>
-
-            </div>
-            
-                <div class="postShorten-content">
-                    <h1 id="不朽"><a href="#不朽" class="headerlink" title="不朽"></a>不朽</h1><blockquote>
-<p>那边“一座低低的土墙，遮着一个弹三弦的人”。那三弦的声浪，在空间起了无数的波澜；那被冲动的空间质点，直接间接冲动无数旁的空间质点；这种波澜，由近而远，至于无穷空间；由现在而将来，由此刹那以至于无量刹那，至于无穷时间：——这已是不灭不朽了。那时间，那“低低的土墙”外来了一位诗人，听见那三弦的声音，忽然起了一个念头；由此念头，就成了一首好诗；这首好诗传诵了许多人；人读了这诗，各起种种念头；由这种种念头，更发生无量数的念头，更发生无数的动作，以至于无穷。然而那“低低的土墙”里面那个弹三弦的人又如何知道他所发生的影响呢？</p>
-<div style="text-align: right;">——胡适</div>
-</blockquote>
-
-                    
-                        
-
-                    
-                    
-                        <p>
-                            <a href="/2018/06/24/灵魂不朽/#post-footer" class="postShorten-excerpt_link link">
-                                评论和共享
-                            </a>
-                        </p>
-                    
-                </div>
-            
-        </div>
-        
-    </article>
-    
-    
-    <article class="postShorten postShorten--thumbnailimg-bottom">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title">
-                    
-                        <a class="link-unstyled" href="/2018/05/22/ES6/">
-                            ES6
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time datetime="2018-05-22T14:44:17+08:00">
-	
-		    5月 22, 2018
-    	
-    </time>
-    
-</div>
-
-            </div>
-            
-                <div class="postShorten-content">
-                    <h1 id="ES6知识点盘点回顾"><a href="#ES6知识点盘点回顾" class="headerlink" title="ES6知识点盘点回顾"></a>ES6知识点盘点回顾</h1><h2 id="let和const"><a href="#let和const" class="headerlink" title="let和const"></a>let和const</h2><h3 id="let"><a href="#let" class="headerlink" title="let"></a>let</h3><ul>
-<li>只在当前块级作用域有效(<em>产生暂时性死区</em>)</li>
-<li>不可重复定义</li>
-<li>可以重复赋值</li>
-<li>不会变量提升</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> a = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">let</span> a = <span class="number">2</span>; <span class="comment">// Identifier 'a' has already been declared</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 一个经典例子</span></span><br><span class="line"><span class="comment">// 使用 var时</span></span><br><span class="line"><span class="keyword">var</span> fnArr = [];</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++) &#123;</span><br><span class="line">  fnArr[i] = <span class="function"><span class="params">()</span> =&gt;</span> &#123;<span class="built_in">console</span>.log(i)&#125;</span><br><span class="line">&#125;</span><br><span class="line">fnArr[<span class="number">2</span>](); <span class="comment">// 10</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 使用 let时</span></span><br><span class="line"><span class="keyword">var</span> fnArr = [];</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++) &#123;</span><br><span class="line">  fnArr[i] = <span class="function"><span class="params">()</span> =&gt;</span> &#123;<span class="built_in">console</span>.log(i)&#125;</span><br><span class="line">&#125;</span><br><span class="line">fnArr[<span class="number">2</span>](); <span class="comment">// 2</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 变量提升的问题</span></span><br><span class="line">(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(b); <span class="comment">// undefined</span></span><br><span class="line">  <span class="built_in">console</span>.log(a); <span class="comment">// a is not defined</span></span><br><span class="line">  <span class="keyword">let</span> a = <span class="number">1</span>;</span><br><span class="line">  <span class="keyword">var</span> b = <span class="number">2</span>;</span><br><span class="line">&#125;)();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 比较有意思的暂时性死区问题</span></span><br><span class="line"><span class="keyword">var</span> arg = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">(<span class="function"><span class="params">()</span> =&gt;</span> &#123; <span class="comment">// 在此函数作用域中产生了一个暂时性死区，此块级作用域中的将忽略外部的arg，但是let不存在变量提升，故报错提示</span></span><br><span class="line">  <span class="built_in">console</span>.log(arg); <span class="comment">// arg is not defined</span></span><br><span class="line">  <span class="keyword">typeof</span> arg; <span class="comment">// arg  is not defined (typeof 不再是百分百安全的操作)</span></span><br><span class="line">  <span class="keyword">let</span> arg = <span class="number">2</span>;</span><br><span class="line">&#125;))();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 隐蔽的死区</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params">x = y, y = <span class="number">11</span></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> [x, y];</span><br><span class="line">&#125;</span><br><span class="line">test(); <span class="comment">// 报错</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> x = x; <span class="comment">// 不报错</span></span><br><span class="line"><span class="keyword">let</span> x = x; <span class="comment">// x is not defined</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 块级作用域</span></span><br><span class="line">&#123; <span class="keyword">let</span> a = <span class="number">233</span>; &#125;</span><br><span class="line">&#123; <span class="keyword">var</span> b = <span class="number">2</span>; &#125;</span><br><span class="line"><span class="built_in">console</span>.log(b); <span class="comment">// 2</span></span><br><span class="line"><span class="built_in">console</span>.log(a) <span class="comment">// a is not defined</span></span><br></pre></td></tr></table></figure>
-<h3 id="const"><a href="#const" class="headerlink" title="const"></a>const</h3><ul>
-<li>只在当前块级作用域有效(<em>产生暂时性死区</em>)</li>
-<li>不可重复定义</li>
-<li>不会变量提升</li>
-<li>声明时必须赋值，不可重复赋值</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> a = <span class="number">1</span>;</span><br><span class="line">a = <span class="number">2</span>; <span class="comment">// Uncaught TypeError: Assignment to constant variable.</span></span><br></pre></td></tr></table></figure>
-<h4 id="本质"><a href="#本质" class="headerlink" title="本质"></a>本质</h4><p>引自 阮一峰 <a href="http://es6.ruanyifeng.com/#docs/let" target="_blank" rel="noopener">ECMAScript 6 入门</a></p>
-<blockquote>
-<p>const实际上保证的，并不是变量的值不得改动，而是变量指向的那个内存地址不得改动。对于简单类型的数据（数值、字符串、布尔值），值就保存在变量指向的那个内存地址，因此等同于常量。但对于复合类型的数据（主要是对象和数组），变量指向的内存地址，保存的只是一个指针，const只能保证这个指针是固定的，至于它指向的数据结构是不是可变的，就完全不能控制了。因此，将一个对象声明为常量必须非常小心。</p>
-</blockquote>
-<h2 id="变量解构赋值"><a href="#变量解构赋值" class="headerlink" title="* 变量解构赋值"></a>* 变量解构赋值</h2><h3 id="数组解构"><a href="#数组解构" class="headerlink" title="数组解构"></a>数组解构</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 基本用法</span></span><br><span class="line"><span class="keyword">let</span> [a, b, c] = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line"></span><br><span class="line"><span class="comment">// 嵌套方式</span></span><br><span class="line"><span class="keyword">let</span> [a, [b], c] = [<span class="number">1</span>,[<span class="number">2</span>], <span class="number">3</span>];</span><br><span class="line"></span><br><span class="line"><span class="comment">// 默认值</span></span><br><span class="line"><span class="keyword">let</span> [a = <span class="number">2</span>] = [];</span><br><span class="line">a <span class="comment">// a = 2 // 匹配失败时，将会为a赋予默认值</span></span><br><span class="line"><span class="comment">// 隐蔽的暂时性死区的问题</span></span><br><span class="line"><span class="keyword">let</span> [x = y, y = <span class="number">2</span>] = [<span class="number">1</span>, <span class="number">2</span>]; <span class="comment">// y is not defined</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> [x = y, y = <span class="number">3</span>] = [<span class="number">1</span>, <span class="number">2</span>]; <span class="comment">// correct!</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 个人理解为，使用let声明时候的情况，类似于</span></span><br><span class="line"><span class="comment">// let x = y;</span></span><br><span class="line"><span class="comment">// let y = 2;</span></span><br><span class="line"><span class="comment">// 不存在变量提升，故提示 y is not defined</span></span><br><span class="line"><span class="comment">// 而在var方式声明时，存在变量提升，情况类似于</span></span><br><span class="line"><span class="comment">// var x = undefined;</span></span><br><span class="line"><span class="comment">// var y = unefined;</span></span><br><span class="line"><span class="comment">// x = y;</span></span><br><span class="line"><span class="comment">// y = 2;</span></span><br><span class="line"><span class="comment">// 故不会有错</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 默认值函数的惰性调用</span></span><br><span class="line"><span class="keyword">const</span> f = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'i’m invoked!'</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> [fc = f()] = [<span class="number">1</span>]; <span class="comment">//函数f将不会执行</span></span><br><span class="line"><span class="keyword">let</span> [fc = f()] = []; <span class="comment">// i’m invoked!</span></span><br></pre></td></tr></table></figure>
-<h3 id="对象解构"><a href="#对象解构" class="headerlink" title="对象解构"></a>对象解构</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 基本用法</span></span><br><span class="line"><span class="keyword">let</span> &#123;a, b, c&#125; = &#123;<span class="attr">a</span>: <span class="number">1</span>, <span class="attr">b</span>: <span class="number">2</span>, <span class="attr">c</span>: <span class="number">3</span>&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 别名方式</span></span><br><span class="line"><span class="keyword">let</span> &#123;a, <span class="attr">b</span>: _b&#125; = &#123;<span class="attr">a</span>: <span class="number">1</span>, <span class="attr">b</span>: <span class="number">2</span>&#125;;</span><br><span class="line">_b <span class="comment">// 2</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 嵌套方式</span></span><br><span class="line"><span class="keyword">let</span> obj = &#123;<span class="attr">a</span>: <span class="number">1</span>, <span class="attr">b</span>: &#123;<span class="attr">c</span>: [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]&#125;,<span class="attr">d</span>: [<span class="number">123</span>]&#125;;</span><br><span class="line"><span class="keyword">let</span> &#123;a, b, <span class="attr">b</span>: &#123;<span class="attr">c</span>:[e]&#125;, d&#125; = obj;</span><br><span class="line"><span class="comment">// a = 1</span></span><br><span class="line"><span class="comment">// b = &#123;c: [1,2,3]&#125; 可以使用多写一个b,把b当做变量而非模式</span></span><br><span class="line"><span class="comment">// e = 1</span></span><br><span class="line"><span class="comment">// d = [123]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 嵌套赋值方式</span></span><br><span class="line"><span class="keyword">let</span> obj = &#123;&#125;;</span><br><span class="line"><span class="keyword">let</span> arr = [];</span><br><span class="line"></span><br><span class="line">(&#123;<span class="attr">a</span>: obj.a, <span class="attr">b</span>: arr[<span class="number">0</span>]&#125; = &#123;<span class="attr">a</span>:<span class="number">1</span>, <span class="attr">b</span>: <span class="number">2</span>&#125;) <span class="comment">// 使用圆括号</span></span><br><span class="line">obj <span class="comment">// &#123;a: 1&#125;</span></span><br><span class="line">arr <span class="comment">// [2]</span></span><br></pre></td></tr></table></figure>
-<h3 id="字符串解构"><a href="#字符串解构" class="headerlink" title="字符串解构"></a>字符串解构</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> [a, b, c, d] = <span class="string">'123456'</span>;</span><br><span class="line">a <span class="comment">// 1</span></span><br><span class="line">b <span class="comment">// 2</span></span><br><span class="line"><span class="keyword">let</span> &#123;length&#125; = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>];</span><br><span class="line">length <span class="comment">// 3</span></span><br></pre></td></tr></table></figure>
-<h3 id="数值和布尔值解构"><a href="#数值和布尔值解构" class="headerlink" title="数值和布尔值解构"></a>数值和布尔值解构</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> &#123; toString &#125; = <span class="number">123</span>;</span><br><span class="line">toString <span class="comment">// function toString() &#123; [native code] &#125;</span></span><br></pre></td></tr></table></figure>
-<h3 id="函数参数解构"><a href="#函数参数解构" class="headerlink" title="函数参数解构"></a>函数参数解构</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">add</span>(<span class="params">[x, y]</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> x+y;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">add([<span class="number">1</span>,<span class="number">3</span>]); <span class="comment">// 4</span></span><br></pre></td></tr></table></figure>
-<h2 id="字符串的扩展"><a href="#字符串的扩展" class="headerlink" title="* 字符串的扩展"></a>* 字符串的扩展</h2><h3 id="1、字符的-Unicode-表示法"><a href="#1、字符的-Unicode-表示法" class="headerlink" title="1、字符的 Unicode 表示法"></a>1、字符的 Unicode 表示法</h3><h3 id="2、codePointAt"><a href="#2、codePointAt" class="headerlink" title="2、codePointAt()"></a>2、codePointAt()</h3><h3 id="3、String-fromCodePoint"><a href="#3、String-fromCodePoint" class="headerlink" title="3、String.fromCodePoint()"></a>3、String.fromCodePoint()</h3><h3 id="4、字符串的遍历器接口"><a href="#4、字符串的遍历器接口" class="headerlink" title="4、字符串的遍历器接口"></a>4、字符串的遍历器接口</h3><h3 id="5、at"><a href="#5、at" class="headerlink" title="5、at()"></a>5、at()</h3><h3 id="6、normalize"><a href="#6、normalize" class="headerlink" title="6、normalize()"></a>6、normalize()</h3><h3 id="7、includes-startsWith-endsWith"><a href="#7、includes-startsWith-endsWith" class="headerlink" title="7、includes(), startsWith(), endsWith()"></a>7、includes(), startsWith(), endsWith()</h3><h3 id="8、repeat"><a href="#8、repeat" class="headerlink" title="8、repeat()"></a>8、repeat()</h3><h3 id="9、padStart-，padEnd"><a href="#9、padStart-，padEnd" class="headerlink" title="9、padStart()，padEnd()"></a>9、padStart()，padEnd()</h3><h3 id="10、matchAll"><a href="#10、matchAll" class="headerlink" title="10、matchAll()"></a>10、matchAll()</h3><blockquote>
-<p>以上十小节略过，需要了去查api就好了</p>
-</blockquote>
-<h3 id="11、模板字符串"><a href="#11、模板字符串" class="headerlink" title="11、模板字符串"></a>11、模板字符串</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">  <span class="keyword">let</span> name = <span class="string">'Simple'</span>;</span><br><span class="line">  <span class="keyword">let</span> age = <span class="number">26</span>;</span><br><span class="line">  <span class="keyword">let</span> year = <span class="number">2018</span>;</span><br><span class="line"></span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">`I'm <span class="subst">$&#123;name&#125;</span>, I was born in <span class="subst">$&#123;year-age&#125;</span>`</span>) <span class="comment">// I'm Simple, I was born in 1992</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">// 模板字符串可以嵌套(可以用替代掉一些模板引擎了)</span></span><br><span class="line">  <span class="string">`&lt;table&gt;</span></span><br><span class="line"><span class="string">  <span class="subst">$&#123;[&#123;first: <span class="number">1</span>, last: <span class="number">2</span>&#125;</span>].map(addr =&gt; `</span></span><br><span class="line">    &lt;tr&gt;&lt;td&gt;$&#123;addr.first&#125;&lt;/td&gt;&lt;/tr&gt;</span><br><span class="line">    &lt;tr&gt;&lt;td&gt;$&#123;addr.last&#125;&lt;/td&gt;&lt;/tr&gt;</span><br><span class="line">  <span class="string">`).join('')&#125;</span></span><br><span class="line"><span class="string">  &lt;/table&gt;</span></span><br><span class="line"><span class="string">`</span></span><br></pre></td></tr></table></figure>
-<h3 id="11、实例"><a href="#11、实例" class="headerlink" title="11、实例"></a>11、实例</h3><h2 id="正则的扩展"><a href="#正则的扩展" class="headerlink" title="正则的扩展"></a>正则的扩展</h2><h2 id="数值的扩展"><a href="#数值的扩展" class="headerlink" title="数值的扩展"></a>数值的扩展</h2><h2 id="函数的扩展"><a href="#函数的扩展" class="headerlink" title="函数的扩展"></a>函数的扩展</h2><h2 id="数组的扩展"><a href="#数组的扩展" class="headerlink" title="* 数组的扩展"></a>* 数组的扩展</h2><h2 id="对象的扩展"><a href="#对象的扩展" class="headerlink" title="对象的扩展"></a>对象的扩展</h2><h2 id="Symbol"><a href="#Symbol" class="headerlink" title="* Symbol"></a>* Symbol</h2><h2 id="Set和Map"><a href="#Set和Map" class="headerlink" title="* Set和Map"></a>* Set和Map</h2><h2 id="Proxy"><a href="#Proxy" class="headerlink" title="* Proxy"></a>* Proxy</h2><h2 id="Reflect"><a href="#Reflect" class="headerlink" title="* Reflect"></a>* Reflect</h2><h2 id="Promise"><a href="#Promise" class="headerlink" title="* Promise"></a>* Promise</h2><h2 id="Iterator-和-for…of循环"><a href="#Iterator-和-for…of循环" class="headerlink" title="* Iterator 和 for…of循环"></a>* Iterator 和 for…of循环</h2><h2 id="Generator-函数相关"><a href="#Generator-函数相关" class="headerlink" title="* Generator 函数相关"></a>* Generator 函数相关</h2><h2 id="async-await"><a href="#async-await" class="headerlink" title="* async await"></a>* async await</h2><h2 id="class"><a href="#class" class="headerlink" title="* class"></a>* class</h2><h2 id="Decorator"><a href="#Decorator" class="headerlink" title="* Decorator"></a>* Decorator</h2><h2 id="Module"><a href="#Module" class="headerlink" title="* Module"></a>* Module</h2>
-                    
-                        
-
-                    
-                    
-                        <p>
-                            <a href="/2018/05/22/ES6/#post-footer" class="postShorten-excerpt_link link">
-                                评论和共享
-                            </a>
-                        </p>
-                    
-                </div>
-            
-        </div>
-        
-    </article>
-    
-    
-    <article class="postShorten postShorten--thumbnailimg-bottom">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title">
-                    
-                        <a class="link-unstyled" href="/2018/04/04/test/">
-                            重开博客
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time datetime="2018-04-04T14:53:43+08:00">
-	
-		    4月 04, 2018
-    	
-    </time>
-    
-</div>
-
-            </div>
-            
-                <div class="postShorten-content">
-                    <h1 id="博客重开"><a href="#博客重开" class="headerlink" title="博客重开"></a>博客重开</h1><blockquote>
-<p>虽然本来就没什么东西的</p>
-</blockquote>
-
-                    
-                        
-
-                    
-                    
-                        <p>
-                            <a href="/2018/04/04/test/#post-footer" class="postShorten-excerpt_link link">
-                                评论和共享
-                            </a>
-                        </p>
-                    
-                </div>
-            
-        </div>
-        
-    </article>
-    
-    <div class="pagination-bar">
-    <ul class="pagination">
-        
-        
-        <li class="pagination-number">第 1 页 共 1 页</li>
-    </ul>
-</div>
-
-</section>
-
-
-                <footer id="footer" class="main-content-wrap">
-    <span class="copyrights">
-        Copyrights &copy; 2018 Simple. All Rights Reserved.
-    </span>
-</footer>
-
-            </div>
-            
-        </div>
-        
-
-
-    
-        
-    
-
-<div id="about">
-    <div id="about-card">
-        <div id="about-btn-close">
-            <i class="fa fa-remove"></i>
-        </div>
-        
-            <img id="about-card-picture" src="/assets/images/avatar.jpeg" alt="作者的图片"/>
-        
-            <h4 id="about-card-name">Simple</h4>
-        
-            <div id="about-card-bio"><p>爱读历史的渣渣前端</p></div>
-        
-        
-            <div id="about-card-job">
-                <i class="fa fa-briefcase"></i>
-                <br/>
-                <p>前端切图仔</p>
-
-            </div>
-        
-        
-            <div id="about-card-location">
-                <i class="fa fa-map-marker"></i>
-                <br/>
-                浙江杭州
-            </div>
-        
-    </div>
-</div>
-
-        
-        
-<div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
-        <!--SCRIPTS-->
-<script src="/assets/js/script-yhuo2grt8r7qkqumzgjoglkfbicl1thukjgmla6jopu56zpcowfedi5zjcor.min.js"></script>
-<!--SCRIPTS END-->
-
-
-
-    </body>
+				<section class="postShorten-group main-content-wrap">
+					<article class="postShorten postShorten--thumbnailimg-bottom">
+						<div class="postShorten-wrap">
+							<div class="postShorten-header">
+								<h1 class="postShorten-title"> <a class="link-unstyled"
+										href="/2018/10/19/一些命令行交互相关的npm包/"> 一些命令行交互相关的npm包 </a> </h1>
+								<div class="postShorten-meta">
+									<time datetime="2018-10-19T10:30:28+08:00"> 10月 19, 2018 </time>
+								</div>
+							</div>
+							<div class="postShorten-content">
+								<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3>
+								<p>最近在写nodejs命令交互，自己写出来的交互效果惨不忍睹，这次参考了一些成熟的构建工具的源码(<code>vue-cli</code>、<code>create-react-app</code>,公司大佬写的<code>abc-cli</code>等)，整理了一些比较有用的npm包
+								</p>
+								<h3 id="命令行相关"><a href="#命令行相关" class="headerlink" title="命令行相关"></a>命令行相关</h3>
+								<h4 id="commander"><a href="#commander" class="headerlink"
+										title="commander"></a>commander</h4>
+								<blockquote>
+									<p>地址 <a href="https://github.com/tj/commander.js" target="_blank"
+											rel="noopener">https://github.com/tj/commander.js</a></p>
+								</blockquote>
+								<p>一个完整的nodejs命令行解决方案</p>
+								<h4 id="inquirer"><a href="#inquirer" class="headerlink" title="inquirer"></a>inquirer
+								</h4>
+								<blockquote>
+									<p>地址 <a href="https://github.com/SBoudrias/Inquirer.js" target="_blank"
+											rel="noopener">https://github.com/SBoudrias/Inquirer.js</a></p>
+								</blockquote>
+								<p>一个用以处理输入交互的命令行工具</p>
+								<h4 id="chalk"><a href="#chalk" class="headerlink" title="chalk"></a>chalk</h4>
+								<blockquote>
+									<p>地址 <a href="https://github.com/chalk/chalk" target="_blank"
+											rel="noopener">https://github.com/chalk/chalk</a></p>
+								</blockquote>
+								<p>用以处理命令行输出的样式等功能的工具</p>
+								<h4 id="listr"><a href="#listr" class="headerlink" title="listr"></a>listr</h4>
+								<blockquote>
+									<p>地址 <a href="https://github.com/SamVerschueren/listr" target="_blank"
+											rel="noopener">https://github.com/SamVerschueren/listr</a></p>
+								</blockquote>
+								<p> 命令行任务处理列表工具</p>
+								<h4 id="figlet"><a href="#figlet" class="headerlink" title="figlet"></a>figlet</h4>
+								<blockquote>
+									<p>地址 <a href="https://github.com/patorjk/figlet.js#" target="_blank"
+											rel="noopener">https://github.com/patorjk/figlet.js</a></p>
+								</blockquote>
+								<p>命令行字符横幅生成工具</p>
+								<h4 id="ora"><a href="#ora" class="headerlink" title="ora"></a>ora</h4>
+								<blockquote>
+									<p>地址<br /><a href="https://github.com/sindresorhus/ora" target="_blank"
+											rel="noopener">https://github.com/sindresorhus/ora</a></p>
+								</blockquote>
+								<p>优雅处理命令行loading</p>
+								<h4 id="rimraf"><a href="#rimraf" class="headerlink" title="rimraf"></a>rimraf</h4>
+								<blockquote>
+									<p>地址<br /><a href="https://github.com/isaacs/rimraf" target="_blank"
+											rel="noopener">https://github.com/isaacs/rimraf</a></p>
+								</blockquote>
+								<p>更好地处理<code>rm -rf</code></p>
+								<h4 id="execa"><a href="#execa" class="headerlink" title="execa"></a>execa</h4>
+								<blockquote>
+									<p>地址 <a href="https://github.com/sindresorhus/execa" target="_blank"
+											rel="noopener">https://github.com/sindresorhus/execa</a></p>
+								</blockquote>
+								<p>一个更好的<code>child_process</code></p>
+								<h4 id="yargs"><a href="#yargs" class="headerlink" title="yargs"></a>yargs</h4>
+								<blockquote>
+									<p>地址 <a href="https://github.com/yargs/yargs" target="_blank"
+											rel="noopener">https://github.com/yargs/yargs</a></p>
+								</blockquote>
+								<p>友好地处理命令参数工具</p>
+								<h4 id="shelljs"><a href="#shelljs" class="headerlink" title="shelljs"></a>shelljs</h4>
+								<blockquote>
+									<p>地址 <a href="https://github.com/shelljs/shelljs" target="_blank"
+											rel="noopener">https://github.com/shelljs/shelljs</a></p>
+								</blockquote>
+								<p>一个方便的nodejs unix shell命令工具</p>
+								<h4 id="semver"><a href="#semver" class="headerlink" title="semver"></a>semver</h4>
+								<blockquote>
+									<p>地址 <a href="https://github.com/npm/node-semver" target="_blank"
+											rel="noopener">https://github.com/npm/node-semver</a></p>
+								</blockquote>
+								<p>处理版本号语义的(感觉有点鸡肋)</p>
+								<h4 id="left-pad"><a href="#left-pad" class="headerlink" title="left-pad"></a>left-pad
+								</h4>
+								<blockquote>
+									<p>地址 <a href="https://github.com/stevemao/left-pad" target="_blank"
+											rel="noopener">https://github.com/stevemao/left-pad</a></p>
+								</blockquote>
+								<p>处理左对齐的…</p>
+								<h4 id="fs-extra"><a href="#fs-extra" class="headerlink" title="fs-extra"></a>fs-extra
+								</h4>
+								<blockquote>
+									<p>地址 <a href="https://www.npmjs.com/package/fs-extra" target="_blank"
+											rel="noopener">https://www.npmjs.com/package/fs-extra</a></p>
+								</blockquote>
+								<p>添加了一些原生的<code>fs</code>模块所不存在的方法，并且添加promise支持。使用<code>graceful-fs</code>阻止<code>EMFILE</code>错误
+								</p>
+								<h4 id="cross-spawn"><a href="#cross-spawn" class="headerlink"
+										title="cross-spawn"></a>cross-spawn</h4>
+								<blockquote>
+									<p>地址 <a href="https://www.npmjs.com/package/cross-spawn" target="_blank"
+											rel="noopener">https://www.npmjs.com/package/cross-spawn</a></p>
+								</blockquote>
+								<p>一个跨平台的nodejs <code>spawn</code>和<code>spawnSync</code>解决方案</p>
+								<h4 id="tmp"><a href="#tmp" class="headerlink" title="tmp"></a>tmp</h4>
+								<blockquote>
+									<p>地址 <a href="https://www.npmjs.com/package/tmp" target="_blank"
+											rel="noopener">https://www.npmjs.com/package/tmp</a></p>
+								</blockquote>
+								<p>一个简单的工具用来生成临时文件或目录</p>
+								<h4 id="envinfo"><a href="#envinfo" class="headerlink" title="envinfo"></a>envinfo</h4>
+								<blockquote>
+									<p>地址 <a href="https://www.npmjs.com/package/envinfo" target="_blank"
+											rel="noopener">https://www.npmjs.com/package/envinfo</a></p>
+								</blockquote>
+								<p>一次性获取所有的系统环境相关信息，快速，无痛苦</p>
+								<h3 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h3>
+								<blockquote>
+									<p>待续…</p>
+								</blockquote>
+								<p> <a href="/2018/10/19/一些命令行交互相关的npm包/#post-footer"
+										class="postShorten-excerpt_link link"> 评论和共享 </a> </p>
+							</div>
+						</div>
+					</article>
+					<article class="postShorten postShorten--thumbnailimg-bottom">
+						<div class="postShorten-wrap">
+							<div class="postShorten-header">
+								<h1 class="postShorten-title"> <a class="link-unstyled"
+										href="/2018/09/27/React16升级注意事项/"> React16升级注意事项 </a> </h1>
+								<div class="postShorten-meta">
+									<time datetime="2018-09-27T19:36:16+08:00"> 9月 27, 2018 </time>
+								</div>
+							</div>
+							<div class="postShorten-content">
+								<p>最近将webim项目的react版本,升级到了16.x,版本升级后存在一些api的更迭，需要慢慢迁移，在此列出一些注意事项。</p>
+								<h2 id="生命周期钩子的改变"><a href="#生命周期钩子的改变" class="headerlink"
+										title="生命周期钩子的改变"></a>生命周期钩子的改变</h2>
+								<p>react16.x修复了一些以往版本的bug，并对一些api做出了调整，原来的<code>UNSAFE_conponentWillMount</code>
+									<code>UNSAFE_conponentWillReceiveProps</code><br /><code>UNSAFE_componentWillUpdate</code>将在17.x版本后移除，因此在本次升级后，我们应该有意识得去把老代码中的这些钩子用新的方式替换掉
+								</p>
+								<h4 id="装配期"><a href="#装配期" class="headerlink" title="装配期"></a>装配期</h4>
+								<ul>
+									<li>constructor()</li>
+									<li>getDerivedStateFromProps()</li>
+									<li>UNSAFE_conponentWillMount() // 不推荐使用</li>
+									<li>render()</li>
+									<li>componentDidMount()</li>
+								</ul>
+								<h4 id="更新期"><a href="#更新期" class="headerlink" title="更新期"></a>更新期</h4>
+								<ul>
+									<li>UNSAFE_conponentWillReceiveProps() // 不推荐使用</li>
+									<li>getDerivedStateFromProps() // 功能与componentWillReceiveProps类似</li>
+									<li>shouldComponentUpdate()</li>
+									<li>UNSAFE_componentWillUpdate() // 不推荐使用</li>
+									<li>render()</li>
+									<li>getSnapshotBeforeUpdate() // 获取改变前的快照，该钩子的返回值将作为componentDidUpdate的第三个参数</li>
+									<li>componentDidUpdate()</li>
+								</ul>
+								<h4 id="销毁期"><a href="#销毁期" class="headerlink" title="销毁期"></a>销毁期</h4>
+								<ul>
+									<li>componentWillUnmount()</li>
+								</ul>
+								<h4 id="错误处理"><a href="#错误处理" class="headerlink" title="错误处理"></a>错误处理</h4>
+								<ul>
+									<li>componentDidCatch() // 错误边界钩子函数</li>
+								</ul>
+								<h2 id="ref的改变"><a href="#ref的改变" class="headerlink" title="ref的改变"></a>ref的改变</h2>
+								<p>16.x之前，ref可以有<code>字符串ref</code>和<code>回调ref</code>两种形式，但是16.x版本将不再支持<code>字符串ref</code>，并且提供了全新的api–<br />React.createRef()
+								</p>
+								<p>使用方式如下:<br /></p>
+								<figure class="highlight javascript">
+									<table>
+										<tbody>
+											<tr>
+												<td class="gutter">
+													<pre><span class="line">1</span><br /><span class="line">2</span><br /><span class="line">3</span><br /><span class="line">4</span><br /><span class="line">5</span><br /><span class="line">6</span><br /><span class="line">7</span><br /><span class="line">8</span><br /><span class="line">9</span><br /></pre>
+												</td>
+												<td class="code">
+													<pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyComponent</span> <span class="keyword">extends</span> <span class="title">React</span>.<span class="title">Component</span> </span>{</span><br /><span class="line">  <span class="keyword">constructor</span>(props) {</span><br /><span class="line">    <span class="keyword">super</span>(props);</span><br /><span class="line">    <span class="keyword">this</span>.myRef = React.createRef();</span><br /><span class="line">  }</span><br /><span class="line">  render() {</span><br /><span class="line">    <span class="keyword">return</span> &lt;div ref={this.myRef} /&gt;;</span><br /><span class="line">  }</span><br /><span class="line">}</span><br /></pre>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</figure>
+								<p></p>
+								<p><strong> 但是，在不到万不得已的情况下还是尽量少用<code>ref</code></strong></p>
+								<h2 id="props-types"><a href="#props-types" class="headerlink"
+										title="props-types"></a>props-types</h2>
+								<p>新版本的react将<code>prop-types</code>从react中移除了，需要单独引入</p>
+								<h2 id="错误边界的使用"><a href="#错误边界的使用" class="headerlink" title="错误边界的使用"></a>错误边界的使用</h2>
+								<p><a href="https://react.docschina.org/docs/error-boundaries.html" target="_blank"
+										rel="noopener">什么事错误边界</a><br />react从16.x开始，定义了UncaughtError错误的新行为。</p>
+								<blockquote>
+									<p><strong> 自 React 16 开始，任何未被错误边界捕获的错误将会卸载整个 React 组件树。 </strong></p>
+								</blockquote>
+								<p>这么一来，可能一个小组件的运行时异常也会导致整个webApp的崩溃，对代码的容错率和健壮性提出了更高的要求。</p>
+								<p><code>Error Boundary</code>可以<strong>用于捕获其子组件树 JavaScript 异常，记录错误并展示一个回退的 UI
+									</strong></p>
+								<h2 id="多余的代码嵌套"><a href="#多余的代码嵌套" class="headerlink" title="多余的代码嵌套"></a>多余的代码嵌套</h2>
+								<p>16.x版本前，一个组件无法但会多个元素，于是大家都会在多个圆度的外部包裹一个没有意义的<code>div</code>或者其他元素<br /></p>
+								<figure class="highlight javascript">
+									<table>
+										<tbody>
+											<tr>
+												<td class="gutter">
+													<pre><span class="line">1</span><br /><span class="line">2</span><br /><span class="line">3</span><br /><span class="line">4</span><br /><span class="line">5</span><br /><span class="line">6</span><br /><span class="line">7</span><br /><span class="line">8</span><br /><span class="line">9</span><br /><span class="line">10</span><br /><span class="line">11</span><br /></pre>
+												</td>
+												<td class="code">
+													<pre><span class="line">...</span><br /><span class="line">render() {</span><br /><span class="line">  <span class="keyword">return</span> (</span><br /><span class="line">    &lt;div&gt; {<span class="comment">/*没有意义的嵌套*/</span>}</span><br /><span class="line">      &lt;Comp1/&gt;</span><br /><span class="line">      &lt;Comp2/&gt;</span><br /><span class="line">      &lt;Comp3/&gt;</span><br /><span class="line">    &lt;<span class="regexp">/div&gt;</span></span><br /><span class="line"><span class="regexp">  )</span></span><br /><span class="line"><span class="regexp">}</span></span><br /><span class="line"><span class="regexp">...</span></span><br /></pre>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</figure>
+								<p></p>
+								<p>现在可以使用<code>Fragment</code>来规避这样的问题<br /></p>
+								<figure class="highlight javascript">
+									<table>
+										<tbody>
+											<tr>
+												<td class="gutter">
+													<pre><span class="line">1</span><br /><span class="line">2</span><br /><span class="line">3</span><br /><span class="line">4</span><br /><span class="line">5</span><br /><span class="line">6</span><br /><span class="line">7</span><br /><span class="line">8</span><br /><span class="line">9</span><br /><span class="line">10</span><br /><span class="line">11</span><br /><span class="line">12</span><br /><span class="line">13</span><br /><span class="line">14</span><br /><span class="line">15</span><br /><span class="line">16</span><br /><span class="line">17</span><br /><span class="line">18</span><br /><span class="line">19</span><br /><span class="line">20</span><br /><span class="line">21</span><br /><span class="line">22</span><br /><span class="line">23</span><br /><span class="line">24</span><br /></pre>
+												</td>
+												<td class="code">
+													<pre><span class="line">...</span><br /><span class="line">render() {</span><br /><span class="line">  <span class="keyword">return</span> (</span><br /><span class="line">    &lt;&gt;</span><br /><span class="line">      &lt;Comp1/&gt;</span><br /><span class="line">      &lt;Comp2/&gt;</span><br /><span class="line">      &lt;Comp3/&gt;</span><br /><span class="line">    &lt;<span class="regexp">/&gt;</span></span><br /><span class="line"><span class="regexp">  )</span></span><br /><span class="line"><span class="regexp">}</span></span><br /><span class="line"><span class="regexp">...</span></span><br /><span class="line"><span class="regexp"></span></span><br /><span class="line"><span class="regexp">/</span><span class="regexp">/ 或者</span></span><br /><span class="line"><span class="regexp">...</span></span><br /><span class="line"><span class="regexp">render() {</span></span><br /><span class="line"><span class="regexp">  return (</span></span><br /><span class="line"><span class="regexp">    &lt;React.Fragment&gt;</span></span><br /><span class="line"><span class="regexp">      &lt;Comp1/</span>&gt;</span><br /><span class="line">      &lt;Comp2/&gt;</span><br /><span class="line">      &lt;Comp3/&gt;</span><br /><span class="line">    &lt;React.Fragment/&gt;</span><br /><span class="line">  )</span><br /><span class="line">}</span><br /><span class="line">...</span><br /></pre>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</figure>
+								<p></p>
+								<p><code>Fragment</code>将不会生成额外的标签，与<code>DocumentFragment</code>有一定程度上的类似</p>
+								<h2 id="Portals的使用"><a href="#Portals的使用" class="headerlink"
+										title="Portals的使用"></a>Portals的使用</h2>
+								<p>在日常开发中，相信大家都会经常碰到这样的情况<br /></p>
+								<figure class="highlight javascript">
+									<table>
+										<tbody>
+											<tr>
+												<td class="gutter">
+													<pre><span class="line">1</span><br /><span class="line">2</span><br /><span class="line">3</span><br /></pre>
+												</td>
+												<td class="code">
+													<pre><span class="line">&lt;div style={{<span class="attr">color</span>: <span class="string">'#0078d8'</span>, <span class="attr">fontSize</span>: <span class="string">'40px'</span>}}&gt;</span><br /><span class="line">  &lt;Dialog show={<span class="keyword">this</span>.state.showDialog}/&gt;</span><br /><span class="line">&lt;<span class="regexp">/div&gt;</span></span><br /></pre>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</figure>
+								<p></p>
+								<p>因为父组件上带有了一些样式，导致Dialog组件继承了父组件样式而造成了错乱</p>
+								<p>使用portal后代码如下<br /></p>
+								<figure class="highlight javascript">
+									<table>
+										<tbody>
+											<tr>
+												<td class="gutter">
+													<pre><span class="line">1</span><br /><span class="line">2</span><br /><span class="line">3</span><br /><span class="line">4</span><br /><span class="line">5</span><br /><span class="line">6</span><br /><span class="line">7</span><br /><span class="line">8</span><br /><span class="line">9</span><br /><span class="line">10</span><br /><span class="line">11</span><br /><span class="line">12</span><br /><span class="line">13</span><br /><span class="line">14</span><br /><span class="line">15</span><br /><span class="line">16</span><br /><span class="line">17</span><br /><span class="line">18</span><br /><span class="line">19</span><br /><span class="line">20</span><br /><span class="line">21</span><br /><span class="line">22</span><br /><span class="line">23</span><br /><span class="line">24</span><br /><span class="line">25</span><br /><span class="line">26</span><br /></pre>
+												</td>
+												<td class="code">
+													<pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Tips</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>{</span><br /><span class="line">  <span class="keyword">constructor</span>() {</span><br /><span class="line">    <span class="keyword">super</span>()</span><br /><span class="line">    <span class="keyword">this</span>.dom = <span class="literal">null</span></span><br /><span class="line">  }</span><br /><span class="line">  componentWillMount() {</span><br /><span class="line">    <span class="keyword">this</span>.dom = <span class="built_in">document</span>.createElement(<span class="string">'div'</span>)</span><br /><span class="line">    <span class="keyword">this</span>.dom.id = <span class="string">`portal-<span class="subst">${<span class="built_in">Date</span>.now()}</span>`</span></span><br /><span class="line">    <span class="built_in">document</span>.body.appendChild(<span class="keyword">this</span>.dom);</span><br /><span class="line">  }</span><br /><span class="line"></span><br /><span class="line">  componentWillUnmount() {</span><br /><span class="line">    <span class="built_in">document</span>.body.removeChild(<span class="keyword">this</span>.dom);</span><br /><span class="line">  }</span><br /><span class="line"></span><br /><span class="line">  render() {</span><br /><span class="line">    <span class="keyword">return</span> ReactDOM.createPortal(</span><br /><span class="line">      &lt;div className={styles.portalTips}&gt;</span><br /><span class="line">        显示弹窗</span><br /><span class="line"></span><br /><span class="line">        &lt;button onClick={<span class="keyword">this</span>.props.onClose}&gt;关闭&lt;<span class="regexp">/button&gt;</span></span><br /><span class="line"><span class="regexp">      &lt;/</span>div&gt;,</span><br /><span class="line">      <span class="keyword">this</span>.dom</span><br /><span class="line">    )</span><br /><span class="line">  }</span><br /><span class="line">}</span><br /></pre>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</figure>
+								<p></p>
+								<p>既保证了样式不会受父元素的污染，又保留了完整的事件冒泡</p>
+								<h2 id="严格模式的使用"><a href="#严格模式的使用" class="headerlink" title="严格模式的使用"></a>严格模式的使用</h2>
+								<figure class="highlight javascript">
+									<table>
+										<tbody>
+											<tr>
+												<td class="gutter">
+													<pre><span class="line">1</span><br /><span class="line">2</span><br /><span class="line">3</span><br /><span class="line">4</span><br /><span class="line">5</span><br /><span class="line">6</span><br /><span class="line">7</span><br /><span class="line">8</span><br /><span class="line">9</span><br /></pre>
+												</td>
+												<td class="code">
+													<pre><span class="line"><span class="keyword">const</span> StrictModeComp = <span class="function"><span class="params">()</span> =&gt;</span> (</span><br /><span class="line">  &lt;React.Fragment&gt;</span><br /><span class="line">    &lt;Comp1/&gt;</span><br /><span class="line">    &lt;React.StrictMode&gt;</span><br /><span class="line">      &lt;Comp2/&gt;</span><br /><span class="line">    &lt;<span class="regexp">/React.StrictMode&gt;</span></span><br /><span class="line"><span class="regexp">    &lt;Comp3/</span>&gt;</span><br /><span class="line">  &lt;React.Fragment/&gt;</span><br /><span class="line">)</span><br /></pre>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</figure>
+								<p>上述代码中的<code>React.StrictMode</code>是一个<strong>标记出应用中潜在问题的工具</strong>，不会生成额外的dom结构，并且只在开发环境中有效
+								</p>
+								<p>他会帮助你做以下几件事情</p>
+								<ul>
+									<li>对不安全的声明周期钩子提出警告</li>
+									<li>对<code>字符串方式的ref</code>提出警告</li>
+									<li>监测意外的副作用</li>
+								</ul>
+								<p><strong>在刚迁移到16.x的情况下，可以多多使用这个新特性</strong></p>
+								<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2>
+								<h3 id="react协调算法"><a href="#react协调算法" class="headerlink"
+										title="react协调算法"></a>react协调算法</h3>
+								<p>react16对react的核心算法进行了一次重构，由原来的<code>stack reconciler</code> 转为 <code>fiber
+										reconciler</code>,<br /><a
+										href="http://www.ayqy.net/blog/dive-into-react-fiber/" target="_blank"
+										rel="noopener">fiber架构拓展阅读1</a><br /><a
+										href="https://juejin.im/entry/5b0245486fb9a07ac23b08ab" target="_blank"
+										rel="noopener">fiber架构拓展阅读2</a></p>
+								<h3 id="待续…"><a href="#待续…" class="headerlink" title="待续…"></a>待续…</h3>
+								<p> <a href="/2018/09/27/React16升级注意事项/#post-footer"
+										class="postShorten-excerpt_link link"> 评论和共享 </a> </p>
+							</div>
+						</div>
+					</article>
+					<article class="postShorten postShorten--thumbnailimg-bottom">
+						<div class="postShorten-wrap">
+							<div class="postShorten-header">
+								<h1 class="postShorten-title"> <a class="link-unstyled" href="/2018/09/27/Portals/">
+										Portals </a> </h1>
+								<div class="postShorten-meta">
+									<time datetime="2018-09-27T10:45:19+08:00"> 9月 27, 2018 </time>
+								</div>
+							</div>
+							<div class="postShorten-content">
+								<h2 id="官方定义"><a href="#官方定义" class="headerlink" title="官方定义"></a>官方定义</h2>
+								<p>Portals 提供了一种很好的将子节点渲染到父组件以外的 DOM 节点的方式。</p>
+								<figure class="highlight javascript">
+									<table>
+										<tbody>
+											<tr>
+												<td class="gutter">
+													<pre><span class="line">1</span><br /></pre>
+												</td>
+												<td class="code">
+													<pre><span class="line">ReactDOM.createPortal(child, container)</span><br /></pre>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</figure>
+								<p>第一个参数（child）是任何可渲染的 React 子元素，例如一个元素，字符串或碎片。第二个参数（container）则是一个 DOM 元素。</p>
+								<h2 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h2>
+								<p>在日常开发中，相信大家都会经常碰到这样的情况<br /></p>
+								<figure class="highlight javascript">
+									<table>
+										<tbody>
+											<tr>
+												<td class="gutter">
+													<pre><span class="line">1</span><br /><span class="line">2</span><br /><span class="line">3</span><br /></pre>
+												</td>
+												<td class="code">
+													<pre><span class="line">&lt;div style={{<span class="attr">color</span>: <span class="string">'#0078d8'</span>, <span class="attr">fontSize</span>: <span class="string">'40px'</span>}}&gt;</span><br /><span class="line">  &lt;Dialog show={<span class="keyword">this</span>.state.showDialog}/&gt;</span><br /><span class="line">&lt;<span class="regexp">/div&gt;</span></span><br /></pre>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</figure>
+								<p></p>
+								<p>因为父组件上带有了一些样式，导致Dialog组件继承了父组件样式而造成了错乱</p>
+								<h2 id="老的解决方案"><a href="#老的解决方案" class="headerlink" title="老的解决方案"></a>老的解决方案</h2>
+								<p>这样的情况肯定是难不倒大家的,相信很多人都有自己的处理方案</p>
+								<figure class="highlight javascript">
+									<table>
+										<tbody>
+											<tr>
+												<td class="gutter">
+													<pre><span class="line">1</span><br /><span class="line">2</span><br /><span class="line">3</span><br /><span class="line">4</span><br /><span class="line">5</span><br /><span class="line">6</span><br /><span class="line">7</span><br /><span class="line">8</span><br /><span class="line">9</span><br /><span class="line">10</span><br /><span class="line">11</span><br /><span class="line">12</span><br /><span class="line">13</span><br /><span class="line">14</span><br /><span class="line">15</span><br /><span class="line">16</span><br /><span class="line">17</span><br /><span class="line">18</span><br /><span class="line">19</span><br /><span class="line">20</span><br /><span class="line">21</span><br /><span class="line">22</span><br /><span class="line">23</span><br /><span class="line">24</span><br /><span class="line">25</span><br /><span class="line">26</span><br /><span class="line">27</span><br /><span class="line">28</span><br /><span class="line">29</span><br /><span class="line">30</span><br /><span class="line">31</span><br /><span class="line">32</span><br /><span class="line">33</span><br /><span class="line">34</span><br /><span class="line">35</span><br /><span class="line">36</span><br /></pre>
+												</td>
+												<td class="code">
+													<pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">DiyPortalTips</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>{</span><br /><span class="line">  <span class="keyword">constructor</span>() {</span><br /><span class="line">    <span class="keyword">super</span>()</span><br /><span class="line">    <span class="keyword">this</span>.dom = <span class="literal">null</span></span><br /><span class="line">  }</span><br /><span class="line"></span><br /><span class="line">  componentWillMount() {</span><br /><span class="line">    <span class="keyword">this</span>.dom = <span class="built_in">document</span>.createElement(<span class="string">'div'</span>)</span><br /><span class="line">    <span class="keyword">this</span>.dom.id = <span class="string">`diy-portal-<span class="subst">${<span class="built_in">Date</span>.now()}</span>`</span></span><br /><span class="line"></span><br /><span class="line">    <span class="built_in">document</span>.body.appendChild(<span class="keyword">this</span>.dom)</span><br /><span class="line">  }</span><br /><span class="line"></span><br /><span class="line">  componentDidMount() {</span><br /><span class="line">    <span class="keyword">this</span>.renderToPortal()</span><br /><span class="line">  }</span><br /><span class="line"></span><br /><span class="line">  renderToPortal = <span class="function"><span class="params">()</span> =&gt;</span> {</span><br /><span class="line">    ReactDOM.render(</span><br /><span class="line">      &lt;div className={styles.portalTips}&gt;</span><br /><span class="line">        显示弹窗</span><br /><span class="line"></span><br /><span class="line">        &lt;button onClick={<span class="keyword">this</span>.props.onClose}&gt;关闭&lt;<span class="regexp">/button&gt;</span></span><br /><span class="line"><span class="regexp">      &lt;/</span>div&gt;,</span><br /><span class="line">      <span class="keyword">this</span>.dom</span><br /><span class="line">    )</span><br /><span class="line">  }</span><br /><span class="line"></span><br /><span class="line">  render() {</span><br /><span class="line">    <span class="keyword">return</span> <span class="literal">null</span></span><br /><span class="line">  }</span><br /><span class="line"></span><br /><span class="line">  componentWillUnmount() {</span><br /><span class="line">    <span class="built_in">document</span>.body.removeChild(<span class="keyword">this</span>.dom)</span><br /><span class="line">  }</span><br /><span class="line">}</span><br /></pre>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</figure>
+								<h2 id="老的方案存在的问题"><a href="#老的方案存在的问题" class="headerlink"
+										title="老的方案存在的问题"></a>老的方案存在的问题</h2>
+								<p>这样的方案能解决掉样式的问题，但是因为将组件渲染到了一个新DOM结构中，会导致父子组件间的包含结构被破坏。这样一来，子组件的事件无法冒泡至父组件上，这个时候我们该怎么办呢
+								</p>
+								<p>…<br />是时候让portal出场了！！！</p>
+								<h2 id="portal的方式实现"><a href="#portal的方式实现" class="headerlink"
+										title="portal的方式实现"></a>portal的方式实现</h2>
+								<figure class="highlight javascript">
+									<table>
+										<tbody>
+											<tr>
+												<td class="gutter">
+													<pre><span class="line">1</span><br /><span class="line">2</span><br /><span class="line">3</span><br /><span class="line">4</span><br /><span class="line">5</span><br /><span class="line">6</span><br /><span class="line">7</span><br /><span class="line">8</span><br /><span class="line">9</span><br /><span class="line">10</span><br /><span class="line">11</span><br /><span class="line">12</span><br /><span class="line">13</span><br /><span class="line">14</span><br /><span class="line">15</span><br /><span class="line">16</span><br /><span class="line">17</span><br /><span class="line">18</span><br /><span class="line">19</span><br /><span class="line">20</span><br /><span class="line">21</span><br /><span class="line">22</span><br /><span class="line">23</span><br /><span class="line">24</span><br /><span class="line">25</span><br /><span class="line">26</span><br /></pre>
+												</td>
+												<td class="code">
+													<pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Tips</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>{</span><br /><span class="line">  <span class="keyword">constructor</span>() {</span><br /><span class="line">    <span class="keyword">super</span>()</span><br /><span class="line">    <span class="keyword">this</span>.dom = <span class="literal">null</span></span><br /><span class="line">  }</span><br /><span class="line">  componentWillMount() {</span><br /><span class="line">    <span class="keyword">this</span>.dom = <span class="built_in">document</span>.createElement(<span class="string">'div'</span>)</span><br /><span class="line">    <span class="keyword">this</span>.dom.id = <span class="string">`portal-<span class="subst">${<span class="built_in">Date</span>.now()}</span>`</span></span><br /><span class="line">    <span class="built_in">document</span>.body.appendChild(<span class="keyword">this</span>.dom);</span><br /><span class="line">  }</span><br /><span class="line"></span><br /><span class="line">  componentWillUnmount() {</span><br /><span class="line">    <span class="built_in">document</span>.body.removeChild(<span class="keyword">this</span>.dom);</span><br /><span class="line">  }</span><br /><span class="line"></span><br /><span class="line">  render() {</span><br /><span class="line">    <span class="keyword">return</span> ReactDOM.createPortal(</span><br /><span class="line">      &lt;div className={styles.portalTips}&gt;</span><br /><span class="line">        显示弹窗</span><br /><span class="line"></span><br /><span class="line">        &lt;button onClick={<span class="keyword">this</span>.props.onClose}&gt;关闭&lt;<span class="regexp">/button&gt;</span></span><br /><span class="line"><span class="regexp">      &lt;/</span>div&gt;,</span><br /><span class="line">      <span class="keyword">this</span>.dom</span><br /><span class="line">    )</span><br /><span class="line">  }</span><br /><span class="line">}</span><br /></pre>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</figure>
+								<h2 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h2>
+								<figure class="highlight javascript">
+									<table>
+										<tbody>
+											<tr>
+												<td class="gutter">
+													<pre><span class="line">1</span><br /><span class="line">2</span><br /><span class="line">3</span><br /><span class="line">4</span><br /><span class="line">5</span><br /><span class="line">6</span><br /><span class="line">7</span><br /><span class="line">8</span><br /><span class="line">9</span><br /><span class="line">10</span><br /><span class="line">11</span><br /><span class="line">12</span><br /><span class="line">13</span><br /><span class="line">14</span><br /><span class="line">15</span><br /><span class="line">16</span><br /><span class="line">17</span><br /><span class="line">18</span><br /><span class="line">19</span><br /><span class="line">20</span><br /><span class="line">21</span><br /><span class="line">22</span><br /><span class="line">23</span><br /><span class="line">24</span><br /><span class="line">25</span><br /></pre>
+												</td>
+												<td class="code">
+													<pre><span class="line">...</span><br /><span class="line">render() {</span><br /><span class="line">    <span class="keyword">return</span> (</span><br /><span class="line">      &lt;div style={{<span class="attr">overflow</span>: <span class="string">'hidden'</span>, <span class="attr">color</span>: <span class="string">'#0078d8'</span>, <span class="attr">fontSize</span>: <span class="string">'40px'</span>}} onClick={(e) =&gt; {</span><br /><span class="line">        e.target.tagName.toLowerCase() ==<span class="string">'button'</span> &amp;&amp; !e.target.getAttribute(<span class="string">'data-trigger'</span>) &amp;&amp; alert(<span class="string">'我的儿被关闭啦~'</span>)</span><br /><span class="line">      }}&gt;</span><br /><span class="line">        &lt;p&gt;两种方式对比&lt;<span class="regexp">/p&gt;</span></span><br /><span class="line"><span class="regexp">        &lt;button onClick={() =&gt; this.setState({ showTips: true })} data-trigger={true}&gt;出现portal弹窗&lt;/</span>button&gt;</span><br /><span class="line">        &lt;button onClick={() =&gt; <span class="keyword">this</span>.setState({ <span class="attr">showNormalTips</span>: <span class="literal">true</span> })} data-trigger={<span class="literal">true</span>}&gt;出现普通弹窗&lt;<span class="regexp">/button&gt;</span></span><br /><span class="line"><span class="regexp">        &lt;button onClick={() =&gt; this.setState({ showDiyTips: true })} data-trigger={true}&gt;出现diy portal弹窗&lt;/</span>button&gt;</span><br /><span class="line">        {</span><br /><span class="line">          <span class="keyword">this</span>.state.showTips &amp;&amp; &lt;Tips onClose={this.onClose}/&gt;</span><br /><span class="line">        }</span><br /><span class="line"></span><br /><span class="line">        {</span><br /><span class="line">          this.state.showNormalTips &amp;&amp; &lt;NormalTips onClose={this.onNormalClose}/&gt;</span><br /><span class="line">        }</span><br /><span class="line"></span><br /><span class="line">        {</span><br /><span class="line">          this.state.showDiyTips &amp;&amp; &lt;DiyPortalTips onClose={this.onDiyClose}/&gt;</span><br /><span class="line">        }</span><br /><span class="line">      &lt;/div&gt;</span><br /><span class="line">    )</span><br /><span class="line">  }</span><br /><span class="line">...</span><br /></pre>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</figure>
+								<h3 id="使用portal"><a href="#使用portal" class="headerlink" title="使用portal"></a>使用portal
+								</h3>
+								<p><img src="http://blog.x2hy.com/cdn/WX20180927-110150.png"
+										alt="1" /><br />样式未被污染，且正确冒泡</p>
+								<h3 id="不使用protal"><a href="#不使用protal" class="headerlink"
+										title="不使用protal"></a>不使用protal</h3>
+								<p><img src="http://blog.x2hy.com/cdn/WX20180927-110211.png"
+										alt="1" /><br />样式被污染，但是正确冒泡</p>
+								<h3 id="使用老的方案"><a href="#使用老的方案" class="headerlink" title="使用老的方案"></a>使用老的方案</h3>
+								<p><img src="http://blog.x2hy.com/cdn/WX20180927-110305.png"
+										alt="1" /><br />样式未被污染，但是没有正确冒泡</p>
+								<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2>
+								<p>总的来说，createPortal是一个很有用的api，在上述场景中解决以往比较麻烦的问题。</p>
+								<p> <a href="/2018/09/27/Portals/#post-footer" class="postShorten-excerpt_link link">
+										评论和共享 </a> </p>
+							</div>
+						</div>
+					</article>
+					<article class="postShorten postShorten--thumbnailimg-bottom">
+						<div class="postShorten-wrap">
+							<div class="postShorten-header">
+								<h1 class="postShorten-title"> <a class="link-unstyled" href="/2018/07/03/SpriteJS学习/">
+										SpriteJS学习 </a> </h1>
+								<div class="postShorten-meta">
+									<time datetime="2018-07-03T10:53:20+08:00"> 7月 03, 2018 </time>
+								</div>
+							</div>
+							<div class="postShorten-content">
+								<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2>
+								<p>sprite.js 是跨平台的2D绘图对象模型库，它能够支持web、node、桌面应用和微信小程序的图形绘制和实现各种动画效果。</p>
+								<h2 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h2>
+								<ul>
+									<li>像<strong>[操作DOM对象]</strong>一样操作画布上的图形元素</li>
+									<li>通过智能缓存大大提升渲染性能</li>
+									<li>支持多图层处理图形、文本、图像渲染</li>
+									<li>支持DOM事件代理、自定义事件派发</li>
+									<li>使用ES6+语法和面向对象编程</li>
+									<li>结构化对象树，对d3引擎友好，能够无缝使用</li>
+									<li>支持服务端渲染</li>
+									<li>支持微信小程序</li>
+								</ul>
+								<h2 id="架构"><a href="#架构" class="headerlink" title="架构"></a>架构</h2>
+								<p><img src="http://blog.x2hy.com/cdn/WechatIMG101.jpeg" alt="架构图" /></p>
+								<h2 id="基础用法"><a href="#基础用法" class="headerlink" title="基础用法"></a>基础用法</h2>
+								<h3 id="坐标"><a href="#坐标" class="headerlink" title="坐标"></a>坐标</h3>
+								<h4 id="绘图尺寸-resolution、viewport"><a href="#绘图尺寸-resolution、viewport" class="headerlink"
+										title="绘图尺寸 resolution、viewport"></a>绘图尺寸 resolution、viewport</h4>
+								<ul>
+									<li><strong>resolution</strong> 画布的宽高(类似canvas的props中指定的width和height)</li>
+									<li><strong>viewport</strong> canvas在文档中的宽高(类似canvas的css中指定的width和height)</li>
+								</ul>
+								<p>viewport不设置的时候，将会自适应外容器的大小。如果需要动态自适应大小，则设置<code>viewport: ['auto', 'auto']</code></p>
+								<h4 id="锚点-anchor"><a href="#锚点-anchor" class="headerlink" title="锚点 anchor"></a>锚点
+									anchor</h4>
+								<ul>
+									<li><strong>anchor</strong> 与transform-origin 类型功能</li>
+								</ul>
+								<h3 id="元素"><a href="#元素" class="headerlink" title="元素"></a>元素</h3>
+								<h4 id="精灵-Sprite"><a href="#精灵-Sprite" class="headerlink" title="精灵 Sprite"></a>精灵
+									Sprite</h4>
+								<p>精灵是最重要的一个类，相当于在dom中的一个element元素，类似的他也具有自己的盒子模型，并且有自己的属性。</p>
+								<blockquote>
+									<p>所有可能的属性<br /></p>
+									<figure class="highlight javascript">
+										<table>
+											<tbody>
+												<tr>
+													<td class="gutter">
+														<pre><span class="line">1</span><br /><span class="line">2</span><br /><span class="line">3</span><br /><span class="line">4</span><br /><span class="line">5</span><br /><span class="line">6</span><br /><span class="line">7</span><br /><span class="line">8</span><br /><span class="line">9</span><br /><span class="line">10</span><br /><span class="line">11</span><br /><span class="line">12</span><br /><span class="line">13</span><br /><span class="line">14</span><br /><span class="line">15</span><br /><span class="line">16</span><br /><span class="line">17</span><br /><span class="line">18</span><br /><span class="line">19</span><br /><span class="line">20</span><br /><span class="line">21</span><br /><span class="line">22</span><br /><span class="line">23</span><br /><span class="line">24</span><br /><span class="line">25</span><br /><span class="line">26</span><br /><span class="line">27</span><br /><span class="line">28</span><br /><span class="line">29</span><br /><span class="line">30</span><br /><span class="line">31</span><br /><span class="line">32</span><br /><span class="line">33</span><br /><span class="line">34</span><br /><span class="line">35</span><br /><span class="line">36</span><br /><span class="line">37</span><br /><span class="line">38</span><br /><span class="line">39</span><br /><span class="line">40</span><br /></pre>
+													</td>
+													<td class="code">
+														<pre><span class="line">anchor: [<span class="number">0</span>, <span class="number">0</span>],</span><br /><span class="line">      x: <span class="number">0</span>,</span><br /><span class="line">      y: <span class="number">0</span>,</span><br /><span class="line">      opacity: <span class="number">1</span>,</span><br /><span class="line">      width: <span class="string">''</span>,</span><br /><span class="line">      height: <span class="string">''</span>,</span><br /><span class="line">      bgcolor: <span class="string">''</span>,</span><br /><span class="line">      rotate: <span class="number">0</span>,</span><br /><span class="line">      scale: [<span class="number">1</span>, <span class="number">1</span>],</span><br /><span class="line">      translate: [<span class="number">0</span>, <span class="number">0</span>],</span><br /><span class="line">      skew: [<span class="number">0</span>, <span class="number">0</span>],</span><br /><span class="line">      transform: <span class="string">'matrix(1,0,0,1,0,0)'</span>,</span><br /><span class="line">      transformOrigin: <span class="string">''</span>,</span><br /><span class="line">      transformMatrix: [<span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>],</span><br /><span class="line">      border: {</span><br /><span class="line">        width: <span class="number">0</span>,</span><br /><span class="line">        color: <span class="string">'rgba(0,0,0,0)'</span>,</span><br /><span class="line">        style: <span class="string">'solid'</span>,</span><br /><span class="line">      },</span><br /><span class="line">      <span class="comment">// border: [0, 'rgba(0,0,0,0)'],</span></span><br /><span class="line">      borderRadius: <span class="number">0</span>,</span><br /><span class="line">      dashOffset: <span class="number">0</span>,</span><br /><span class="line">      padding: [<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>],</span><br /><span class="line">      zIndex: <span class="number">0</span>,</span><br /><span class="line">      offsetRotate: <span class="string">'auto'</span>,</span><br /><span class="line">      gradients: {},</span><br /><span class="line">      offsetDistance: <span class="number">0</span>,</span><br /><span class="line">      filter: <span class="string">''</span>, <span class="comment">// filter: {blur, ...}</span></span><br /><span class="line">      shadow: <span class="string">''</span>, <span class="comment">// shadow: {color = 'rgba(0,0,0,1)', blur = 1[, offset]}</span></span><br /><span class="line">    }, {</span><br /><span class="line">      pos() {</span><br /><span class="line">        <span class="keyword">return</span> [<span class="keyword">this</span>.x, <span class="keyword">this</span>.y]</span><br /><span class="line">      },</span><br /><span class="line">      size() {</span><br /><span class="line">        <span class="keyword">return</span> [<span class="keyword">this</span>.width, <span class="keyword">this</span>.height]</span><br /><span class="line">      },</span><br /><span class="line">      linearGradients() {</span><br /><span class="line">        <span class="comment">/* istanbul ignore next  */</span></span><br /><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.gradients</span><br /><span class="line">      },</span><br /></pre>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</figure>
+									<p></p>
+								</blockquote>
+								<h4 id="文字-Label"><a href="#文字-Label" class="headerlink" title="文字 Label"></a>文字 Label
+								</h4>
+								<h4 id="路径-Path"><a href="#路径-Path" class="headerlink" title="路径 Path"></a>路径 Path</h4>
+								<h4 id="分组-Group"><a href="#分组-Group" class="headerlink" title="分组 Group"></a>分组 Group
+								</h4>
+								<p> <a href="/2018/07/03/SpriteJS学习/#post-footer" class="postShorten-excerpt_link link">
+										评论和共享 </a> </p>
+							</div>
+						</div>
+					</article>
+					<article class="postShorten postShorten--thumbnailimg-bottom">
+						<div class="postShorten-wrap">
+							<div class="postShorten-header">
+								<h1 class="postShorten-title"> <a class="link-unstyled"
+										href="/2018/06/27/webpack的各种sourcemap选择/"> webpack的各种sourcemap选择 </a> </h1>
+								<div class="postShorten-meta">
+									<time datetime="2018-06-27T16:47:14+08:00"> 6月 27, 2018 </time>
+								</div>
+							</div>
+							<div class="postShorten-content">
+								<h1 id="webpack的各种sourcemap"><a href="#webpack的各种sourcemap" class="headerlink"
+										title="webpack的各种sourcemap"></a>webpack的各种sourcemap</h1>
+								<blockquote>
+									<p>对webpack配置中sourcemap的选择一直感觉有点概念不清楚，今天来整理一下，主要参照的是webpack的官方文档</p>
+								</blockquote>
+								<table>
+									<thead>
+										<tr>
+											<th style="text-align:left">devtool</th>
+											<th style="text-align:left">首次构建速度</th>
+											<th style="text-align:left">重新构建速度</th>
+											<th style="text-align:left">是否生产环境专用</th>
+											<th style="text-align:left">质量</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td style="text-align:left">(none)</td>
+											<td style="text-align:left">极快</td>
+											<td style="text-align:left">极快</td>
+											<td style="text-align:left">是</td>
+											<td style="text-align:left">bundled code</td>
+										</tr>
+										<tr>
+											<td style="text-align:left">eval</td>
+											<td style="text-align:left">极快</td>
+											<td style="text-align:left">极快</td>
+											<td style="text-align:left">否</td>
+											<td style="text-align:left">generated code</td>
+										</tr>
+										<tr>
+											<td style="text-align:left">cheap-eval-source-map</td>
+											<td style="text-align:left">较快</td>
+											<td style="text-align:left">快</td>
+											<td style="text-align:left">否</td>
+											<td style="text-align:left">transformed code(单行)</td>
+										</tr>
+										<tr>
+											<td style="text-align:left">cheap-module-eval-source-map</td>
+											<td style="text-align:left">普通</td>
+											<td style="text-align:left">快</td>
+											<td style="text-align:left">否</td>
+											<td style="text-align:left">original source(单行)）</td>
+										</tr>
+										<tr>
+											<td style="text-align:left">eval-source-map</td>
+											<td style="text-align:left">慢</td>
+											<td style="text-align:left">较快</td>
+											<td style="text-align:left">否</td>
+											<td style="text-align:left">original source</td>
+										</tr>
+										<tr>
+											<td style="text-align:left">cheap-source-map</td>
+											<td style="text-align:left">较快</td>
+											<td style="text-align:left">普通</td>
+											<td style="text-align:left">否</td>
+											<td style="text-align:left">transformed code(单行)</td>
+										</tr>
+										<tr>
+											<td style="text-align:left">cheap-module-source-map</td>
+											<td style="text-align:left">普通</td>
+											<td style="text-align:left">较慢</td>
+											<td style="text-align:left">否</td>
+											<td style="text-align:left">original source(单行)</td>
+										</tr>
+										<tr>
+											<td style="text-align:left">inline-cheap-source-map</td>
+											<td style="text-align:left">较快</td>
+											<td style="text-align:left">普通</td>
+											<td style="text-align:left">否</td>
+											<td style="text-align:left">transformed code(单行)</td>
+										</tr>
+										<tr>
+											<td style="text-align:left">inline-cheap-module-source-map</td>
+											<td style="text-align:left">普通</td>
+											<td style="text-align:left">较慢</td>
+											<td style="text-align:left">否</td>
+											<td style="text-align:left">original source(单行)</td>
+										</tr>
+										<tr>
+											<td style="text-align:left">source-map</td>
+											<td style="text-align:left">慢</td>
+											<td style="text-align:left">慢</td>
+											<td style="text-align:left">是</td>
+											<td style="text-align:left">original source</td>
+										</tr>
+										<tr>
+											<td style="text-align:left">inline-source-map</td>
+											<td style="text-align:left">慢</td>
+											<td style="text-align:left">慢</td>
+											<td style="text-align:left">否</td>
+											<td style="text-align:left">original source</td>
+										</tr>
+										<tr>
+											<td style="text-align:left">hidden-source-map</td>
+											<td style="text-align:left">慢</td>
+											<td style="text-align:left">慢</td>
+											<td style="text-align:left">是</td>
+											<td style="text-align:left">original source</td>
+										</tr>
+										<tr>
+											<td style="text-align:left">nosources-source-map</td>
+											<td style="text-align:left">慢</td>
+											<td style="text-align:left">慢</td>
+											<td style="text-align:left">是</td>
+											<td style="text-align:left">没有源代码</td>
+										</tr>
+									</tbody>
+								</table>
+								<blockquote>
+									<p><strong>速度衡量:</strong> 极快 &gt; 快 &gt; 较快 &gt; 普通 &gt; 较慢 &gt; 慢</p>
+								</blockquote>
+								<blockquote>
+									<p><strong>质量衡量</strong></p>
+									<ul>
+										<li><strong>bundled code</strong> - 生成的代码是大文件对象形式的，模块互相之间没有分离开 ？</li>
+										<li><strong>generated code</strong> - 每一个模块互相分离，并且用模块名字注释，生产的代码类似
+											<figure class="highlight javascript">
+												<table>
+													<tbody>
+														<tr>
+															<td class="gutter">
+																<pre><span class="line">1</span><br /><span class="line">2</span><br /><span class="line">3</span><br /><span class="line">4</span><br /><span class="line">5</span><br /></pre>
+															</td>
+															<td class="code">
+																<pre><span class="line"><span class="comment">//before</span></span><br /><span class="line"><span class="keyword">import</span> {test} <span class="keyword">from</span> <span class="string">&quot;module&quot;</span>; test();</span><br /><span class="line"><span class="comment">//after</span></span><br /><span class="line"><span class="keyword">var</span> module__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(<span class="number">42</span>);</span><br /><span class="line"> module__WEBPACK_IMPORTED_MODULE_1__.a();</span><br /></pre>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</figure>
+										</li>
+									</ul>
+								</blockquote>
+								<ul>
+									<li>
+										<p><strong>transformed code</strong> -
+											每一个模块互相分离，并且用模块名字注释，你看到的代码是loader执行后，但是webpack转译前</p>
+										<figure class="highlight javascript">
+											<table>
+												<tbody>
+													<tr>
+														<td class="gutter">
+															<pre><span class="line">1</span><br /><span class="line">2</span><br /><span class="line">3</span><br /><span class="line">4</span><br /></pre>
+														</td>
+														<td class="code">
+															<pre><span class="line"><span class="comment">// before</span></span><br /><span class="line"><span class="keyword">import</span> {test} <span class="keyword">from</span> <span class="string">&quot;module&quot;</span>; <span class="class"><span class="keyword">class</span> <span class="title">A</span> <span class="keyword">extends</span> <span class="title">test</span> </span>{}<span class="keyword">import</span> {test} <span class="keyword">from</span> <span class="string">&quot;module&quot;</span>; <span class="class"><span class="keyword">class</span> <span class="title">A</span> <span class="keyword">extends</span> <span class="title">test</span> </span>{}</span><br /><span class="line"><span class="comment">// after</span></span><br /><span class="line"><span class="keyword">import</span> {test} <span class="keyword">from</span> <span class="string">&quot;module&quot;</span>; <span class="keyword">var</span> A = <span class="function"><span class="keyword">function</span>(<span class="params">_test</span>) </span>{ ... }(test);</span><br /></pre>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</figure>
+									</li>
+									<li>
+										<p><strong>original source</strong> -
+											每一个模块互相分离，并且用模块名字注释，你看到的是在webpack转译以前，保持你在写的时候的样子，他需要依赖loader的支持</p>
+									</li>
+									<li><strong>without source content</strong> -
+										打包后的文件不包含sourcemap,浏览器通常会会通过webserver或者文件系统去加载它，所以你必须保证output.devtoolModuleFilenameTemplate是正确匹配了资源文件的地址
+									</li>
+									<li><strong>(lines only)</strong> -
+										sourcemap被简化为每一行一个映射。这通常意味着每个语句只有单个映射（假设你就是这么写的）。这会妨碍你在语句级别上调试执行，也会妨碍你在每行的一些列上设置断点。与压缩后的代码组合后，映射关系是不可能实现的，因为压缩工具通常只会输出一行
+									</li>
+								</ul>
+								<p> <a href="/2018/06/27/webpack的各种sourcemap选择/#post-footer"
+										class="postShorten-excerpt_link link"> 评论和共享 </a> </p>
+							</div>
+						</div>
+					</article>
+					<article class="postShorten postShorten--thumbnailimg-bottom">
+						<div class="postShorten-wrap">
+							<div class="postShorten-header">
+								<h1 class="postShorten-title"> <a class="link-unstyled" href="/2018/06/24/灵魂不朽/"> 灵魂不朽
+									</a> </h1>
+								<div class="postShorten-meta">
+									<time datetime="2018-06-24T12:37:36+08:00"> 6月 24, 2018 </time>
+								</div>
+							</div>
+							<div class="postShorten-content">
+								<h1 id="不朽"><a href="#不朽" class="headerlink" title="不朽"></a>不朽</h1>
+								<blockquote>
+									<p>那边“一座低低的土墙，遮着一个弹三弦的人”。那三弦的声浪，在空间起了无数的波澜；那被冲动的空间质点，直接间接冲动无数旁的空间质点；这种波澜，由近而远，至于无穷空间；由现在而将来，由此刹那以至于无量刹那，至于无穷时间：——这已是不灭不朽了。那时间，那“低低的土墙”外来了一位诗人，听见那三弦的声音，忽然起了一个念头；由此念头，就成了一首好诗；这首好诗传诵了许多人；人读了这诗，各起种种念头；由这种种念头，更发生无量数的念头，更发生无数的动作，以至于无穷。然而那“低低的土墙”里面那个弹三弦的人又如何知道他所发生的影响呢？
+									</p>
+									<div style="text-align: right;">
+										——胡适
+									</div>
+								</blockquote>
+								<p> <a href="/2018/06/24/灵魂不朽/#post-footer" class="postShorten-excerpt_link link"> 评论和共享
+									</a> </p>
+							</div>
+						</div>
+					</article>
+					<article class="postShorten postShorten--thumbnailimg-bottom">
+						<div class="postShorten-wrap">
+							<div class="postShorten-header">
+								<h1 class="postShorten-title"> <a class="link-unstyled" href="/2018/05/22/ES6/"> ES6
+									</a> </h1>
+								<div class="postShorten-meta">
+									<time datetime="2018-05-22T14:44:17+08:00"> 5月 22, 2018 </time>
+								</div>
+							</div>
+							<div class="postShorten-content">
+								<h1 id="ES6知识点盘点回顾"><a href="#ES6知识点盘点回顾" class="headerlink"
+										title="ES6知识点盘点回顾"></a>ES6知识点盘点回顾</h1>
+								<h2 id="let和const"><a href="#let和const" class="headerlink"
+										title="let和const"></a>let和const</h2>
+								<h3 id="let"><a href="#let" class="headerlink" title="let"></a>let</h3>
+								<ul>
+									<li>只在当前块级作用域有效(<em>产生暂时性死区</em>)</li>
+									<li>不可重复定义</li>
+									<li>可以重复赋值</li>
+									<li>不会变量提升</li>
+								</ul>
+								<figure class="highlight javascript">
+									<table>
+										<tbody>
+											<tr>
+												<td class="gutter">
+													<pre><span class="line">1</span><br /><span class="line">2</span><br /><span class="line">3</span><br /><span class="line">4</span><br /><span class="line">5</span><br /><span class="line">6</span><br /><span class="line">7</span><br /><span class="line">8</span><br /><span class="line">9</span><br /><span class="line">10</span><br /><span class="line">11</span><br /><span class="line">12</span><br /><span class="line">13</span><br /><span class="line">14</span><br /><span class="line">15</span><br /><span class="line">16</span><br /><span class="line">17</span><br /><span class="line">18</span><br /><span class="line">19</span><br /><span class="line">20</span><br /><span class="line">21</span><br /><span class="line">22</span><br /><span class="line">23</span><br /><span class="line">24</span><br /><span class="line">25</span><br /><span class="line">26</span><br /><span class="line">27</span><br /><span class="line">28</span><br /><span class="line">29</span><br /><span class="line">30</span><br /><span class="line">31</span><br /><span class="line">32</span><br /><span class="line">33</span><br /><span class="line">34</span><br /><span class="line">35</span><br /><span class="line">36</span><br /><span class="line">37</span><br /><span class="line">38</span><br /><span class="line">39</span><br /><span class="line">40</span><br /><span class="line">41</span><br /><span class="line">42</span><br /><span class="line">43</span><br /><span class="line">44</span><br /><span class="line">45</span><br /><span class="line">46</span><br /><span class="line">47</span><br /><span class="line">48</span><br /><span class="line">49</span><br /></pre>
+												</td>
+												<td class="code">
+													<pre><span class="line"><span class="keyword">let</span> a = <span class="number">1</span>;</span><br /><span class="line"><span class="keyword">let</span> a = <span class="number">2</span>; <span class="comment">// Identifier 'a' has already been declared</span></span><br /><span class="line"></span><br /><span class="line"><span class="comment">// 一个经典例子</span></span><br /><span class="line"><span class="comment">// 使用 var时</span></span><br /><span class="line"><span class="keyword">var</span> fnArr = [];</span><br /><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++) {</span><br /><span class="line">  fnArr[i] = <span class="function"><span class="params">()</span> =&gt;</span> {<span class="built_in">console</span>.log(i)}</span><br /><span class="line">}</span><br /><span class="line">fnArr[<span class="number">2</span>](); <span class="comment">// 10</span></span><br /><span class="line"></span><br /><span class="line"><span class="comment">// 使用 let时</span></span><br /><span class="line"><span class="keyword">var</span> fnArr = [];</span><br /><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++) {</span><br /><span class="line">  fnArr[i] = <span class="function"><span class="params">()</span> =&gt;</span> {<span class="built_in">console</span>.log(i)}</span><br /><span class="line">}</span><br /><span class="line">fnArr[<span class="number">2</span>](); <span class="comment">// 2</span></span><br /><span class="line"></span><br /><span class="line"><span class="comment">// 变量提升的问题</span></span><br /><span class="line">(<span class="function"><span class="params">()</span> =&gt;</span> {</span><br /><span class="line">  <span class="built_in">console</span>.log(b); <span class="comment">// undefined</span></span><br /><span class="line">  <span class="built_in">console</span>.log(a); <span class="comment">// a is not defined</span></span><br /><span class="line">  <span class="keyword">let</span> a = <span class="number">1</span>;</span><br /><span class="line">  <span class="keyword">var</span> b = <span class="number">2</span>;</span><br /><span class="line">})();</span><br /><span class="line"></span><br /><span class="line"><span class="comment">// 比较有意思的暂时性死区问题</span></span><br /><span class="line"><span class="keyword">var</span> arg = <span class="number">1</span>;</span><br /><span class="line"></span><br /><span class="line">(<span class="function"><span class="params">()</span> =&gt;</span> { <span class="comment">// 在此函数作用域中产生了一个暂时性死区，此块级作用域中的将忽略外部的arg，但是let不存在变量提升，故报错提示</span></span><br /><span class="line">  <span class="built_in">console</span>.log(arg); <span class="comment">// arg is not defined</span></span><br /><span class="line">  <span class="keyword">typeof</span> arg; <span class="comment">// arg  is not defined (typeof 不再是百分百安全的操作)</span></span><br /><span class="line">  <span class="keyword">let</span> arg = <span class="number">2</span>;</span><br /><span class="line">}))();</span><br /><span class="line"></span><br /><span class="line"><span class="comment">// 隐蔽的死区</span></span><br /><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params">x = y, y = <span class="number">11</span></span>) </span>{</span><br /><span class="line">  <span class="keyword">return</span> [x, y];</span><br /><span class="line">}</span><br /><span class="line">test(); <span class="comment">// 报错</span></span><br /><span class="line"></span><br /><span class="line"><span class="keyword">var</span> x = x; <span class="comment">// 不报错</span></span><br /><span class="line"><span class="keyword">let</span> x = x; <span class="comment">// x is not defined</span></span><br /><span class="line"></span><br /><span class="line"><span class="comment">// 块级作用域</span></span><br /><span class="line">{ <span class="keyword">let</span> a = <span class="number">233</span>; }</span><br /><span class="line">{ <span class="keyword">var</span> b = <span class="number">2</span>; }</span><br /><span class="line"><span class="built_in">console</span>.log(b); <span class="comment">// 2</span></span><br /><span class="line"><span class="built_in">console</span>.log(a) <span class="comment">// a is not defined</span></span><br /></pre>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</figure>
+								<h3 id="const"><a href="#const" class="headerlink" title="const"></a>const</h3>
+								<ul>
+									<li>只在当前块级作用域有效(<em>产生暂时性死区</em>)</li>
+									<li>不可重复定义</li>
+									<li>不会变量提升</li>
+									<li>声明时必须赋值，不可重复赋值</li>
+								</ul>
+								<figure class="highlight javascript">
+									<table>
+										<tbody>
+											<tr>
+												<td class="gutter">
+													<pre><span class="line">1</span><br /><span class="line">2</span><br /></pre>
+												</td>
+												<td class="code">
+													<pre><span class="line"><span class="keyword">const</span> a = <span class="number">1</span>;</span><br /><span class="line">a = <span class="number">2</span>; <span class="comment">// Uncaught TypeError: Assignment to constant variable.</span></span><br /></pre>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</figure>
+								<h4 id="本质"><a href="#本质" class="headerlink" title="本质"></a>本质</h4>
+								<p>引自 阮一峰 <a href="http://es6.ruanyifeng.com/#docs/let" target="_blank"
+										rel="noopener">ECMAScript 6 入门</a></p>
+								<blockquote>
+									<p>const实际上保证的，并不是变量的值不得改动，而是变量指向的那个内存地址不得改动。对于简单类型的数据（数值、字符串、布尔值），值就保存在变量指向的那个内存地址，因此等同于常量。但对于复合类型的数据（主要是对象和数组），变量指向的内存地址，保存的只是一个指针，const只能保证这个指针是固定的，至于它指向的数据结构是不是可变的，就完全不能控制了。因此，将一个对象声明为常量必须非常小心。
+									</p>
+								</blockquote>
+								<h2 id="变量解构赋值"><a href="#变量解构赋值" class="headerlink" title="* 变量解构赋值"></a>* 变量解构赋值</h2>
+								<h3 id="数组解构"><a href="#数组解构" class="headerlink" title="数组解构"></a>数组解构</h3>
+								<figure class="highlight javascript">
+									<table>
+										<tbody>
+											<tr>
+												<td class="gutter">
+													<pre><span class="line">1</span><br /><span class="line">2</span><br /><span class="line">3</span><br /><span class="line">4</span><br /><span class="line">5</span><br /><span class="line">6</span><br /><span class="line">7</span><br /><span class="line">8</span><br /><span class="line">9</span><br /><span class="line">10</span><br /><span class="line">11</span><br /><span class="line">12</span><br /><span class="line">13</span><br /><span class="line">14</span><br /><span class="line">15</span><br /><span class="line">16</span><br /><span class="line">17</span><br /><span class="line">18</span><br /><span class="line">19</span><br /><span class="line">20</span><br /><span class="line">21</span><br /><span class="line">22</span><br /><span class="line">23</span><br /><span class="line">24</span><br /><span class="line">25</span><br /><span class="line">26</span><br /><span class="line">27</span><br /><span class="line">28</span><br /><span class="line">29</span><br /><span class="line">30</span><br /><span class="line">31</span><br /><span class="line">32</span><br /></pre>
+												</td>
+												<td class="code">
+													<pre><span class="line"><span class="comment">// 基本用法</span></span><br /><span class="line"><span class="keyword">let</span> [a, b, c] = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br /><span class="line"></span><br /><span class="line"><span class="comment">// 嵌套方式</span></span><br /><span class="line"><span class="keyword">let</span> [a, [b], c] = [<span class="number">1</span>,[<span class="number">2</span>], <span class="number">3</span>];</span><br /><span class="line"></span><br /><span class="line"><span class="comment">// 默认值</span></span><br /><span class="line"><span class="keyword">let</span> [a = <span class="number">2</span>] = [];</span><br /><span class="line">a <span class="comment">// a = 2 // 匹配失败时，将会为a赋予默认值</span></span><br /><span class="line"><span class="comment">// 隐蔽的暂时性死区的问题</span></span><br /><span class="line"><span class="keyword">let</span> [x = y, y = <span class="number">2</span>] = [<span class="number">1</span>, <span class="number">2</span>]; <span class="comment">// y is not defined</span></span><br /><span class="line"></span><br /><span class="line"><span class="keyword">var</span> [x = y, y = <span class="number">3</span>] = [<span class="number">1</span>, <span class="number">2</span>]; <span class="comment">// correct!</span></span><br /><span class="line"></span><br /><span class="line"><span class="comment">// 个人理解为，使用let声明时候的情况，类似于</span></span><br /><span class="line"><span class="comment">// let x = y;</span></span><br /><span class="line"><span class="comment">// let y = 2;</span></span><br /><span class="line"><span class="comment">// 不存在变量提升，故提示 y is not defined</span></span><br /><span class="line"><span class="comment">// 而在var方式声明时，存在变量提升，情况类似于</span></span><br /><span class="line"><span class="comment">// var x = undefined;</span></span><br /><span class="line"><span class="comment">// var y = unefined;</span></span><br /><span class="line"><span class="comment">// x = y;</span></span><br /><span class="line"><span class="comment">// y = 2;</span></span><br /><span class="line"><span class="comment">// 故不会有错</span></span><br /><span class="line"></span><br /><span class="line"><span class="comment">// 默认值函数的惰性调用</span></span><br /><span class="line"><span class="keyword">const</span> f = <span class="function"><span class="params">()</span> =&gt;</span> {</span><br /><span class="line">  <span class="built_in">console</span>.log(<span class="string">'i’m invoked!'</span>);</span><br /><span class="line">}</span><br /><span class="line"></span><br /><span class="line"><span class="keyword">let</span> [fc = f()] = [<span class="number">1</span>]; <span class="comment">//函数f将不会执行</span></span><br /><span class="line"><span class="keyword">let</span> [fc = f()] = []; <span class="comment">// i’m invoked!</span></span><br /></pre>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</figure>
+								<h3 id="对象解构"><a href="#对象解构" class="headerlink" title="对象解构"></a>对象解构</h3>
+								<figure class="highlight javascript">
+									<table>
+										<tbody>
+											<tr>
+												<td class="gutter">
+													<pre><span class="line">1</span><br /><span class="line">2</span><br /><span class="line">3</span><br /><span class="line">4</span><br /><span class="line">5</span><br /><span class="line">6</span><br /><span class="line">7</span><br /><span class="line">8</span><br /><span class="line">9</span><br /><span class="line">10</span><br /><span class="line">11</span><br /><span class="line">12</span><br /><span class="line">13</span><br /><span class="line">14</span><br /><span class="line">15</span><br /><span class="line">16</span><br /><span class="line">17</span><br /><span class="line">18</span><br /><span class="line">19</span><br /><span class="line">20</span><br /><span class="line">21</span><br /><span class="line">22</span><br /></pre>
+												</td>
+												<td class="code">
+													<pre><span class="line"><span class="comment">// 基本用法</span></span><br /><span class="line"><span class="keyword">let</span> {a, b, c} = {<span class="attr">a</span>: <span class="number">1</span>, <span class="attr">b</span>: <span class="number">2</span>, <span class="attr">c</span>: <span class="number">3</span>};</span><br /><span class="line"></span><br /><span class="line"><span class="comment">// 别名方式</span></span><br /><span class="line"><span class="keyword">let</span> {a, <span class="attr">b</span>: _b} = {<span class="attr">a</span>: <span class="number">1</span>, <span class="attr">b</span>: <span class="number">2</span>};</span><br /><span class="line">_b <span class="comment">// 2</span></span><br /><span class="line"></span><br /><span class="line"><span class="comment">// 嵌套方式</span></span><br /><span class="line"><span class="keyword">let</span> obj = {<span class="attr">a</span>: <span class="number">1</span>, <span class="attr">b</span>: {<span class="attr">c</span>: [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]},<span class="attr">d</span>: [<span class="number">123</span>]};</span><br /><span class="line"><span class="keyword">let</span> {a, b, <span class="attr">b</span>: {<span class="attr">c</span>:[e]}, d} = obj;</span><br /><span class="line"><span class="comment">// a = 1</span></span><br /><span class="line"><span class="comment">// b = {c: [1,2,3]} 可以使用多写一个b,把b当做变量而非模式</span></span><br /><span class="line"><span class="comment">// e = 1</span></span><br /><span class="line"><span class="comment">// d = [123]</span></span><br /><span class="line"></span><br /><span class="line"><span class="comment">// 嵌套赋值方式</span></span><br /><span class="line"><span class="keyword">let</span> obj = {};</span><br /><span class="line"><span class="keyword">let</span> arr = [];</span><br /><span class="line"></span><br /><span class="line">({<span class="attr">a</span>: obj.a, <span class="attr">b</span>: arr[<span class="number">0</span>]} = {<span class="attr">a</span>:<span class="number">1</span>, <span class="attr">b</span>: <span class="number">2</span>}) <span class="comment">// 使用圆括号</span></span><br /><span class="line">obj <span class="comment">// {a: 1}</span></span><br /><span class="line">arr <span class="comment">// [2]</span></span><br /></pre>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</figure>
+								<h3 id="字符串解构"><a href="#字符串解构" class="headerlink" title="字符串解构"></a>字符串解构</h3>
+								<figure class="highlight javascript">
+									<table>
+										<tbody>
+											<tr>
+												<td class="gutter">
+													<pre><span class="line">1</span><br /><span class="line">2</span><br /><span class="line">3</span><br /><span class="line">4</span><br /><span class="line">5</span><br /></pre>
+												</td>
+												<td class="code">
+													<pre><span class="line"><span class="keyword">let</span> [a, b, c, d] = <span class="string">'123456'</span>;</span><br /><span class="line">a <span class="comment">// 1</span></span><br /><span class="line">b <span class="comment">// 2</span></span><br /><span class="line"><span class="keyword">let</span> {length} = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>];</span><br /><span class="line">length <span class="comment">// 3</span></span><br /></pre>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</figure>
+								<h3 id="数值和布尔值解构"><a href="#数值和布尔值解构" class="headerlink" title="数值和布尔值解构"></a>数值和布尔值解构
+								</h3>
+								<figure class="highlight javascript">
+									<table>
+										<tbody>
+											<tr>
+												<td class="gutter">
+													<pre><span class="line">1</span><br /><span class="line">2</span><br /></pre>
+												</td>
+												<td class="code">
+													<pre><span class="line"><span class="keyword">let</span> { toString } = <span class="number">123</span>;</span><br /><span class="line">toString <span class="comment">// function toString() { [native code] }</span></span><br /></pre>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</figure>
+								<h3 id="函数参数解构"><a href="#函数参数解构" class="headerlink" title="函数参数解构"></a>函数参数解构</h3>
+								<figure class="highlight javascript">
+									<table>
+										<tbody>
+											<tr>
+												<td class="gutter">
+													<pre><span class="line">1</span><br /><span class="line">2</span><br /><span class="line">3</span><br /><span class="line">4</span><br /><span class="line">5</span><br /></pre>
+												</td>
+												<td class="code">
+													<pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">add</span>(<span class="params">[x, y]</span>) </span>{</span><br /><span class="line">  <span class="keyword">return</span> x+y;</span><br /><span class="line">}</span><br /><span class="line"></span><br /><span class="line">add([<span class="number">1</span>,<span class="number">3</span>]); <span class="comment">// 4</span></span><br /></pre>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</figure>
+								<h2 id="字符串的扩展"><a href="#字符串的扩展" class="headerlink" title="* 字符串的扩展"></a>* 字符串的扩展</h2>
+								<h3 id="1、字符的-Unicode-表示法"><a href="#1、字符的-Unicode-表示法" class="headerlink"
+										title="1、字符的 Unicode 表示法"></a>1、字符的 Unicode 表示法</h3>
+								<h3 id="2、codePointAt"><a href="#2、codePointAt" class="headerlink"
+										title="2、codePointAt()"></a>2、codePointAt()</h3>
+								<h3 id="3、String-fromCodePoint"><a href="#3、String-fromCodePoint" class="headerlink"
+										title="3、String.fromCodePoint()"></a>3、String.fromCodePoint()</h3>
+								<h3 id="4、字符串的遍历器接口"><a href="#4、字符串的遍历器接口" class="headerlink"
+										title="4、字符串的遍历器接口"></a>4、字符串的遍历器接口</h3>
+								<h3 id="5、at"><a href="#5、at" class="headerlink" title="5、at()"></a>5、at()</h3>
+								<h3 id="6、normalize"><a href="#6、normalize" class="headerlink"
+										title="6、normalize()"></a>6、normalize()</h3>
+								<h3 id="7、includes-startsWith-endsWith"><a href="#7、includes-startsWith-endsWith"
+										class="headerlink"
+										title="7、includes(), startsWith(), endsWith()"></a>7、includes(), startsWith(),
+									endsWith()</h3>
+								<h3 id="8、repeat"><a href="#8、repeat" class="headerlink"
+										title="8、repeat()"></a>8、repeat()</h3>
+								<h3 id="9、padStart-，padEnd"><a href="#9、padStart-，padEnd" class="headerlink"
+										title="9、padStart()，padEnd()"></a>9、padStart()，padEnd()</h3>
+								<h3 id="10、matchAll"><a href="#10、matchAll" class="headerlink"
+										title="10、matchAll()"></a>10、matchAll()</h3>
+								<blockquote>
+									<p>以上十小节略过，需要了去查api就好了</p>
+								</blockquote>
+								<h3 id="11、模板字符串"><a href="#11、模板字符串" class="headerlink" title="11、模板字符串"></a>11、模板字符串
+								</h3>
+								<figure class="highlight javascript">
+									<table>
+										<tbody>
+											<tr>
+												<td class="gutter">
+													<pre><span class="line">1</span><br /><span class="line">2</span><br /><span class="line">3</span><br /><span class="line">4</span><br /><span class="line">5</span><br /><span class="line">6</span><br /><span class="line">7</span><br /><span class="line">8</span><br /><span class="line">9</span><br /><span class="line">10</span><br /><span class="line">11</span><br /><span class="line">12</span><br /><span class="line">13</span><br /><span class="line">14</span><br /></pre>
+												</td>
+												<td class="code">
+													<pre><span class="line">  <span class="keyword">let</span> name = <span class="string">'Simple'</span>;</span><br /><span class="line">  <span class="keyword">let</span> age = <span class="number">26</span>;</span><br /><span class="line">  <span class="keyword">let</span> year = <span class="number">2018</span>;</span><br /><span class="line"></span><br /><span class="line">  <span class="built_in">console</span>.log(<span class="string">`I'm <span class="subst">${name}</span>, I was born in <span class="subst">${year-age}</span>`</span>) <span class="comment">// I'm Simple, I was born in 1992</span></span><br /><span class="line"></span><br /><span class="line">  <span class="comment">// 模板字符串可以嵌套(可以用替代掉一些模板引擎了)</span></span><br /><span class="line">  <span class="string">`&lt;table&gt;</span></span><br /><span class="line"><span class="string">  <span class="subst">${[{first: <span class="number">1</span>, last: <span class="number">2</span>}</span>].map(addr =&gt; `</span></span><br /><span class="line">    &lt;tr&gt;&lt;td&gt;${addr.first}&lt;/td&gt;&lt;/tr&gt;</span><br /><span class="line">    &lt;tr&gt;&lt;td&gt;${addr.last}&lt;/td&gt;&lt;/tr&gt;</span><br /><span class="line">  <span class="string">`).join('')}</span></span><br /><span class="line"><span class="string">  &lt;/table&gt;</span></span><br /><span class="line"><span class="string">`</span></span><br /></pre>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</figure>
+								<h3 id="11、实例"><a href="#11、实例" class="headerlink" title="11、实例"></a>11、实例</h3>
+								<h2 id="正则的扩展"><a href="#正则的扩展" class="headerlink" title="正则的扩展"></a>正则的扩展</h2>
+								<h2 id="数值的扩展"><a href="#数值的扩展" class="headerlink" title="数值的扩展"></a>数值的扩展</h2>
+								<h2 id="函数的扩展"><a href="#函数的扩展" class="headerlink" title="函数的扩展"></a>函数的扩展</h2>
+								<h2 id="数组的扩展"><a href="#数组的扩展" class="headerlink" title="* 数组的扩展"></a>* 数组的扩展</h2>
+								<h2 id="对象的扩展"><a href="#对象的扩展" class="headerlink" title="对象的扩展"></a>对象的扩展</h2>
+								<h2 id="Symbol"><a href="#Symbol" class="headerlink" title="* Symbol"></a>* Symbol</h2>
+								<h2 id="Set和Map"><a href="#Set和Map" class="headerlink" title="* Set和Map"></a>* Set和Map
+								</h2>
+								<h2 id="Proxy"><a href="#Proxy" class="headerlink" title="* Proxy"></a>* Proxy</h2>
+								<h2 id="Reflect"><a href="#Reflect" class="headerlink" title="* Reflect"></a>* Reflect
+								</h2>
+								<h2 id="Promise"><a href="#Promise" class="headerlink" title="* Promise"></a>* Promise
+								</h2>
+								<h2 id="Iterator-和-for…of循环"><a href="#Iterator-和-for…of循环" class="headerlink"
+										title="* Iterator 和 for…of循环"></a>* Iterator 和 for…of循环</h2>
+								<h2 id="Generator-函数相关"><a href="#Generator-函数相关" class="headerlink"
+										title="* Generator 函数相关"></a>* Generator 函数相关</h2>
+								<h2 id="async-await"><a href="#async-await" class="headerlink"
+										title="* async await"></a>* async await</h2>
+								<h2 id="class"><a href="#class" class="headerlink" title="* class"></a>* class</h2>
+								<h2 id="Decorator"><a href="#Decorator" class="headerlink" title="* Decorator"></a>*
+									Decorator</h2>
+								<h2 id="Module"><a href="#Module" class="headerlink" title="* Module"></a>* Module</h2>
+								<p> <a href="/2018/05/22/ES6/#post-footer" class="postShorten-excerpt_link link"> 评论和共享
+									</a> </p>
+							</div>
+						</div>
+					</article>
+					<article class="postShorten postShorten--thumbnailimg-bottom">
+						<div class="postShorten-wrap">
+							<div class="postShorten-header">
+								<h1 class="postShorten-title"> <a class="link-unstyled" href="/2018/04/04/test/"> 重开博客
+									</a> </h1>
+								<div class="postShorten-meta">
+									<time datetime="2018-04-04T14:53:43+08:00"> 4月 04, 2018 </time>
+								</div>
+							</div>
+							<div class="postShorten-content">
+								<h1 id="博客重开"><a href="#博客重开" class="headerlink" title="博客重开"></a>博客重开</h1>
+								<blockquote>
+									<p>虽然本来就没什么东西的</p>
+								</blockquote>
+								<p> <a href="/2018/04/04/test/#post-footer" class="postShorten-excerpt_link link"> 评论和共享
+									</a> </p>
+							</div>
+						</div>
+					</article>
+					<div class="pagination-bar">
+						<ul class="pagination">
+							<li class="pagination-number">第 1 页 共 1 页</li>
+						</ul>
+					</div>
+				</section>
+				<footer id="footer" class="main-content-wrap">
+					<span class="copyrights"> Copyrights &copy; 2018 Simple. All Rights Reserved. </span>
+				</footer>
+			</div>
+		</div>
+		<div id="about">
+			<div id="about-card">
+				<div id="about-btn-close">
+					<i class="fa fa-remove"></i>
+				</div>
+				<img id="about-card-picture" src="/assets/images/avatar.jpeg" alt="作者的图片" />
+				<h4 id="about-card-name">Simple</h4>
+				<div id="about-card-bio">
+					<p>爱读历史的渣渣前端</p>
+				</div>
+				<div id="about-card-job">
+					<i class="fa fa-briefcase"></i>
+					<br />
+					<p>前端切图仔</p>
+				</div>
+				<div id="about-card-location">
+					<i class="fa fa-map-marker"></i>
+					<br /> 浙江杭州
+				</div>
+			</div>
+		</div>
+		<div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
+		<!--SCRIPTS-->
+		<script src="/assets/js/script-yhuo2grt8r7qkqumzgjoglkfbicl1thukjgmla6jopu56zpcowfedi5zjcor.min.js"></script>
+		<!--SCRIPTS END-->
+	</body>
 </html>
