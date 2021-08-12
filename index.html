@@ -1,1059 +1,632 @@
-<!DOCTYPE html>
-<html lang="zh-cn">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="generator" content="Simple Life" />
-		<title>Simple Life</title>
-		<meta name="author" content="Simple" />
-		<meta name="keywords" content="前端,javascript," />
-		<link rel="icon" href="http://www.x2hy.com/assets/images/favicon.ico" />
-		<link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml" />
-		<script type="application/ld+json">
-			{
-				"@context": "http://schema.org",
-				"@type": "Website",
-				"@id": "http://www.x2hy.com",
-				"author": {
-					"@type": "Person",
-					"name": "Simple",
-					"sameAs": ["https://github.com/406892700", "mailto:simplexhy1992@gmail.com"],
-					"image": "avatar.jpeg"
-				},
-				"name": "Simple Life",
-				"description": null,
-				"url": "http://www.x2hy.com",
-				"keywords": "前端, javascript"
-			}
-		</script>
-		<meta name="keywords" content="前端,javascript" />
-		<meta property="og:type" content="blog" />
-		<meta property="og:title" content="Simple Life" />
-		<meta property="og:url" content="http://www.x2hy.com/index.html" />
-		<meta property="og:site_name" content="Simple Life" />
-		<meta property="og:locale" content="zh-cn" />
-		<meta name="twitter:card" content="summary" />
-		<meta name="twitter:title" content="Simple Life" />
-		<meta property="og:image" content="http://www.x2hy.com/assets/images/avatar.jpeg" />
-		<!--STYLES-->
-		<link rel="stylesheet"
-			href="/assets/css/style-1udptkpril81ozu8ifd8zpujn7ipu7lefxsiu5gxx0dpnzntdx6dusvki3ao.min.css" />
-		<!--STYLES END-->
-		<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-		<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-	</head>
-	<body>
-		<div id="blog">
-			<!-- Define author's picture -->
-			<header id="header" data-behavior="1">
-				<i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
-				<div class="header-title">
-					<a class="header-title-link" href="/ ">Simple Life</a>
-				</div>
-				<a class="header-right-picture " href="#about"> <img class="header-picture"
-						src="/assets/images/avatar.jpeg" alt="作者的图片" /> </a>
-			</header>
-			<!-- Define author's picture -->
-			<nav id="sidebar" data-behavior="1">
-				<div class="sidebar-container">
-					<div class="sidebar-profile">
-						<a href="/#about"> <img class="sidebar-profile-picture" src="/assets/images/avatar.jpeg"
-								alt="作者的图片" /> </a>
-						<h4 class="sidebar-profile-name">Simple</h4>
-						<h5 class="sidebar-profile-bio">
-							<p>爱读历史的渣渣前端</p>
-						</h5>
-					</div>
-					<ul class="sidebar-buttons">
-						<li class="sidebar-button"> <a class="sidebar-button-link " href="/ " title="Simple Life"> <i
-									class="sidebar-button-icon fa fa-lg fa-home" aria-hidden="true"></i> <span
-									class="sidebar-button-desc">Simple Life</span> </a> </li>
-						<li class="sidebar-button"> <a class="sidebar-button-link " href="/all-categories" title="分类">
-								<i class="sidebar-button-icon fa fa-lg fa-bookmark" aria-hidden="true"></i> <span
-									class="sidebar-button-desc">分类</span> </a> </li>
-						<li class="sidebar-button"> <a class="sidebar-button-link " href="/all-tags" title="标签"> <i
-									class="sidebar-button-icon fa fa-lg fa-tags" aria-hidden="true"></i> <span
-									class="sidebar-button-desc">标签</span> </a> </li>
-						<li class="sidebar-button"> <a class="sidebar-button-link " href="#about" title="关于我"> <i
-									class="sidebar-button-icon fa fa-lg fa-question" aria-hidden="true"></i> <span
-									class="sidebar-button-desc">关于我</span> </a> </li>
+
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>好东西分享 - 推荐有价值的资源、建站教程和实用软件！</title>
+<meta name="keywords" content="好东西分享,前卫博客,asqq8,源码分享,源码下载,实用软件分享,免费活动" />
+<meta name="description" content="好东西分享(jinmengqiang.cn)：汇集建站、源码、教程以及各类优秀资源和实用软件分享，旨在免费为广大网友推荐有价值的互联网资源！" />
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="shortcut icon" href="https://jinmengqiang.cn/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="https://jinmengqiang.cn/images/css/style.css" />
+<link rel="stylesheet" type="text/css"  href="https://jinmengqiang.cn/images/css/fontawesome-all.css">
+<link rel="alternate" type="application/rss+xml" title="sitemap" href="https://jinmengqiang.cn/images/sitemap.php"/>
+<link rel="alternate" type="application/rss+xml" title="urltxt" href="https://jinmengqiang.cn/images/urlmap.php"/>
+<link rel="alternate" type="application/rss+xml" title="newsite" href="https://jinmengqiang.cn/images/new.php"/>
+<script src="https://jinmengqiang.cn/images/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+<script src="https://jinmengqiang.cn/images/js/jquery-1.11.0.min.js"></script>
+<script src="https://jinmengqiang.cn/images/js/jquery.lazyload.js?v=1.9.1"></script>
+<script type="text/javascript" charset="utf-8">
+  $(function() {
+      $("img.lazy").lazyload({effect: "fadeIn"});
+  });
+</script>
+</head>
+<body>
+<div id="header" class="dhsd heaferys">
+	<div class="header container">
+		<div class="logo">
+			<a href="https://jinmengqiang.cn" title="好东西分享jinmengqiang.cn"><img src="https://jinmengqiang.cn/images/logo.png" alt="好东西分享jinmengqiang.cn"></a>
+		</div>
+		<div id="monavber" class="nav heaferys" data-type="index" data-infoid="">
+			<ul class="navbar">
+				<li><a href="https://jinmengqiang.cn" title="好东西分享jinmengqiang.cn"><i class="fa fa-home"></i>首页</a></li>
+				
+				<li id='navbar-category-1'><a title='建站经验' href='https://jinmengqiang.cn/a/web/' >建站经验</a></li>
+				
+				<li id='navbar-category-2'><a title='常用笔记' href='https://jinmengqiang.cn/a/note/' >常用笔记</a></li>
+				
+				<li id='navbar-category-7'><a title='福利经验' href='https://jinmengqiang.cn/a/free/' >福利经验</a></li>
+				
+				<li id='navbar-category-3'><a title='电脑软件' href='https://jinmengqiang.cn/a/soft/' >电脑软件</a></li>
+				
+				<li id='navbar-category-4'><a title='源码下载' href='https://jinmengqiang.cn/a/code/' >源码下载</a></li>
+				
+				<li id='navbar-category-5'><a title='手机资源' href='https://jinmengqiang.cn/a/mobile/' >手机资源</a></li>
+				
+				<li id='navbar-category-6'><a title='其它资源' href='https://jinmengqiang.cn/a/down/' >其它资源</a></li>
+				
+			</ul>
+		</div>
+		<div id="mnav"><i class="fa fa-bars"></i></div>
+
+		<div id="search"><i class="fa fa-search"></i></div>
+		<div class="search">
+			<form name="search" method="get" action="https://jinmengqiang.cn/plus/search.php">
+				<input type="text" name="q" placeholder="输入关键词" />
+				<button type="submit" id="search-option" class="submit" value="搜索"><i class="fa fa-search"></i></button>
+			</form>
+		</div>
+	</div>
+</div>
+<div class="qk_twonavq22 ds1190" id="qkfunava"><script src='https://jinmengqiang.cn/plus/ad_js.php?aid=5' language='javascript'></script></div>
+
+<div id="main">
+	<div class="main container">
+		<div class="mainl">
+
+			<div class="page_speeder_2064059573">
+				<div class="hometab">
+					<ul class="title">
+						<span class="page_speeder_575133020">最新发布</span>
 					</ul>
-					<ul class="sidebar-buttons">
-						<li class="sidebar-button"> <a class="sidebar-button-link " href="https://github.com/406892700"
-								target="_blank" rel="noopener" title="github"> <i
-									class="sidebar-button-icon fa fa-lg fa-github" aria-hidden="true"></i> <span
-									class="sidebar-button-desc">github</span> </a> </li>
-						<li class="sidebar-button"> <a class="sidebar-button-link "
-								href="mailto:simplexhy1992@gmail.com" target="_blank" rel="noopener" title="邮箱"> <i
-									class="sidebar-button-icon fa fa-lg fa-envelope-o" aria-hidden="true"></i> <span
-									class="sidebar-button-desc">邮箱</span> </a> </li>
-					</ul>
-				</div>
-			</nav>
-			<div id="main" data-behavior="1" class="
-                        hasCoverMetaIn
-                        ">
-				<section class="postShorten-group main-content-wrap">
-					<article class="postShorten postShorten--thumbnailimg-bottom">
-						<div class="postShorten-wrap">
-							<div class="postShorten-header">
-								<h1 class="postShorten-title"> <a class="link-unstyled"
-										href="/2018/10/19/一些命令行交互相关的npm包/"> 一些命令行交互相关的npm包 </a> </h1>
-								<div class="postShorten-meta">
-									<time datetime="2018-10-19T10:30:28+08:00"> 10月 19, 2018 </time>
+
+					<div class="list22">
+						<ul>
+							<li>
+								<div class="img">
+									<a href='https://jinmengqiang.cn/a/202108/51.html'><img src='https://jinmengqiang.cn/upload/2108/1-210Q0135926145-lp.jpg' class='lazy'/></a>
 								</div>
-							</div>
-							<div class="postShorten-content">
-								<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3>
-								<p>最近在写nodejs命令交互，自己写出来的交互效果惨不忍睹，这次参考了一些成熟的构建工具的源码(<code>vue-cli</code>、<code>create-react-app</code>,公司大佬写的<code>abc-cli</code>等)，整理了一些比较有用的npm包
-								</p>
-								<h3 id="命令行相关"><a href="#命令行相关" class="headerlink" title="命令行相关"></a>命令行相关</h3>
-								<h4 id="commander"><a href="#commander" class="headerlink"
-										title="commander"></a>commander</h4>
-								<blockquote>
-									<p>地址 <a href="https://github.com/tj/commander.js" target="_blank"
-											rel="noopener">https://github.com/tj/commander.js</a></p>
-								</blockquote>
-								<p>一个完整的nodejs命令行解决方案</p>
-								<h4 id="inquirer"><a href="#inquirer" class="headerlink" title="inquirer"></a>inquirer
-								</h4>
-								<blockquote>
-									<p>地址 <a href="https://github.com/SBoudrias/Inquirer.js" target="_blank"
-											rel="noopener">https://github.com/SBoudrias/Inquirer.js</a></p>
-								</blockquote>
-								<p>一个用以处理输入交互的命令行工具</p>
-								<h4 id="chalk"><a href="#chalk" class="headerlink" title="chalk"></a>chalk</h4>
-								<blockquote>
-									<p>地址 <a href="https://github.com/chalk/chalk" target="_blank"
-											rel="noopener">https://github.com/chalk/chalk</a></p>
-								</blockquote>
-								<p>用以处理命令行输出的样式等功能的工具</p>
-								<h4 id="listr"><a href="#listr" class="headerlink" title="listr"></a>listr</h4>
-								<blockquote>
-									<p>地址 <a href="https://github.com/SamVerschueren/listr" target="_blank"
-											rel="noopener">https://github.com/SamVerschueren/listr</a></p>
-								</blockquote>
-								<p> 命令行任务处理列表工具</p>
-								<h4 id="figlet"><a href="#figlet" class="headerlink" title="figlet"></a>figlet</h4>
-								<blockquote>
-									<p>地址 <a href="https://github.com/patorjk/figlet.js#" target="_blank"
-											rel="noopener">https://github.com/patorjk/figlet.js</a></p>
-								</blockquote>
-								<p>命令行字符横幅生成工具</p>
-								<h4 id="ora"><a href="#ora" class="headerlink" title="ora"></a>ora</h4>
-								<blockquote>
-									<p>地址<br /><a href="https://github.com/sindresorhus/ora" target="_blank"
-											rel="noopener">https://github.com/sindresorhus/ora</a></p>
-								</blockquote>
-								<p>优雅处理命令行loading</p>
-								<h4 id="rimraf"><a href="#rimraf" class="headerlink" title="rimraf"></a>rimraf</h4>
-								<blockquote>
-									<p>地址<br /><a href="https://github.com/isaacs/rimraf" target="_blank"
-											rel="noopener">https://github.com/isaacs/rimraf</a></p>
-								</blockquote>
-								<p>更好地处理<code>rm -rf</code></p>
-								<h4 id="execa"><a href="#execa" class="headerlink" title="execa"></a>execa</h4>
-								<blockquote>
-									<p>地址 <a href="https://github.com/sindresorhus/execa" target="_blank"
-											rel="noopener">https://github.com/sindresorhus/execa</a></p>
-								</blockquote>
-								<p>一个更好的<code>child_process</code></p>
-								<h4 id="yargs"><a href="#yargs" class="headerlink" title="yargs"></a>yargs</h4>
-								<blockquote>
-									<p>地址 <a href="https://github.com/yargs/yargs" target="_blank"
-											rel="noopener">https://github.com/yargs/yargs</a></p>
-								</blockquote>
-								<p>友好地处理命令参数工具</p>
-								<h4 id="shelljs"><a href="#shelljs" class="headerlink" title="shelljs"></a>shelljs</h4>
-								<blockquote>
-									<p>地址 <a href="https://github.com/shelljs/shelljs" target="_blank"
-											rel="noopener">https://github.com/shelljs/shelljs</a></p>
-								</blockquote>
-								<p>一个方便的nodejs unix shell命令工具</p>
-								<h4 id="semver"><a href="#semver" class="headerlink" title="semver"></a>semver</h4>
-								<blockquote>
-									<p>地址 <a href="https://github.com/npm/node-semver" target="_blank"
-											rel="noopener">https://github.com/npm/node-semver</a></p>
-								</blockquote>
-								<p>处理版本号语义的(感觉有点鸡肋)</p>
-								<h4 id="left-pad"><a href="#left-pad" class="headerlink" title="left-pad"></a>left-pad
-								</h4>
-								<blockquote>
-									<p>地址 <a href="https://github.com/stevemao/left-pad" target="_blank"
-											rel="noopener">https://github.com/stevemao/left-pad</a></p>
-								</blockquote>
-								<p>处理左对齐的…</p>
-								<h4 id="fs-extra"><a href="#fs-extra" class="headerlink" title="fs-extra"></a>fs-extra
-								</h4>
-								<blockquote>
-									<p>地址 <a href="https://www.npmjs.com/package/fs-extra" target="_blank"
-											rel="noopener">https://www.npmjs.com/package/fs-extra</a></p>
-								</blockquote>
-								<p>添加了一些原生的<code>fs</code>模块所不存在的方法，并且添加promise支持。使用<code>graceful-fs</code>阻止<code>EMFILE</code>错误
-								</p>
-								<h4 id="cross-spawn"><a href="#cross-spawn" class="headerlink"
-										title="cross-spawn"></a>cross-spawn</h4>
-								<blockquote>
-									<p>地址 <a href="https://www.npmjs.com/package/cross-spawn" target="_blank"
-											rel="noopener">https://www.npmjs.com/package/cross-spawn</a></p>
-								</blockquote>
-								<p>一个跨平台的nodejs <code>spawn</code>和<code>spawnSync</code>解决方案</p>
-								<h4 id="tmp"><a href="#tmp" class="headerlink" title="tmp"></a>tmp</h4>
-								<blockquote>
-									<p>地址 <a href="https://www.npmjs.com/package/tmp" target="_blank"
-											rel="noopener">https://www.npmjs.com/package/tmp</a></p>
-								</blockquote>
-								<p>一个简单的工具用来生成临时文件或目录</p>
-								<h4 id="envinfo"><a href="#envinfo" class="headerlink" title="envinfo"></a>envinfo</h4>
-								<blockquote>
-									<p>地址 <a href="https://www.npmjs.com/package/envinfo" target="_blank"
-											rel="noopener">https://www.npmjs.com/package/envinfo</a></p>
-								</blockquote>
-								<p>一次性获取所有的系统环境相关信息，快速，无痛苦</p>
-								<h3 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h3>
-								<blockquote>
-									<p>待续…</p>
-								</blockquote>
-								<p> <a href="/2018/10/19/一些命令行交互相关的npm包/#post-footer"
-										class="postShorten-excerpt_link link"> 评论和共享 </a> </p>
-							</div>
-						</div>
-					</article>
-					<article class="postShorten postShorten--thumbnailimg-bottom">
-						<div class="postShorten-wrap">
-							<div class="postShorten-header">
-								<h1 class="postShorten-title"> <a class="link-unstyled"
-										href="/2018/09/27/React16升级注意事项/"> React16升级注意事项 </a> </h1>
-								<div class="postShorten-meta">
-									<time datetime="2018-09-27T19:36:16+08:00"> 9月 27, 2018 </time>
-								</div>
-							</div>
-							<div class="postShorten-content">
-								<p>最近将webim项目的react版本,升级到了16.x,版本升级后存在一些api的更迭，需要慢慢迁移，在此列出一些注意事项。</p>
-								<h2 id="生命周期钩子的改变"><a href="#生命周期钩子的改变" class="headerlink"
-										title="生命周期钩子的改变"></a>生命周期钩子的改变</h2>
-								<p>react16.x修复了一些以往版本的bug，并对一些api做出了调整，原来的<code>UNSAFE_conponentWillMount</code>
-									<code>UNSAFE_conponentWillReceiveProps</code><br /><code>UNSAFE_componentWillUpdate</code>将在17.x版本后移除，因此在本次升级后，我们应该有意识得去把老代码中的这些钩子用新的方式替换掉
-								</p>
-								<h4 id="装配期"><a href="#装配期" class="headerlink" title="装配期"></a>装配期</h4>
-								<ul>
-									<li>constructor()</li>
-									<li>getDerivedStateFromProps()</li>
-									<li>UNSAFE_conponentWillMount() // 不推荐使用</li>
-									<li>render()</li>
-									<li>componentDidMount()</li>
-								</ul>
-								<h4 id="更新期"><a href="#更新期" class="headerlink" title="更新期"></a>更新期</h4>
-								<ul>
-									<li>UNSAFE_conponentWillReceiveProps() // 不推荐使用</li>
-									<li>getDerivedStateFromProps() // 功能与componentWillReceiveProps类似</li>
-									<li>shouldComponentUpdate()</li>
-									<li>UNSAFE_componentWillUpdate() // 不推荐使用</li>
-									<li>render()</li>
-									<li>getSnapshotBeforeUpdate() // 获取改变前的快照，该钩子的返回值将作为componentDidUpdate的第三个参数</li>
-									<li>componentDidUpdate()</li>
-								</ul>
-								<h4 id="销毁期"><a href="#销毁期" class="headerlink" title="销毁期"></a>销毁期</h4>
-								<ul>
-									<li>componentWillUnmount()</li>
-								</ul>
-								<h4 id="错误处理"><a href="#错误处理" class="headerlink" title="错误处理"></a>错误处理</h4>
-								<ul>
-									<li>componentDidCatch() // 错误边界钩子函数</li>
-								</ul>
-								<h2 id="ref的改变"><a href="#ref的改变" class="headerlink" title="ref的改变"></a>ref的改变</h2>
-								<p>16.x之前，ref可以有<code>字符串ref</code>和<code>回调ref</code>两种形式，但是16.x版本将不再支持<code>字符串ref</code>，并且提供了全新的api–<br />React.createRef()
-								</p>
-								<p>使用方式如下:<br /></p>
-								<figure class="highlight javascript">
-									<table>
-										<tbody>
-											<tr>
-												<td class="gutter">
-													<pre><span class="line">1</span><br /><span class="line">2</span><br /><span class="line">3</span><br /><span class="line">4</span><br /><span class="line">5</span><br /><span class="line">6</span><br /><span class="line">7</span><br /><span class="line">8</span><br /><span class="line">9</span><br /></pre>
-												</td>
-												<td class="code">
-													<pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyComponent</span> <span class="keyword">extends</span> <span class="title">React</span>.<span class="title">Component</span> </span>{</span><br /><span class="line">  <span class="keyword">constructor</span>(props) {</span><br /><span class="line">    <span class="keyword">super</span>(props);</span><br /><span class="line">    <span class="keyword">this</span>.myRef = React.createRef();</span><br /><span class="line">  }</span><br /><span class="line">  render() {</span><br /><span class="line">    <span class="keyword">return</span> &lt;div ref={this.myRef} /&gt;;</span><br /><span class="line">  }</span><br /><span class="line">}</span><br /></pre>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</figure>
-								<p></p>
-								<p><strong> 但是，在不到万不得已的情况下还是尽量少用<code>ref</code></strong></p>
-								<h2 id="props-types"><a href="#props-types" class="headerlink"
-										title="props-types"></a>props-types</h2>
-								<p>新版本的react将<code>prop-types</code>从react中移除了，需要单独引入</p>
-								<h2 id="错误边界的使用"><a href="#错误边界的使用" class="headerlink" title="错误边界的使用"></a>错误边界的使用</h2>
-								<p><a href="https://react.docschina.org/docs/error-boundaries.html" target="_blank"
-										rel="noopener">什么事错误边界</a><br />react从16.x开始，定义了UncaughtError错误的新行为。</p>
-								<blockquote>
-									<p><strong> 自 React 16 开始，任何未被错误边界捕获的错误将会卸载整个 React 组件树。 </strong></p>
-								</blockquote>
-								<p>这么一来，可能一个小组件的运行时异常也会导致整个webApp的崩溃，对代码的容错率和健壮性提出了更高的要求。</p>
-								<p><code>Error Boundary</code>可以<strong>用于捕获其子组件树 JavaScript 异常，记录错误并展示一个回退的 UI
-									</strong></p>
-								<h2 id="多余的代码嵌套"><a href="#多余的代码嵌套" class="headerlink" title="多余的代码嵌套"></a>多余的代码嵌套</h2>
-								<p>16.x版本前，一个组件无法但会多个元素，于是大家都会在多个圆度的外部包裹一个没有意义的<code>div</code>或者其他元素<br /></p>
-								<figure class="highlight javascript">
-									<table>
-										<tbody>
-											<tr>
-												<td class="gutter">
-													<pre><span class="line">1</span><br /><span class="line">2</span><br /><span class="line">3</span><br /><span class="line">4</span><br /><span class="line">5</span><br /><span class="line">6</span><br /><span class="line">7</span><br /><span class="line">8</span><br /><span class="line">9</span><br /><span class="line">10</span><br /><span class="line">11</span><br /></pre>
-												</td>
-												<td class="code">
-													<pre><span class="line">...</span><br /><span class="line">render() {</span><br /><span class="line">  <span class="keyword">return</span> (</span><br /><span class="line">    &lt;div&gt; {<span class="comment">/*没有意义的嵌套*/</span>}</span><br /><span class="line">      &lt;Comp1/&gt;</span><br /><span class="line">      &lt;Comp2/&gt;</span><br /><span class="line">      &lt;Comp3/&gt;</span><br /><span class="line">    &lt;<span class="regexp">/div&gt;</span></span><br /><span class="line"><span class="regexp">  )</span></span><br /><span class="line"><span class="regexp">}</span></span><br /><span class="line"><span class="regexp">...</span></span><br /></pre>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</figure>
-								<p></p>
-								<p>现在可以使用<code>Fragment</code>来规避这样的问题<br /></p>
-								<figure class="highlight javascript">
-									<table>
-										<tbody>
-											<tr>
-												<td class="gutter">
-													<pre><span class="line">1</span><br /><span class="line">2</span><br /><span class="line">3</span><br /><span class="line">4</span><br /><span class="line">5</span><br /><span class="line">6</span><br /><span class="line">7</span><br /><span class="line">8</span><br /><span class="line">9</span><br /><span class="line">10</span><br /><span class="line">11</span><br /><span class="line">12</span><br /><span class="line">13</span><br /><span class="line">14</span><br /><span class="line">15</span><br /><span class="line">16</span><br /><span class="line">17</span><br /><span class="line">18</span><br /><span class="line">19</span><br /><span class="line">20</span><br /><span class="line">21</span><br /><span class="line">22</span><br /><span class="line">23</span><br /><span class="line">24</span><br /></pre>
-												</td>
-												<td class="code">
-													<pre><span class="line">...</span><br /><span class="line">render() {</span><br /><span class="line">  <span class="keyword">return</span> (</span><br /><span class="line">    &lt;&gt;</span><br /><span class="line">      &lt;Comp1/&gt;</span><br /><span class="line">      &lt;Comp2/&gt;</span><br /><span class="line">      &lt;Comp3/&gt;</span><br /><span class="line">    &lt;<span class="regexp">/&gt;</span></span><br /><span class="line"><span class="regexp">  )</span></span><br /><span class="line"><span class="regexp">}</span></span><br /><span class="line"><span class="regexp">...</span></span><br /><span class="line"><span class="regexp"></span></span><br /><span class="line"><span class="regexp">/</span><span class="regexp">/ 或者</span></span><br /><span class="line"><span class="regexp">...</span></span><br /><span class="line"><span class="regexp">render() {</span></span><br /><span class="line"><span class="regexp">  return (</span></span><br /><span class="line"><span class="regexp">    &lt;React.Fragment&gt;</span></span><br /><span class="line"><span class="regexp">      &lt;Comp1/</span>&gt;</span><br /><span class="line">      &lt;Comp2/&gt;</span><br /><span class="line">      &lt;Comp3/&gt;</span><br /><span class="line">    &lt;React.Fragment/&gt;</span><br /><span class="line">  )</span><br /><span class="line">}</span><br /><span class="line">...</span><br /></pre>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</figure>
-								<p></p>
-								<p><code>Fragment</code>将不会生成额外的标签，与<code>DocumentFragment</code>有一定程度上的类似</p>
-								<h2 id="Portals的使用"><a href="#Portals的使用" class="headerlink"
-										title="Portals的使用"></a>Portals的使用</h2>
-								<p>在日常开发中，相信大家都会经常碰到这样的情况<br /></p>
-								<figure class="highlight javascript">
-									<table>
-										<tbody>
-											<tr>
-												<td class="gutter">
-													<pre><span class="line">1</span><br /><span class="line">2</span><br /><span class="line">3</span><br /></pre>
-												</td>
-												<td class="code">
-													<pre><span class="line">&lt;div style={{<span class="attr">color</span>: <span class="string">'#0078d8'</span>, <span class="attr">fontSize</span>: <span class="string">'40px'</span>}}&gt;</span><br /><span class="line">  &lt;Dialog show={<span class="keyword">this</span>.state.showDialog}/&gt;</span><br /><span class="line">&lt;<span class="regexp">/div&gt;</span></span><br /></pre>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</figure>
-								<p></p>
-								<p>因为父组件上带有了一些样式，导致Dialog组件继承了父组件样式而造成了错乱</p>
-								<p>使用portal后代码如下<br /></p>
-								<figure class="highlight javascript">
-									<table>
-										<tbody>
-											<tr>
-												<td class="gutter">
-													<pre><span class="line">1</span><br /><span class="line">2</span><br /><span class="line">3</span><br /><span class="line">4</span><br /><span class="line">5</span><br /><span class="line">6</span><br /><span class="line">7</span><br /><span class="line">8</span><br /><span class="line">9</span><br /><span class="line">10</span><br /><span class="line">11</span><br /><span class="line">12</span><br /><span class="line">13</span><br /><span class="line">14</span><br /><span class="line">15</span><br /><span class="line">16</span><br /><span class="line">17</span><br /><span class="line">18</span><br /><span class="line">19</span><br /><span class="line">20</span><br /><span class="line">21</span><br /><span class="line">22</span><br /><span class="line">23</span><br /><span class="line">24</span><br /><span class="line">25</span><br /><span class="line">26</span><br /></pre>
-												</td>
-												<td class="code">
-													<pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Tips</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>{</span><br /><span class="line">  <span class="keyword">constructor</span>() {</span><br /><span class="line">    <span class="keyword">super</span>()</span><br /><span class="line">    <span class="keyword">this</span>.dom = <span class="literal">null</span></span><br /><span class="line">  }</span><br /><span class="line">  componentWillMount() {</span><br /><span class="line">    <span class="keyword">this</span>.dom = <span class="built_in">document</span>.createElement(<span class="string">'div'</span>)</span><br /><span class="line">    <span class="keyword">this</span>.dom.id = <span class="string">`portal-<span class="subst">${<span class="built_in">Date</span>.now()}</span>`</span></span><br /><span class="line">    <span class="built_in">document</span>.body.appendChild(<span class="keyword">this</span>.dom);</span><br /><span class="line">  }</span><br /><span class="line"></span><br /><span class="line">  componentWillUnmount() {</span><br /><span class="line">    <span class="built_in">document</span>.body.removeChild(<span class="keyword">this</span>.dom);</span><br /><span class="line">  }</span><br /><span class="line"></span><br /><span class="line">  render() {</span><br /><span class="line">    <span class="keyword">return</span> ReactDOM.createPortal(</span><br /><span class="line">      &lt;div className={styles.portalTips}&gt;</span><br /><span class="line">        显示弹窗</span><br /><span class="line"></span><br /><span class="line">        &lt;button onClick={<span class="keyword">this</span>.props.onClose}&gt;关闭&lt;<span class="regexp">/button&gt;</span></span><br /><span class="line"><span class="regexp">      &lt;/</span>div&gt;,</span><br /><span class="line">      <span class="keyword">this</span>.dom</span><br /><span class="line">    )</span><br /><span class="line">  }</span><br /><span class="line">}</span><br /></pre>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</figure>
-								<p></p>
-								<p>既保证了样式不会受父元素的污染，又保留了完整的事件冒泡</p>
-								<h2 id="严格模式的使用"><a href="#严格模式的使用" class="headerlink" title="严格模式的使用"></a>严格模式的使用</h2>
-								<figure class="highlight javascript">
-									<table>
-										<tbody>
-											<tr>
-												<td class="gutter">
-													<pre><span class="line">1</span><br /><span class="line">2</span><br /><span class="line">3</span><br /><span class="line">4</span><br /><span class="line">5</span><br /><span class="line">6</span><br /><span class="line">7</span><br /><span class="line">8</span><br /><span class="line">9</span><br /></pre>
-												</td>
-												<td class="code">
-													<pre><span class="line"><span class="keyword">const</span> StrictModeComp = <span class="function"><span class="params">()</span> =&gt;</span> (</span><br /><span class="line">  &lt;React.Fragment&gt;</span><br /><span class="line">    &lt;Comp1/&gt;</span><br /><span class="line">    &lt;React.StrictMode&gt;</span><br /><span class="line">      &lt;Comp2/&gt;</span><br /><span class="line">    &lt;<span class="regexp">/React.StrictMode&gt;</span></span><br /><span class="line"><span class="regexp">    &lt;Comp3/</span>&gt;</span><br /><span class="line">  &lt;React.Fragment/&gt;</span><br /><span class="line">)</span><br /></pre>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</figure>
-								<p>上述代码中的<code>React.StrictMode</code>是一个<strong>标记出应用中潜在问题的工具</strong>，不会生成额外的dom结构，并且只在开发环境中有效
-								</p>
-								<p>他会帮助你做以下几件事情</p>
-								<ul>
-									<li>对不安全的声明周期钩子提出警告</li>
-									<li>对<code>字符串方式的ref</code>提出警告</li>
-									<li>监测意外的副作用</li>
-								</ul>
-								<p><strong>在刚迁移到16.x的情况下，可以多多使用这个新特性</strong></p>
-								<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2>
-								<h3 id="react协调算法"><a href="#react协调算法" class="headerlink"
-										title="react协调算法"></a>react协调算法</h3>
-								<p>react16对react的核心算法进行了一次重构，由原来的<code>stack reconciler</code> 转为 <code>fiber
-										reconciler</code>,<br /><a
-										href="http://www.ayqy.net/blog/dive-into-react-fiber/" target="_blank"
-										rel="noopener">fiber架构拓展阅读1</a><br /><a
-										href="https://juejin.im/entry/5b0245486fb9a07ac23b08ab" target="_blank"
-										rel="noopener">fiber架构拓展阅读2</a></p>
-								<h3 id="待续…"><a href="#待续…" class="headerlink" title="待续…"></a>待续…</h3>
-								<p> <a href="/2018/09/27/React16升级注意事项/#post-footer"
-										class="postShorten-excerpt_link link"> 评论和共享 </a> </p>
-							</div>
-						</div>
-					</article>
-					<article class="postShorten postShorten--thumbnailimg-bottom">
-						<div class="postShorten-wrap">
-							<div class="postShorten-header">
-								<h1 class="postShorten-title"> <a class="link-unstyled" href="/2018/09/27/Portals/">
-										Portals </a> </h1>
-								<div class="postShorten-meta">
-									<time datetime="2018-09-27T10:45:19+08:00"> 9月 27, 2018 </time>
-								</div>
-							</div>
-							<div class="postShorten-content">
-								<h2 id="官方定义"><a href="#官方定义" class="headerlink" title="官方定义"></a>官方定义</h2>
-								<p>Portals 提供了一种很好的将子节点渲染到父组件以外的 DOM 节点的方式。</p>
-								<figure class="highlight javascript">
-									<table>
-										<tbody>
-											<tr>
-												<td class="gutter">
-													<pre><span class="line">1</span><br /></pre>
-												</td>
-												<td class="code">
-													<pre><span class="line">ReactDOM.createPortal(child, container)</span><br /></pre>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</figure>
-								<p>第一个参数（child）是任何可渲染的 React 子元素，例如一个元素，字符串或碎片。第二个参数（container）则是一个 DOM 元素。</p>
-								<h2 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h2>
-								<p>在日常开发中，相信大家都会经常碰到这样的情况<br /></p>
-								<figure class="highlight javascript">
-									<table>
-										<tbody>
-											<tr>
-												<td class="gutter">
-													<pre><span class="line">1</span><br /><span class="line">2</span><br /><span class="line">3</span><br /></pre>
-												</td>
-												<td class="code">
-													<pre><span class="line">&lt;div style={{<span class="attr">color</span>: <span class="string">'#0078d8'</span>, <span class="attr">fontSize</span>: <span class="string">'40px'</span>}}&gt;</span><br /><span class="line">  &lt;Dialog show={<span class="keyword">this</span>.state.showDialog}/&gt;</span><br /><span class="line">&lt;<span class="regexp">/div&gt;</span></span><br /></pre>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</figure>
-								<p></p>
-								<p>因为父组件上带有了一些样式，导致Dialog组件继承了父组件样式而造成了错乱</p>
-								<h2 id="老的解决方案"><a href="#老的解决方案" class="headerlink" title="老的解决方案"></a>老的解决方案</h2>
-								<p>这样的情况肯定是难不倒大家的,相信很多人都有自己的处理方案</p>
-								<figure class="highlight javascript">
-									<table>
-										<tbody>
-											<tr>
-												<td class="gutter">
-													<pre><span class="line">1</span><br /><span class="line">2</span><br /><span class="line">3</span><br /><span class="line">4</span><br /><span class="line">5</span><br /><span class="line">6</span><br /><span class="line">7</span><br /><span class="line">8</span><br /><span class="line">9</span><br /><span class="line">10</span><br /><span class="line">11</span><br /><span class="line">12</span><br /><span class="line">13</span><br /><span class="line">14</span><br /><span class="line">15</span><br /><span class="line">16</span><br /><span class="line">17</span><br /><span class="line">18</span><br /><span class="line">19</span><br /><span class="line">20</span><br /><span class="line">21</span><br /><span class="line">22</span><br /><span class="line">23</span><br /><span class="line">24</span><br /><span class="line">25</span><br /><span class="line">26</span><br /><span class="line">27</span><br /><span class="line">28</span><br /><span class="line">29</span><br /><span class="line">30</span><br /><span class="line">31</span><br /><span class="line">32</span><br /><span class="line">33</span><br /><span class="line">34</span><br /><span class="line">35</span><br /><span class="line">36</span><br /></pre>
-												</td>
-												<td class="code">
-													<pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">DiyPortalTips</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>{</span><br /><span class="line">  <span class="keyword">constructor</span>() {</span><br /><span class="line">    <span class="keyword">super</span>()</span><br /><span class="line">    <span class="keyword">this</span>.dom = <span class="literal">null</span></span><br /><span class="line">  }</span><br /><span class="line"></span><br /><span class="line">  componentWillMount() {</span><br /><span class="line">    <span class="keyword">this</span>.dom = <span class="built_in">document</span>.createElement(<span class="string">'div'</span>)</span><br /><span class="line">    <span class="keyword">this</span>.dom.id = <span class="string">`diy-portal-<span class="subst">${<span class="built_in">Date</span>.now()}</span>`</span></span><br /><span class="line"></span><br /><span class="line">    <span class="built_in">document</span>.body.appendChild(<span class="keyword">this</span>.dom)</span><br /><span class="line">  }</span><br /><span class="line"></span><br /><span class="line">  componentDidMount() {</span><br /><span class="line">    <span class="keyword">this</span>.renderToPortal()</span><br /><span class="line">  }</span><br /><span class="line"></span><br /><span class="line">  renderToPortal = <span class="function"><span class="params">()</span> =&gt;</span> {</span><br /><span class="line">    ReactDOM.render(</span><br /><span class="line">      &lt;div className={styles.portalTips}&gt;</span><br /><span class="line">        显示弹窗</span><br /><span class="line"></span><br /><span class="line">        &lt;button onClick={<span class="keyword">this</span>.props.onClose}&gt;关闭&lt;<span class="regexp">/button&gt;</span></span><br /><span class="line"><span class="regexp">      &lt;/</span>div&gt;,</span><br /><span class="line">      <span class="keyword">this</span>.dom</span><br /><span class="line">    )</span><br /><span class="line">  }</span><br /><span class="line"></span><br /><span class="line">  render() {</span><br /><span class="line">    <span class="keyword">return</span> <span class="literal">null</span></span><br /><span class="line">  }</span><br /><span class="line"></span><br /><span class="line">  componentWillUnmount() {</span><br /><span class="line">    <span class="built_in">document</span>.body.removeChild(<span class="keyword">this</span>.dom)</span><br /><span class="line">  }</span><br /><span class="line">}</span><br /></pre>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</figure>
-								<h2 id="老的方案存在的问题"><a href="#老的方案存在的问题" class="headerlink"
-										title="老的方案存在的问题"></a>老的方案存在的问题</h2>
-								<p>这样的方案能解决掉样式的问题，但是因为将组件渲染到了一个新DOM结构中，会导致父子组件间的包含结构被破坏。这样一来，子组件的事件无法冒泡至父组件上，这个时候我们该怎么办呢
-								</p>
-								<p>…<br />是时候让portal出场了！！！</p>
-								<h2 id="portal的方式实现"><a href="#portal的方式实现" class="headerlink"
-										title="portal的方式实现"></a>portal的方式实现</h2>
-								<figure class="highlight javascript">
-									<table>
-										<tbody>
-											<tr>
-												<td class="gutter">
-													<pre><span class="line">1</span><br /><span class="line">2</span><br /><span class="line">3</span><br /><span class="line">4</span><br /><span class="line">5</span><br /><span class="line">6</span><br /><span class="line">7</span><br /><span class="line">8</span><br /><span class="line">9</span><br /><span class="line">10</span><br /><span class="line">11</span><br /><span class="line">12</span><br /><span class="line">13</span><br /><span class="line">14</span><br /><span class="line">15</span><br /><span class="line">16</span><br /><span class="line">17</span><br /><span class="line">18</span><br /><span class="line">19</span><br /><span class="line">20</span><br /><span class="line">21</span><br /><span class="line">22</span><br /><span class="line">23</span><br /><span class="line">24</span><br /><span class="line">25</span><br /><span class="line">26</span><br /></pre>
-												</td>
-												<td class="code">
-													<pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Tips</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>{</span><br /><span class="line">  <span class="keyword">constructor</span>() {</span><br /><span class="line">    <span class="keyword">super</span>()</span><br /><span class="line">    <span class="keyword">this</span>.dom = <span class="literal">null</span></span><br /><span class="line">  }</span><br /><span class="line">  componentWillMount() {</span><br /><span class="line">    <span class="keyword">this</span>.dom = <span class="built_in">document</span>.createElement(<span class="string">'div'</span>)</span><br /><span class="line">    <span class="keyword">this</span>.dom.id = <span class="string">`portal-<span class="subst">${<span class="built_in">Date</span>.now()}</span>`</span></span><br /><span class="line">    <span class="built_in">document</span>.body.appendChild(<span class="keyword">this</span>.dom);</span><br /><span class="line">  }</span><br /><span class="line"></span><br /><span class="line">  componentWillUnmount() {</span><br /><span class="line">    <span class="built_in">document</span>.body.removeChild(<span class="keyword">this</span>.dom);</span><br /><span class="line">  }</span><br /><span class="line"></span><br /><span class="line">  render() {</span><br /><span class="line">    <span class="keyword">return</span> ReactDOM.createPortal(</span><br /><span class="line">      &lt;div className={styles.portalTips}&gt;</span><br /><span class="line">        显示弹窗</span><br /><span class="line"></span><br /><span class="line">        &lt;button onClick={<span class="keyword">this</span>.props.onClose}&gt;关闭&lt;<span class="regexp">/button&gt;</span></span><br /><span class="line"><span class="regexp">      &lt;/</span>div&gt;,</span><br /><span class="line">      <span class="keyword">this</span>.dom</span><br /><span class="line">    )</span><br /><span class="line">  }</span><br /><span class="line">}</span><br /></pre>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</figure>
-								<h2 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h2>
-								<figure class="highlight javascript">
-									<table>
-										<tbody>
-											<tr>
-												<td class="gutter">
-													<pre><span class="line">1</span><br /><span class="line">2</span><br /><span class="line">3</span><br /><span class="line">4</span><br /><span class="line">5</span><br /><span class="line">6</span><br /><span class="line">7</span><br /><span class="line">8</span><br /><span class="line">9</span><br /><span class="line">10</span><br /><span class="line">11</span><br /><span class="line">12</span><br /><span class="line">13</span><br /><span class="line">14</span><br /><span class="line">15</span><br /><span class="line">16</span><br /><span class="line">17</span><br /><span class="line">18</span><br /><span class="line">19</span><br /><span class="line">20</span><br /><span class="line">21</span><br /><span class="line">22</span><br /><span class="line">23</span><br /><span class="line">24</span><br /><span class="line">25</span><br /></pre>
-												</td>
-												<td class="code">
-													<pre><span class="line">...</span><br /><span class="line">render() {</span><br /><span class="line">    <span class="keyword">return</span> (</span><br /><span class="line">      &lt;div style={{<span class="attr">overflow</span>: <span class="string">'hidden'</span>, <span class="attr">color</span>: <span class="string">'#0078d8'</span>, <span class="attr">fontSize</span>: <span class="string">'40px'</span>}} onClick={(e) =&gt; {</span><br /><span class="line">        e.target.tagName.toLowerCase() ==<span class="string">'button'</span> &amp;&amp; !e.target.getAttribute(<span class="string">'data-trigger'</span>) &amp;&amp; alert(<span class="string">'我的儿被关闭啦~'</span>)</span><br /><span class="line">      }}&gt;</span><br /><span class="line">        &lt;p&gt;两种方式对比&lt;<span class="regexp">/p&gt;</span></span><br /><span class="line"><span class="regexp">        &lt;button onClick={() =&gt; this.setState({ showTips: true })} data-trigger={true}&gt;出现portal弹窗&lt;/</span>button&gt;</span><br /><span class="line">        &lt;button onClick={() =&gt; <span class="keyword">this</span>.setState({ <span class="attr">showNormalTips</span>: <span class="literal">true</span> })} data-trigger={<span class="literal">true</span>}&gt;出现普通弹窗&lt;<span class="regexp">/button&gt;</span></span><br /><span class="line"><span class="regexp">        &lt;button onClick={() =&gt; this.setState({ showDiyTips: true })} data-trigger={true}&gt;出现diy portal弹窗&lt;/</span>button&gt;</span><br /><span class="line">        {</span><br /><span class="line">          <span class="keyword">this</span>.state.showTips &amp;&amp; &lt;Tips onClose={this.onClose}/&gt;</span><br /><span class="line">        }</span><br /><span class="line"></span><br /><span class="line">        {</span><br /><span class="line">          this.state.showNormalTips &amp;&amp; &lt;NormalTips onClose={this.onNormalClose}/&gt;</span><br /><span class="line">        }</span><br /><span class="line"></span><br /><span class="line">        {</span><br /><span class="line">          this.state.showDiyTips &amp;&amp; &lt;DiyPortalTips onClose={this.onDiyClose}/&gt;</span><br /><span class="line">        }</span><br /><span class="line">      &lt;/div&gt;</span><br /><span class="line">    )</span><br /><span class="line">  }</span><br /><span class="line">...</span><br /></pre>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</figure>
-								<h3 id="使用portal"><a href="#使用portal" class="headerlink" title="使用portal"></a>使用portal
-								</h3>
-								<p><img src="http://blog.x2hy.com/cdn/WX20180927-110150.png"
-										alt="1" /><br />样式未被污染，且正确冒泡</p>
-								<h3 id="不使用protal"><a href="#不使用protal" class="headerlink"
-										title="不使用protal"></a>不使用protal</h3>
-								<p><img src="http://blog.x2hy.com/cdn/WX20180927-110211.png"
-										alt="1" /><br />样式被污染，但是正确冒泡</p>
-								<h3 id="使用老的方案"><a href="#使用老的方案" class="headerlink" title="使用老的方案"></a>使用老的方案</h3>
-								<p><img src="http://blog.x2hy.com/cdn/WX20180927-110305.png"
-										alt="1" /><br />样式未被污染，但是没有正确冒泡</p>
-								<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2>
-								<p>总的来说，createPortal是一个很有用的api，在上述场景中解决以往比较麻烦的问题。</p>
-								<p> <a href="/2018/09/27/Portals/#post-footer" class="postShorten-excerpt_link link">
-										评论和共享 </a> </p>
-							</div>
-						</div>
-					</article>
-					<article class="postShorten postShorten--thumbnailimg-bottom">
-						<div class="postShorten-wrap">
-							<div class="postShorten-header">
-								<h1 class="postShorten-title"> <a class="link-unstyled" href="/2018/07/03/SpriteJS学习/">
-										SpriteJS学习 </a> </h1>
-								<div class="postShorten-meta">
-									<time datetime="2018-07-03T10:53:20+08:00"> 7月 03, 2018 </time>
-								</div>
-							</div>
-							<div class="postShorten-content">
-								<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2>
-								<p>sprite.js 是跨平台的2D绘图对象模型库，它能够支持web、node、桌面应用和微信小程序的图形绘制和实现各种动画效果。</p>
-								<h2 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h2>
-								<ul>
-									<li>像<strong>[操作DOM对象]</strong>一样操作画布上的图形元素</li>
-									<li>通过智能缓存大大提升渲染性能</li>
-									<li>支持多图层处理图形、文本、图像渲染</li>
-									<li>支持DOM事件代理、自定义事件派发</li>
-									<li>使用ES6+语法和面向对象编程</li>
-									<li>结构化对象树，对d3引擎友好，能够无缝使用</li>
-									<li>支持服务端渲染</li>
-									<li>支持微信小程序</li>
-								</ul>
-								<h2 id="架构"><a href="#架构" class="headerlink" title="架构"></a>架构</h2>
-								<p><img src="http://blog.x2hy.com/cdn/WechatIMG101.jpeg" alt="架构图" /></p>
-								<h2 id="基础用法"><a href="#基础用法" class="headerlink" title="基础用法"></a>基础用法</h2>
-								<h3 id="坐标"><a href="#坐标" class="headerlink" title="坐标"></a>坐标</h3>
-								<h4 id="绘图尺寸-resolution、viewport"><a href="#绘图尺寸-resolution、viewport" class="headerlink"
-										title="绘图尺寸 resolution、viewport"></a>绘图尺寸 resolution、viewport</h4>
-								<ul>
-									<li><strong>resolution</strong> 画布的宽高(类似canvas的props中指定的width和height)</li>
-									<li><strong>viewport</strong> canvas在文档中的宽高(类似canvas的css中指定的width和height)</li>
-								</ul>
-								<p>viewport不设置的时候，将会自适应外容器的大小。如果需要动态自适应大小，则设置<code>viewport: ['auto', 'auto']</code></p>
-								<h4 id="锚点-anchor"><a href="#锚点-anchor" class="headerlink" title="锚点 anchor"></a>锚点
-									anchor</h4>
-								<ul>
-									<li><strong>anchor</strong> 与transform-origin 类型功能</li>
-								</ul>
-								<h3 id="元素"><a href="#元素" class="headerlink" title="元素"></a>元素</h3>
-								<h4 id="精灵-Sprite"><a href="#精灵-Sprite" class="headerlink" title="精灵 Sprite"></a>精灵
-									Sprite</h4>
-								<p>精灵是最重要的一个类，相当于在dom中的一个element元素，类似的他也具有自己的盒子模型，并且有自己的属性。</p>
-								<blockquote>
-									<p>所有可能的属性<br /></p>
-									<figure class="highlight javascript">
-										<table>
-											<tbody>
-												<tr>
-													<td class="gutter">
-														<pre><span class="line">1</span><br /><span class="line">2</span><br /><span class="line">3</span><br /><span class="line">4</span><br /><span class="line">5</span><br /><span class="line">6</span><br /><span class="line">7</span><br /><span class="line">8</span><br /><span class="line">9</span><br /><span class="line">10</span><br /><span class="line">11</span><br /><span class="line">12</span><br /><span class="line">13</span><br /><span class="line">14</span><br /><span class="line">15</span><br /><span class="line">16</span><br /><span class="line">17</span><br /><span class="line">18</span><br /><span class="line">19</span><br /><span class="line">20</span><br /><span class="line">21</span><br /><span class="line">22</span><br /><span class="line">23</span><br /><span class="line">24</span><br /><span class="line">25</span><br /><span class="line">26</span><br /><span class="line">27</span><br /><span class="line">28</span><br /><span class="line">29</span><br /><span class="line">30</span><br /><span class="line">31</span><br /><span class="line">32</span><br /><span class="line">33</span><br /><span class="line">34</span><br /><span class="line">35</span><br /><span class="line">36</span><br /><span class="line">37</span><br /><span class="line">38</span><br /><span class="line">39</span><br /><span class="line">40</span><br /></pre>
-													</td>
-													<td class="code">
-														<pre><span class="line">anchor: [<span class="number">0</span>, <span class="number">0</span>],</span><br /><span class="line">      x: <span class="number">0</span>,</span><br /><span class="line">      y: <span class="number">0</span>,</span><br /><span class="line">      opacity: <span class="number">1</span>,</span><br /><span class="line">      width: <span class="string">''</span>,</span><br /><span class="line">      height: <span class="string">''</span>,</span><br /><span class="line">      bgcolor: <span class="string">''</span>,</span><br /><span class="line">      rotate: <span class="number">0</span>,</span><br /><span class="line">      scale: [<span class="number">1</span>, <span class="number">1</span>],</span><br /><span class="line">      translate: [<span class="number">0</span>, <span class="number">0</span>],</span><br /><span class="line">      skew: [<span class="number">0</span>, <span class="number">0</span>],</span><br /><span class="line">      transform: <span class="string">'matrix(1,0,0,1,0,0)'</span>,</span><br /><span class="line">      transformOrigin: <span class="string">''</span>,</span><br /><span class="line">      transformMatrix: [<span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>],</span><br /><span class="line">      border: {</span><br /><span class="line">        width: <span class="number">0</span>,</span><br /><span class="line">        color: <span class="string">'rgba(0,0,0,0)'</span>,</span><br /><span class="line">        style: <span class="string">'solid'</span>,</span><br /><span class="line">      },</span><br /><span class="line">      <span class="comment">// border: [0, 'rgba(0,0,0,0)'],</span></span><br /><span class="line">      borderRadius: <span class="number">0</span>,</span><br /><span class="line">      dashOffset: <span class="number">0</span>,</span><br /><span class="line">      padding: [<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>],</span><br /><span class="line">      zIndex: <span class="number">0</span>,</span><br /><span class="line">      offsetRotate: <span class="string">'auto'</span>,</span><br /><span class="line">      gradients: {},</span><br /><span class="line">      offsetDistance: <span class="number">0</span>,</span><br /><span class="line">      filter: <span class="string">''</span>, <span class="comment">// filter: {blur, ...}</span></span><br /><span class="line">      shadow: <span class="string">''</span>, <span class="comment">// shadow: {color = 'rgba(0,0,0,1)', blur = 1[, offset]}</span></span><br /><span class="line">    }, {</span><br /><span class="line">      pos() {</span><br /><span class="line">        <span class="keyword">return</span> [<span class="keyword">this</span>.x, <span class="keyword">this</span>.y]</span><br /><span class="line">      },</span><br /><span class="line">      size() {</span><br /><span class="line">        <span class="keyword">return</span> [<span class="keyword">this</span>.width, <span class="keyword">this</span>.height]</span><br /><span class="line">      },</span><br /><span class="line">      linearGradients() {</span><br /><span class="line">        <span class="comment">/* istanbul ignore next  */</span></span><br /><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.gradients</span><br /><span class="line">      },</span><br /></pre>
-													</td>
-												</tr>
-											</tbody>
-										</table>
-									</figure>
-									<p></p>
-								</blockquote>
-								<h4 id="文字-Label"><a href="#文字-Label" class="headerlink" title="文字 Label"></a>文字 Label
-								</h4>
-								<h4 id="路径-Path"><a href="#路径-Path" class="headerlink" title="路径 Path"></a>路径 Path</h4>
-								<h4 id="分组-Group"><a href="#分组-Group" class="headerlink" title="分组 Group"></a>分组 Group
-								</h4>
-								<p> <a href="/2018/07/03/SpriteJS学习/#post-footer" class="postShorten-excerpt_link link">
-										评论和共享 </a> </p>
-							</div>
-						</div>
-					</article>
-					<article class="postShorten postShorten--thumbnailimg-bottom">
-						<div class="postShorten-wrap">
-							<div class="postShorten-header">
-								<h1 class="postShorten-title"> <a class="link-unstyled"
-										href="/2018/06/27/webpack的各种sourcemap选择/"> webpack的各种sourcemap选择 </a> </h1>
-								<div class="postShorten-meta">
-									<time datetime="2018-06-27T16:47:14+08:00"> 6月 27, 2018 </time>
-								</div>
-							</div>
-							<div class="postShorten-content">
-								<h1 id="webpack的各种sourcemap"><a href="#webpack的各种sourcemap" class="headerlink"
-										title="webpack的各种sourcemap"></a>webpack的各种sourcemap</h1>
-								<blockquote>
-									<p>对webpack配置中sourcemap的选择一直感觉有点概念不清楚，今天来整理一下，主要参照的是webpack的官方文档</p>
-								</blockquote>
-								<table>
-									<thead>
-										<tr>
-											<th style="text-align:left">devtool</th>
-											<th style="text-align:left">首次构建速度</th>
-											<th style="text-align:left">重新构建速度</th>
-											<th style="text-align:left">是否生产环境专用</th>
-											<th style="text-align:left">质量</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td style="text-align:left">(none)</td>
-											<td style="text-align:left">极快</td>
-											<td style="text-align:left">极快</td>
-											<td style="text-align:left">是</td>
-											<td style="text-align:left">bundled code</td>
-										</tr>
-										<tr>
-											<td style="text-align:left">eval</td>
-											<td style="text-align:left">极快</td>
-											<td style="text-align:left">极快</td>
-											<td style="text-align:left">否</td>
-											<td style="text-align:left">generated code</td>
-										</tr>
-										<tr>
-											<td style="text-align:left">cheap-eval-source-map</td>
-											<td style="text-align:left">较快</td>
-											<td style="text-align:left">快</td>
-											<td style="text-align:left">否</td>
-											<td style="text-align:left">transformed code(单行)</td>
-										</tr>
-										<tr>
-											<td style="text-align:left">cheap-module-eval-source-map</td>
-											<td style="text-align:left">普通</td>
-											<td style="text-align:left">快</td>
-											<td style="text-align:left">否</td>
-											<td style="text-align:left">original source(单行)）</td>
-										</tr>
-										<tr>
-											<td style="text-align:left">eval-source-map</td>
-											<td style="text-align:left">慢</td>
-											<td style="text-align:left">较快</td>
-											<td style="text-align:left">否</td>
-											<td style="text-align:left">original source</td>
-										</tr>
-										<tr>
-											<td style="text-align:left">cheap-source-map</td>
-											<td style="text-align:left">较快</td>
-											<td style="text-align:left">普通</td>
-											<td style="text-align:left">否</td>
-											<td style="text-align:left">transformed code(单行)</td>
-										</tr>
-										<tr>
-											<td style="text-align:left">cheap-module-source-map</td>
-											<td style="text-align:left">普通</td>
-											<td style="text-align:left">较慢</td>
-											<td style="text-align:left">否</td>
-											<td style="text-align:left">original source(单行)</td>
-										</tr>
-										<tr>
-											<td style="text-align:left">inline-cheap-source-map</td>
-											<td style="text-align:left">较快</td>
-											<td style="text-align:left">普通</td>
-											<td style="text-align:left">否</td>
-											<td style="text-align:left">transformed code(单行)</td>
-										</tr>
-										<tr>
-											<td style="text-align:left">inline-cheap-module-source-map</td>
-											<td style="text-align:left">普通</td>
-											<td style="text-align:left">较慢</td>
-											<td style="text-align:left">否</td>
-											<td style="text-align:left">original source(单行)</td>
-										</tr>
-										<tr>
-											<td style="text-align:left">source-map</td>
-											<td style="text-align:left">慢</td>
-											<td style="text-align:left">慢</td>
-											<td style="text-align:left">是</td>
-											<td style="text-align:left">original source</td>
-										</tr>
-										<tr>
-											<td style="text-align:left">inline-source-map</td>
-											<td style="text-align:left">慢</td>
-											<td style="text-align:left">慢</td>
-											<td style="text-align:left">否</td>
-											<td style="text-align:left">original source</td>
-										</tr>
-										<tr>
-											<td style="text-align:left">hidden-source-map</td>
-											<td style="text-align:left">慢</td>
-											<td style="text-align:left">慢</td>
-											<td style="text-align:left">是</td>
-											<td style="text-align:left">original source</td>
-										</tr>
-										<tr>
-											<td style="text-align:left">nosources-source-map</td>
-											<td style="text-align:left">慢</td>
-											<td style="text-align:left">慢</td>
-											<td style="text-align:left">是</td>
-											<td style="text-align:left">没有源代码</td>
-										</tr>
-									</tbody>
-								</table>
-								<blockquote>
-									<p><strong>速度衡量:</strong> 极快 &gt; 快 &gt; 较快 &gt; 普通 &gt; 较慢 &gt; 慢</p>
-								</blockquote>
-								<blockquote>
-									<p><strong>质量衡量</strong></p>
-									<ul>
-										<li><strong>bundled code</strong> - 生成的代码是大文件对象形式的，模块互相之间没有分离开 ？</li>
-										<li><strong>generated code</strong> - 每一个模块互相分离，并且用模块名字注释，生产的代码类似
-											<figure class="highlight javascript">
-												<table>
-													<tbody>
-														<tr>
-															<td class="gutter">
-																<pre><span class="line">1</span><br /><span class="line">2</span><br /><span class="line">3</span><br /><span class="line">4</span><br /><span class="line">5</span><br /></pre>
-															</td>
-															<td class="code">
-																<pre><span class="line"><span class="comment">//before</span></span><br /><span class="line"><span class="keyword">import</span> {test} <span class="keyword">from</span> <span class="string">&quot;module&quot;</span>; test();</span><br /><span class="line"><span class="comment">//after</span></span><br /><span class="line"><span class="keyword">var</span> module__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(<span class="number">42</span>);</span><br /><span class="line"> module__WEBPACK_IMPORTED_MODULE_1__.a();</span><br /></pre>
-															</td>
-														</tr>
-													</tbody>
-												</table>
-											</figure>
-										</li>
-									</ul>
-								</blockquote>
-								<ul>
-									<li>
-										<p><strong>transformed code</strong> -
-											每一个模块互相分离，并且用模块名字注释，你看到的代码是loader执行后，但是webpack转译前</p>
-										<figure class="highlight javascript">
-											<table>
-												<tbody>
-													<tr>
-														<td class="gutter">
-															<pre><span class="line">1</span><br /><span class="line">2</span><br /><span class="line">3</span><br /><span class="line">4</span><br /></pre>
-														</td>
-														<td class="code">
-															<pre><span class="line"><span class="comment">// before</span></span><br /><span class="line"><span class="keyword">import</span> {test} <span class="keyword">from</span> <span class="string">&quot;module&quot;</span>; <span class="class"><span class="keyword">class</span> <span class="title">A</span> <span class="keyword">extends</span> <span class="title">test</span> </span>{}<span class="keyword">import</span> {test} <span class="keyword">from</span> <span class="string">&quot;module&quot;</span>; <span class="class"><span class="keyword">class</span> <span class="title">A</span> <span class="keyword">extends</span> <span class="title">test</span> </span>{}</span><br /><span class="line"><span class="comment">// after</span></span><br /><span class="line"><span class="keyword">import</span> {test} <span class="keyword">from</span> <span class="string">&quot;module&quot;</span>; <span class="keyword">var</span> A = <span class="function"><span class="keyword">function</span>(<span class="params">_test</span>) </span>{ ... }(test);</span><br /></pre>
-														</td>
-													</tr>
-												</tbody>
-											</table>
-										</figure>
-									</li>
-									<li>
-										<p><strong>original source</strong> -
-											每一个模块互相分离，并且用模块名字注释，你看到的是在webpack转译以前，保持你在写的时候的样子，他需要依赖loader的支持</p>
-									</li>
-									<li><strong>without source content</strong> -
-										打包后的文件不包含sourcemap,浏览器通常会会通过webserver或者文件系统去加载它，所以你必须保证output.devtoolModuleFilenameTemplate是正确匹配了资源文件的地址
-									</li>
-									<li><strong>(lines only)</strong> -
-										sourcemap被简化为每一行一个映射。这通常意味着每个语句只有单个映射（假设你就是这么写的）。这会妨碍你在语句级别上调试执行，也会妨碍你在每行的一些列上设置断点。与压缩后的代码组合后，映射关系是不可能实现的，因为压缩工具通常只会输出一行
-									</li>
-								</ul>
-								<p> <a href="/2018/06/27/webpack的各种sourcemap选择/#post-footer"
-										class="postShorten-excerpt_link link"> 评论和共享 </a> </p>
-							</div>
-						</div>
-					</article>
-					<article class="postShorten postShorten--thumbnailimg-bottom">
-						<div class="postShorten-wrap">
-							<div class="postShorten-header">
-								<h1 class="postShorten-title"> <a class="link-unstyled" href="/2018/06/24/灵魂不朽/"> 灵魂不朽
-									</a> </h1>
-								<div class="postShorten-meta">
-									<time datetime="2018-06-24T12:37:36+08:00"> 6月 24, 2018 </time>
-								</div>
-							</div>
-							<div class="postShorten-content">
-								<h1 id="不朽"><a href="#不朽" class="headerlink" title="不朽"></a>不朽</h1>
-								<blockquote>
-									<p>那边“一座低低的土墙，遮着一个弹三弦的人”。那三弦的声浪，在空间起了无数的波澜；那被冲动的空间质点，直接间接冲动无数旁的空间质点；这种波澜，由近而远，至于无穷空间；由现在而将来，由此刹那以至于无量刹那，至于无穷时间：——这已是不灭不朽了。那时间，那“低低的土墙”外来了一位诗人，听见那三弦的声音，忽然起了一个念头；由此念头，就成了一首好诗；这首好诗传诵了许多人；人读了这诗，各起种种念头；由这种种念头，更发生无量数的念头，更发生无数的动作，以至于无穷。然而那“低低的土墙”里面那个弹三弦的人又如何知道他所发生的影响呢？
+								<div class="imgr">
+									<h2><a href="https://jinmengqiang.cn/a/202108/51.html"
+											title="Youtube解析youtube下载视频转换为mp4&mp3源码下载">Youtube解析youtube下载视频转换为mp4&mp3源码下载</a>
+									</h2>
+									<p>一个简单的 php 应用程序，它能够从 youtube 下载视频，将视频转换为具有不同比特率的 MP4 和 MP3。...
 									</p>
-									<div style="text-align: right;">
-										——胡适
+									<div class="info">
+										<span><a href="https://jinmengqiang.cn/a/code/" title="源码下载"><i class="fa fa-columns"></i>源码下载</a></span>
+										<span><i class="fa fa-clock-o"></i>2021-08-10</span>
+										<span><i class="fa fa-eye"></i>2761</span>
+										<span class="tag"><a href=/tags.php?/youtube target=_blank>youtube</a></span>
 									</div>
-								</blockquote>
-								<p> <a href="/2018/06/24/灵魂不朽/#post-footer" class="postShorten-excerpt_link link"> 评论和共享
-									</a> </p>
-							</div>
-						</div>
-					</article>
-					<article class="postShorten postShorten--thumbnailimg-bottom">
-						<div class="postShorten-wrap">
-							<div class="postShorten-header">
-								<h1 class="postShorten-title"> <a class="link-unstyled" href="/2018/05/22/ES6/"> ES6
-									</a> </h1>
-								<div class="postShorten-meta">
-									<time datetime="2018-05-22T14:44:17+08:00"> 5月 22, 2018 </time>
 								</div>
-							</div>
-							<div class="postShorten-content">
-								<h1 id="ES6知识点盘点回顾"><a href="#ES6知识点盘点回顾" class="headerlink"
-										title="ES6知识点盘点回顾"></a>ES6知识点盘点回顾</h1>
-								<h2 id="let和const"><a href="#let和const" class="headerlink"
-										title="let和const"></a>let和const</h2>
-								<h3 id="let"><a href="#let" class="headerlink" title="let"></a>let</h3>
-								<ul>
-									<li>只在当前块级作用域有效(<em>产生暂时性死区</em>)</li>
-									<li>不可重复定义</li>
-									<li>可以重复赋值</li>
-									<li>不会变量提升</li>
-								</ul>
-								<figure class="highlight javascript">
-									<table>
-										<tbody>
-											<tr>
-												<td class="gutter">
-													<pre><span class="line">1</span><br /><span class="line">2</span><br /><span class="line">3</span><br /><span class="line">4</span><br /><span class="line">5</span><br /><span class="line">6</span><br /><span class="line">7</span><br /><span class="line">8</span><br /><span class="line">9</span><br /><span class="line">10</span><br /><span class="line">11</span><br /><span class="line">12</span><br /><span class="line">13</span><br /><span class="line">14</span><br /><span class="line">15</span><br /><span class="line">16</span><br /><span class="line">17</span><br /><span class="line">18</span><br /><span class="line">19</span><br /><span class="line">20</span><br /><span class="line">21</span><br /><span class="line">22</span><br /><span class="line">23</span><br /><span class="line">24</span><br /><span class="line">25</span><br /><span class="line">26</span><br /><span class="line">27</span><br /><span class="line">28</span><br /><span class="line">29</span><br /><span class="line">30</span><br /><span class="line">31</span><br /><span class="line">32</span><br /><span class="line">33</span><br /><span class="line">34</span><br /><span class="line">35</span><br /><span class="line">36</span><br /><span class="line">37</span><br /><span class="line">38</span><br /><span class="line">39</span><br /><span class="line">40</span><br /><span class="line">41</span><br /><span class="line">42</span><br /><span class="line">43</span><br /><span class="line">44</span><br /><span class="line">45</span><br /><span class="line">46</span><br /><span class="line">47</span><br /><span class="line">48</span><br /><span class="line">49</span><br /></pre>
-												</td>
-												<td class="code">
-													<pre><span class="line"><span class="keyword">let</span> a = <span class="number">1</span>;</span><br /><span class="line"><span class="keyword">let</span> a = <span class="number">2</span>; <span class="comment">// Identifier 'a' has already been declared</span></span><br /><span class="line"></span><br /><span class="line"><span class="comment">// 一个经典例子</span></span><br /><span class="line"><span class="comment">// 使用 var时</span></span><br /><span class="line"><span class="keyword">var</span> fnArr = [];</span><br /><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++) {</span><br /><span class="line">  fnArr[i] = <span class="function"><span class="params">()</span> =&gt;</span> {<span class="built_in">console</span>.log(i)}</span><br /><span class="line">}</span><br /><span class="line">fnArr[<span class="number">2</span>](); <span class="comment">// 10</span></span><br /><span class="line"></span><br /><span class="line"><span class="comment">// 使用 let时</span></span><br /><span class="line"><span class="keyword">var</span> fnArr = [];</span><br /><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++) {</span><br /><span class="line">  fnArr[i] = <span class="function"><span class="params">()</span> =&gt;</span> {<span class="built_in">console</span>.log(i)}</span><br /><span class="line">}</span><br /><span class="line">fnArr[<span class="number">2</span>](); <span class="comment">// 2</span></span><br /><span class="line"></span><br /><span class="line"><span class="comment">// 变量提升的问题</span></span><br /><span class="line">(<span class="function"><span class="params">()</span> =&gt;</span> {</span><br /><span class="line">  <span class="built_in">console</span>.log(b); <span class="comment">// undefined</span></span><br /><span class="line">  <span class="built_in">console</span>.log(a); <span class="comment">// a is not defined</span></span><br /><span class="line">  <span class="keyword">let</span> a = <span class="number">1</span>;</span><br /><span class="line">  <span class="keyword">var</span> b = <span class="number">2</span>;</span><br /><span class="line">})();</span><br /><span class="line"></span><br /><span class="line"><span class="comment">// 比较有意思的暂时性死区问题</span></span><br /><span class="line"><span class="keyword">var</span> arg = <span class="number">1</span>;</span><br /><span class="line"></span><br /><span class="line">(<span class="function"><span class="params">()</span> =&gt;</span> { <span class="comment">// 在此函数作用域中产生了一个暂时性死区，此块级作用域中的将忽略外部的arg，但是let不存在变量提升，故报错提示</span></span><br /><span class="line">  <span class="built_in">console</span>.log(arg); <span class="comment">// arg is not defined</span></span><br /><span class="line">  <span class="keyword">typeof</span> arg; <span class="comment">// arg  is not defined (typeof 不再是百分百安全的操作)</span></span><br /><span class="line">  <span class="keyword">let</span> arg = <span class="number">2</span>;</span><br /><span class="line">}))();</span><br /><span class="line"></span><br /><span class="line"><span class="comment">// 隐蔽的死区</span></span><br /><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params">x = y, y = <span class="number">11</span></span>) </span>{</span><br /><span class="line">  <span class="keyword">return</span> [x, y];</span><br /><span class="line">}</span><br /><span class="line">test(); <span class="comment">// 报错</span></span><br /><span class="line"></span><br /><span class="line"><span class="keyword">var</span> x = x; <span class="comment">// 不报错</span></span><br /><span class="line"><span class="keyword">let</span> x = x; <span class="comment">// x is not defined</span></span><br /><span class="line"></span><br /><span class="line"><span class="comment">// 块级作用域</span></span><br /><span class="line">{ <span class="keyword">let</span> a = <span class="number">233</span>; }</span><br /><span class="line">{ <span class="keyword">var</span> b = <span class="number">2</span>; }</span><br /><span class="line"><span class="built_in">console</span>.log(b); <span class="comment">// 2</span></span><br /><span class="line"><span class="built_in">console</span>.log(a) <span class="comment">// a is not defined</span></span><br /></pre>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</figure>
-								<h3 id="const"><a href="#const" class="headerlink" title="const"></a>const</h3>
-								<ul>
-									<li>只在当前块级作用域有效(<em>产生暂时性死区</em>)</li>
-									<li>不可重复定义</li>
-									<li>不会变量提升</li>
-									<li>声明时必须赋值，不可重复赋值</li>
-								</ul>
-								<figure class="highlight javascript">
-									<table>
-										<tbody>
-											<tr>
-												<td class="gutter">
-													<pre><span class="line">1</span><br /><span class="line">2</span><br /></pre>
-												</td>
-												<td class="code">
-													<pre><span class="line"><span class="keyword">const</span> a = <span class="number">1</span>;</span><br /><span class="line">a = <span class="number">2</span>; <span class="comment">// Uncaught TypeError: Assignment to constant variable.</span></span><br /></pre>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</figure>
-								<h4 id="本质"><a href="#本质" class="headerlink" title="本质"></a>本质</h4>
-								<p>引自 阮一峰 <a href="http://es6.ruanyifeng.com/#docs/let" target="_blank"
-										rel="noopener">ECMAScript 6 入门</a></p>
-								<blockquote>
-									<p>const实际上保证的，并不是变量的值不得改动，而是变量指向的那个内存地址不得改动。对于简单类型的数据（数值、字符串、布尔值），值就保存在变量指向的那个内存地址，因此等同于常量。但对于复合类型的数据（主要是对象和数组），变量指向的内存地址，保存的只是一个指针，const只能保证这个指针是固定的，至于它指向的数据结构是不是可变的，就完全不能控制了。因此，将一个对象声明为常量必须非常小心。
+							</li>
+<li>
+								<div class="img">
+									<a href='https://jinmengqiang.cn/a/202108/50.html'><img src='https://jinmengqiang.cn/upload/2108/1-210P51541435a.jpg' class='lazy'/></a>
+								</div>
+								<div class="imgr">
+									<h2><a href="https://jinmengqiang.cn/a/202108/50.html"
+											title="一指禅自动跳过广告v3.1.101pro无广告版">一指禅自动跳过广告v3.1.101pro无广告版</a>
+									</h2>
+									<p>一指禅自动跳过广告是一款非常好用的广告跳过手机工具软件，软件能够提供给用户非常强大的广告跳过功能，不论是应用的打开广告还是使用过程中出现的广告，都能够轻松屏蔽调过...
 									</p>
-								</blockquote>
-								<h2 id="变量解构赋值"><a href="#变量解构赋值" class="headerlink" title="* 变量解构赋值"></a>* 变量解构赋值</h2>
-								<h3 id="数组解构"><a href="#数组解构" class="headerlink" title="数组解构"></a>数组解构</h3>
-								<figure class="highlight javascript">
-									<table>
-										<tbody>
-											<tr>
-												<td class="gutter">
-													<pre><span class="line">1</span><br /><span class="line">2</span><br /><span class="line">3</span><br /><span class="line">4</span><br /><span class="line">5</span><br /><span class="line">6</span><br /><span class="line">7</span><br /><span class="line">8</span><br /><span class="line">9</span><br /><span class="line">10</span><br /><span class="line">11</span><br /><span class="line">12</span><br /><span class="line">13</span><br /><span class="line">14</span><br /><span class="line">15</span><br /><span class="line">16</span><br /><span class="line">17</span><br /><span class="line">18</span><br /><span class="line">19</span><br /><span class="line">20</span><br /><span class="line">21</span><br /><span class="line">22</span><br /><span class="line">23</span><br /><span class="line">24</span><br /><span class="line">25</span><br /><span class="line">26</span><br /><span class="line">27</span><br /><span class="line">28</span><br /><span class="line">29</span><br /><span class="line">30</span><br /><span class="line">31</span><br /><span class="line">32</span><br /></pre>
-												</td>
-												<td class="code">
-													<pre><span class="line"><span class="comment">// 基本用法</span></span><br /><span class="line"><span class="keyword">let</span> [a, b, c] = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br /><span class="line"></span><br /><span class="line"><span class="comment">// 嵌套方式</span></span><br /><span class="line"><span class="keyword">let</span> [a, [b], c] = [<span class="number">1</span>,[<span class="number">2</span>], <span class="number">3</span>];</span><br /><span class="line"></span><br /><span class="line"><span class="comment">// 默认值</span></span><br /><span class="line"><span class="keyword">let</span> [a = <span class="number">2</span>] = [];</span><br /><span class="line">a <span class="comment">// a = 2 // 匹配失败时，将会为a赋予默认值</span></span><br /><span class="line"><span class="comment">// 隐蔽的暂时性死区的问题</span></span><br /><span class="line"><span class="keyword">let</span> [x = y, y = <span class="number">2</span>] = [<span class="number">1</span>, <span class="number">2</span>]; <span class="comment">// y is not defined</span></span><br /><span class="line"></span><br /><span class="line"><span class="keyword">var</span> [x = y, y = <span class="number">3</span>] = [<span class="number">1</span>, <span class="number">2</span>]; <span class="comment">// correct!</span></span><br /><span class="line"></span><br /><span class="line"><span class="comment">// 个人理解为，使用let声明时候的情况，类似于</span></span><br /><span class="line"><span class="comment">// let x = y;</span></span><br /><span class="line"><span class="comment">// let y = 2;</span></span><br /><span class="line"><span class="comment">// 不存在变量提升，故提示 y is not defined</span></span><br /><span class="line"><span class="comment">// 而在var方式声明时，存在变量提升，情况类似于</span></span><br /><span class="line"><span class="comment">// var x = undefined;</span></span><br /><span class="line"><span class="comment">// var y = unefined;</span></span><br /><span class="line"><span class="comment">// x = y;</span></span><br /><span class="line"><span class="comment">// y = 2;</span></span><br /><span class="line"><span class="comment">// 故不会有错</span></span><br /><span class="line"></span><br /><span class="line"><span class="comment">// 默认值函数的惰性调用</span></span><br /><span class="line"><span class="keyword">const</span> f = <span class="function"><span class="params">()</span> =&gt;</span> {</span><br /><span class="line">  <span class="built_in">console</span>.log(<span class="string">'i’m invoked!'</span>);</span><br /><span class="line">}</span><br /><span class="line"></span><br /><span class="line"><span class="keyword">let</span> [fc = f()] = [<span class="number">1</span>]; <span class="comment">//函数f将不会执行</span></span><br /><span class="line"><span class="keyword">let</span> [fc = f()] = []; <span class="comment">// i’m invoked!</span></span><br /></pre>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</figure>
-								<h3 id="对象解构"><a href="#对象解构" class="headerlink" title="对象解构"></a>对象解构</h3>
-								<figure class="highlight javascript">
-									<table>
-										<tbody>
-											<tr>
-												<td class="gutter">
-													<pre><span class="line">1</span><br /><span class="line">2</span><br /><span class="line">3</span><br /><span class="line">4</span><br /><span class="line">5</span><br /><span class="line">6</span><br /><span class="line">7</span><br /><span class="line">8</span><br /><span class="line">9</span><br /><span class="line">10</span><br /><span class="line">11</span><br /><span class="line">12</span><br /><span class="line">13</span><br /><span class="line">14</span><br /><span class="line">15</span><br /><span class="line">16</span><br /><span class="line">17</span><br /><span class="line">18</span><br /><span class="line">19</span><br /><span class="line">20</span><br /><span class="line">21</span><br /><span class="line">22</span><br /></pre>
-												</td>
-												<td class="code">
-													<pre><span class="line"><span class="comment">// 基本用法</span></span><br /><span class="line"><span class="keyword">let</span> {a, b, c} = {<span class="attr">a</span>: <span class="number">1</span>, <span class="attr">b</span>: <span class="number">2</span>, <span class="attr">c</span>: <span class="number">3</span>};</span><br /><span class="line"></span><br /><span class="line"><span class="comment">// 别名方式</span></span><br /><span class="line"><span class="keyword">let</span> {a, <span class="attr">b</span>: _b} = {<span class="attr">a</span>: <span class="number">1</span>, <span class="attr">b</span>: <span class="number">2</span>};</span><br /><span class="line">_b <span class="comment">// 2</span></span><br /><span class="line"></span><br /><span class="line"><span class="comment">// 嵌套方式</span></span><br /><span class="line"><span class="keyword">let</span> obj = {<span class="attr">a</span>: <span class="number">1</span>, <span class="attr">b</span>: {<span class="attr">c</span>: [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]},<span class="attr">d</span>: [<span class="number">123</span>]};</span><br /><span class="line"><span class="keyword">let</span> {a, b, <span class="attr">b</span>: {<span class="attr">c</span>:[e]}, d} = obj;</span><br /><span class="line"><span class="comment">// a = 1</span></span><br /><span class="line"><span class="comment">// b = {c: [1,2,3]} 可以使用多写一个b,把b当做变量而非模式</span></span><br /><span class="line"><span class="comment">// e = 1</span></span><br /><span class="line"><span class="comment">// d = [123]</span></span><br /><span class="line"></span><br /><span class="line"><span class="comment">// 嵌套赋值方式</span></span><br /><span class="line"><span class="keyword">let</span> obj = {};</span><br /><span class="line"><span class="keyword">let</span> arr = [];</span><br /><span class="line"></span><br /><span class="line">({<span class="attr">a</span>: obj.a, <span class="attr">b</span>: arr[<span class="number">0</span>]} = {<span class="attr">a</span>:<span class="number">1</span>, <span class="attr">b</span>: <span class="number">2</span>}) <span class="comment">// 使用圆括号</span></span><br /><span class="line">obj <span class="comment">// {a: 1}</span></span><br /><span class="line">arr <span class="comment">// [2]</span></span><br /></pre>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</figure>
-								<h3 id="字符串解构"><a href="#字符串解构" class="headerlink" title="字符串解构"></a>字符串解构</h3>
-								<figure class="highlight javascript">
-									<table>
-										<tbody>
-											<tr>
-												<td class="gutter">
-													<pre><span class="line">1</span><br /><span class="line">2</span><br /><span class="line">3</span><br /><span class="line">4</span><br /><span class="line">5</span><br /></pre>
-												</td>
-												<td class="code">
-													<pre><span class="line"><span class="keyword">let</span> [a, b, c, d] = <span class="string">'123456'</span>;</span><br /><span class="line">a <span class="comment">// 1</span></span><br /><span class="line">b <span class="comment">// 2</span></span><br /><span class="line"><span class="keyword">let</span> {length} = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>];</span><br /><span class="line">length <span class="comment">// 3</span></span><br /></pre>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</figure>
-								<h3 id="数值和布尔值解构"><a href="#数值和布尔值解构" class="headerlink" title="数值和布尔值解构"></a>数值和布尔值解构
-								</h3>
-								<figure class="highlight javascript">
-									<table>
-										<tbody>
-											<tr>
-												<td class="gutter">
-													<pre><span class="line">1</span><br /><span class="line">2</span><br /></pre>
-												</td>
-												<td class="code">
-													<pre><span class="line"><span class="keyword">let</span> { toString } = <span class="number">123</span>;</span><br /><span class="line">toString <span class="comment">// function toString() { [native code] }</span></span><br /></pre>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</figure>
-								<h3 id="函数参数解构"><a href="#函数参数解构" class="headerlink" title="函数参数解构"></a>函数参数解构</h3>
-								<figure class="highlight javascript">
-									<table>
-										<tbody>
-											<tr>
-												<td class="gutter">
-													<pre><span class="line">1</span><br /><span class="line">2</span><br /><span class="line">3</span><br /><span class="line">4</span><br /><span class="line">5</span><br /></pre>
-												</td>
-												<td class="code">
-													<pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">add</span>(<span class="params">[x, y]</span>) </span>{</span><br /><span class="line">  <span class="keyword">return</span> x+y;</span><br /><span class="line">}</span><br /><span class="line"></span><br /><span class="line">add([<span class="number">1</span>,<span class="number">3</span>]); <span class="comment">// 4</span></span><br /></pre>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</figure>
-								<h2 id="字符串的扩展"><a href="#字符串的扩展" class="headerlink" title="* 字符串的扩展"></a>* 字符串的扩展</h2>
-								<h3 id="1、字符的-Unicode-表示法"><a href="#1、字符的-Unicode-表示法" class="headerlink"
-										title="1、字符的 Unicode 表示法"></a>1、字符的 Unicode 表示法</h3>
-								<h3 id="2、codePointAt"><a href="#2、codePointAt" class="headerlink"
-										title="2、codePointAt()"></a>2、codePointAt()</h3>
-								<h3 id="3、String-fromCodePoint"><a href="#3、String-fromCodePoint" class="headerlink"
-										title="3、String.fromCodePoint()"></a>3、String.fromCodePoint()</h3>
-								<h3 id="4、字符串的遍历器接口"><a href="#4、字符串的遍历器接口" class="headerlink"
-										title="4、字符串的遍历器接口"></a>4、字符串的遍历器接口</h3>
-								<h3 id="5、at"><a href="#5、at" class="headerlink" title="5、at()"></a>5、at()</h3>
-								<h3 id="6、normalize"><a href="#6、normalize" class="headerlink"
-										title="6、normalize()"></a>6、normalize()</h3>
-								<h3 id="7、includes-startsWith-endsWith"><a href="#7、includes-startsWith-endsWith"
-										class="headerlink"
-										title="7、includes(), startsWith(), endsWith()"></a>7、includes(), startsWith(),
-									endsWith()</h3>
-								<h3 id="8、repeat"><a href="#8、repeat" class="headerlink"
-										title="8、repeat()"></a>8、repeat()</h3>
-								<h3 id="9、padStart-，padEnd"><a href="#9、padStart-，padEnd" class="headerlink"
-										title="9、padStart()，padEnd()"></a>9、padStart()，padEnd()</h3>
-								<h3 id="10、matchAll"><a href="#10、matchAll" class="headerlink"
-										title="10、matchAll()"></a>10、matchAll()</h3>
-								<blockquote>
-									<p>以上十小节略过，需要了去查api就好了</p>
-								</blockquote>
-								<h3 id="11、模板字符串"><a href="#11、模板字符串" class="headerlink" title="11、模板字符串"></a>11、模板字符串
-								</h3>
-								<figure class="highlight javascript">
-									<table>
-										<tbody>
-											<tr>
-												<td class="gutter">
-													<pre><span class="line">1</span><br /><span class="line">2</span><br /><span class="line">3</span><br /><span class="line">4</span><br /><span class="line">5</span><br /><span class="line">6</span><br /><span class="line">7</span><br /><span class="line">8</span><br /><span class="line">9</span><br /><span class="line">10</span><br /><span class="line">11</span><br /><span class="line">12</span><br /><span class="line">13</span><br /><span class="line">14</span><br /></pre>
-												</td>
-												<td class="code">
-													<pre><span class="line">  <span class="keyword">let</span> name = <span class="string">'Simple'</span>;</span><br /><span class="line">  <span class="keyword">let</span> age = <span class="number">26</span>;</span><br /><span class="line">  <span class="keyword">let</span> year = <span class="number">2018</span>;</span><br /><span class="line"></span><br /><span class="line">  <span class="built_in">console</span>.log(<span class="string">`I'm <span class="subst">${name}</span>, I was born in <span class="subst">${year-age}</span>`</span>) <span class="comment">// I'm Simple, I was born in 1992</span></span><br /><span class="line"></span><br /><span class="line">  <span class="comment">// 模板字符串可以嵌套(可以用替代掉一些模板引擎了)</span></span><br /><span class="line">  <span class="string">`&lt;table&gt;</span></span><br /><span class="line"><span class="string">  <span class="subst">${[{first: <span class="number">1</span>, last: <span class="number">2</span>}</span>].map(addr =&gt; `</span></span><br /><span class="line">    &lt;tr&gt;&lt;td&gt;${addr.first}&lt;/td&gt;&lt;/tr&gt;</span><br /><span class="line">    &lt;tr&gt;&lt;td&gt;${addr.last}&lt;/td&gt;&lt;/tr&gt;</span><br /><span class="line">  <span class="string">`).join('')}</span></span><br /><span class="line"><span class="string">  &lt;/table&gt;</span></span><br /><span class="line"><span class="string">`</span></span><br /></pre>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</figure>
-								<h3 id="11、实例"><a href="#11、实例" class="headerlink" title="11、实例"></a>11、实例</h3>
-								<h2 id="正则的扩展"><a href="#正则的扩展" class="headerlink" title="正则的扩展"></a>正则的扩展</h2>
-								<h2 id="数值的扩展"><a href="#数值的扩展" class="headerlink" title="数值的扩展"></a>数值的扩展</h2>
-								<h2 id="函数的扩展"><a href="#函数的扩展" class="headerlink" title="函数的扩展"></a>函数的扩展</h2>
-								<h2 id="数组的扩展"><a href="#数组的扩展" class="headerlink" title="* 数组的扩展"></a>* 数组的扩展</h2>
-								<h2 id="对象的扩展"><a href="#对象的扩展" class="headerlink" title="对象的扩展"></a>对象的扩展</h2>
-								<h2 id="Symbol"><a href="#Symbol" class="headerlink" title="* Symbol"></a>* Symbol</h2>
-								<h2 id="Set和Map"><a href="#Set和Map" class="headerlink" title="* Set和Map"></a>* Set和Map
-								</h2>
-								<h2 id="Proxy"><a href="#Proxy" class="headerlink" title="* Proxy"></a>* Proxy</h2>
-								<h2 id="Reflect"><a href="#Reflect" class="headerlink" title="* Reflect"></a>* Reflect
-								</h2>
-								<h2 id="Promise"><a href="#Promise" class="headerlink" title="* Promise"></a>* Promise
-								</h2>
-								<h2 id="Iterator-和-for…of循环"><a href="#Iterator-和-for…of循环" class="headerlink"
-										title="* Iterator 和 for…of循环"></a>* Iterator 和 for…of循环</h2>
-								<h2 id="Generator-函数相关"><a href="#Generator-函数相关" class="headerlink"
-										title="* Generator 函数相关"></a>* Generator 函数相关</h2>
-								<h2 id="async-await"><a href="#async-await" class="headerlink"
-										title="* async await"></a>* async await</h2>
-								<h2 id="class"><a href="#class" class="headerlink" title="* class"></a>* class</h2>
-								<h2 id="Decorator"><a href="#Decorator" class="headerlink" title="* Decorator"></a>*
-									Decorator</h2>
-								<h2 id="Module"><a href="#Module" class="headerlink" title="* Module"></a>* Module</h2>
-								<p> <a href="/2018/05/22/ES6/#post-footer" class="postShorten-excerpt_link link"> 评论和共享
-									</a> </p>
-							</div>
-						</div>
-					</article>
-					<article class="postShorten postShorten--thumbnailimg-bottom">
-						<div class="postShorten-wrap">
-							<div class="postShorten-header">
-								<h1 class="postShorten-title"> <a class="link-unstyled" href="/2018/04/04/test/"> 重开博客
-									</a> </h1>
-								<div class="postShorten-meta">
-									<time datetime="2018-04-04T14:53:43+08:00"> 4月 04, 2018 </time>
+									<div class="info">
+										<span><a href="https://jinmengqiang.cn/a/mobile/" title="手机资源"><i class="fa fa-columns"></i>手机资源</a></span>
+										<span><i class="fa fa-clock-o"></i>2021-08-05</span>
+										<span><i class="fa fa-eye"></i>4388</span>
+										<span class="tag"><a href=/tags.php?/安卓 target=_blank>安卓</a> 
+<a href=/tags.php?/android target=_blank>android</a></span>
+									</div>
 								</div>
-							</div>
-							<div class="postShorten-content">
-								<h1 id="博客重开"><a href="#博客重开" class="headerlink" title="博客重开"></a>博客重开</h1>
-								<blockquote>
-									<p>虽然本来就没什么东西的</p>
-								</blockquote>
-								<p> <a href="/2018/04/04/test/#post-footer" class="postShorten-excerpt_link link"> 评论和共享
-									</a> </p>
-							</div>
-						</div>
-					</article>
-					<div class="pagination-bar">
-						<ul class="pagination">
-							<li class="pagination-number">第 1 页 共 1 页</li>
+							</li>
+<li>
+								<div class="img">
+									<a href='https://jinmengqiang.cn/a/202108/49.html'><img src='https://jinmengqiang.cn/upload/2108/1-210P5160935I0.jpg' class='lazy'/></a>
+								</div>
+								<div class="imgr">
+									<h2><a href="https://jinmengqiang.cn/a/202108/49.html"
+											title="钉钉打卡助手2021.8.3无需root 支持鸿蒙2.0.145">钉钉打卡助手2021.8.3无需root 支持鸿蒙2.0.145</a>
+									</h2>
+									<p>测试环境：荣耀8青春版EMUI5.0.3 安卓7.0、华为P40 EMUI11.0.0 安卓10，无需ROOT 支持鸿蒙，钉管那里不会提示，钉管那里不会提示钉管那里不会提示钉管那里不会提示!!!!!都测试过!!!! 测试时间...
+									</p>
+									<div class="info">
+										<span><a href="https://jinmengqiang.cn/a/mobile/" title="手机资源"><i class="fa fa-columns"></i>手机资源</a></span>
+										<span><i class="fa fa-clock-o"></i>2021-08-05</span>
+										<span><i class="fa fa-eye"></i>2906</span>
+										<span class="tag"><a href=/tags.php?/钉钉打卡 target=_blank>钉钉打卡</a> 
+<a href=/tags.php?/鸿蒙 target=_blank>鸿蒙</a></span>
+									</div>
+								</div>
+							</li>
+<li>
+								<div class="img">
+									<a href='https://jinmengqiang.cn/a/202107/46.html'><img src='//i.jinmengqiang.cn/random/6.jpg' class='lazy' /></a>
+								</div>
+								<div class="imgr">
+									<h2><a href="https://jinmengqiang.cn/a/202107/46.html"
+											title="dede调用调用当前栏目下所有文档总数统计">dede调用调用当前栏目下所有文档总数统计</a>
+									</h2>
+									<p>dede调用自定义栏目模型 调用当前栏目下所有文档总数统计，因为在开发一套织梦网址导航模板的时候遇到一个需要统计当前栏目下所有提交网址的总数量，需要用到这个功能，方法如下...
+									</p>
+									<div class="info">
+										<span><a href="https://jinmengqiang.cn/a/web/" title="建站经验"><i class="fa fa-columns"></i>建站经验</a></span>
+										<span><i class="fa fa-clock-o"></i>2021-08-02</span>
+										<span><i class="fa fa-eye"></i>233</span>
+										<span class="tag"><a href=/tags.php?/dedecms target=_blank>dedecms</a></span>
+									</div>
+								</div>
+							</li>
+<li>
+								<div class="img">
+									<a href='https://jinmengqiang.cn/a/202108/48.html'><img src='//i.jinmengqiang.cn/random/2.jpg' class='lazy' /></a>
+								</div>
+								<div class="imgr">
+									<h2><a href="https://jinmengqiang.cn/a/202108/48.html"
+											title="dede开启网站绝对路径后软件下载地址出错">dede开启网站绝对路径后软件下载地址出错</a>
+									</h2>
+									<p>今天教大家如何解决（织梦CMS启用绝对网址后，下载页面的软件下载地址出错） 织梦开启绝对路径后软件模型，下载地址填https://开头的，调用出来会显示 域名+https://网址，如下图网址...
+									</p>
+									<div class="info">
+										<span><a href="https://jinmengqiang.cn/a/web/" title="建站经验"><i class="fa fa-columns"></i>建站经验</a></span>
+										<span><i class="fa fa-clock-o"></i>2021-08-02</span>
+										<span><i class="fa fa-eye"></i>185</span>
+										<span class="tag"><a href=/tags.php?/dedecms target=_blank>dedecms</a></span>
+									</div>
+								</div>
+							</li>
+<li>
+								<div class="img">
+									<a href='https://jinmengqiang.cn/a/202108/47.html'><img src='https://jinmengqiang.cn/upload/2108/1-210P213433B55-lp.png' class='lazy'/></a>
+								</div>
+								<div class="imgr">
+									<h2><a href="https://jinmengqiang.cn/a/202108/47.html"
+											title="Office Tool Plus 8.2.3.2 office部署工具">Office Tool Plus 8.2.3.2 office部署工具</a>
+									</h2>
+									<p>Office Tool Plus（简称OTP）是一款微软Office办公软件下载、安装、管理的部署工具。 支持下列产品： Microsoft 365 Office 2021、2019、2016 Visio Online Plan 2 2021、2019、2016 Project Online Desktop Client 202...
+									</p>
+									<div class="info">
+										<span><a href="https://jinmengqiang.cn/a/soft/" title="电脑软件"><i class="fa fa-columns"></i>电脑软件</a></span>
+										<span><i class="fa fa-clock-o"></i>2021-08-02</span>
+										<span><i class="fa fa-eye"></i>195</span>
+										<span class="tag"><a href=/tags.php?/office target=_blank>office</a></span>
+									</div>
+								</div>
+							</li>
+<li>
+								<div class="img">
+									<a href='https://jinmengqiang.cn/a/202107/19.html'><img src='//i.jinmengqiang.cn/random/6.jpg' class='lazy' /></a>
+								</div>
+								<div class="imgr">
+									<h2><a href="https://jinmengqiang.cn/a/202107/19.html"
+											title="dede不能添加新变量,变量名不能为空">dede不能添加新变量,变量名不能为空</a>
+									</h2>
+									<p>本文讲述：dede不能添加新变量 变量名不能为空并且必须为[a-z_]组成，“变量名不能为空并且必须为[a-z_]组成“ 报错的解决办法。 dedecms5.7 稍微新一点的版本 更新过以后，在添加新系统变量的...
+									</p>
+									<div class="info">
+										<span><a href="https://jinmengqiang.cn/a/web/" title="建站经验"><i class="fa fa-columns"></i>建站经验</a></span>
+										<span><i class="fa fa-clock-o"></i>2021-08-02</span>
+										<span><i class="fa fa-eye"></i>4802</span>
+										<span class="tag"><a href=/tags.php?/dedecms target=_blank>dedecms</a></span>
+									</div>
+								</div>
+							</li>
+<li>
+								<div class="img">
+									<a href='https://jinmengqiang.cn/a/202107/45.html'><img src='https://jinmengqiang.cn/upload/2107/1-210I115212H63-lp.jpg' class='lazy'/></a>
+								</div>
+								<div class="imgr">
+									<h2><a href="https://jinmengqiang.cn/a/202107/45.html"
+											title="dsicuz禁止用户浏览帖子但是可以查看版块的设置">dsicuz禁止用户浏览帖子但是可以查看版块的设置</a>
+									</h2>
+									<p>dsicuz禁止用户浏览帖子但是可以查看版块的设置方法 用户组，游客 阅读权限设置为 0 把某些可以让游客访问的版块权限 勾选游客用户组浏览版块即可 其它把不让访问的版块 就不勾选游...
+									</p>
+									<div class="info">
+										<span><a href="https://jinmengqiang.cn/a/web/" title="建站经验"><i class="fa fa-columns"></i>建站经验</a></span>
+										<span><i class="fa fa-clock-o"></i>2021-07-31</span>
+										<span><i class="fa fa-eye"></i>149</span>
+										<span class="tag"><a href=/tags.php?/dsicuz target=_blank>dsicuz</a></span>
+									</div>
+								</div>
+							</li>
+<li>
+								<div class="img">
+									<a href='https://jinmengqiang.cn/a/202107/42.html'><img src='//i.jinmengqiang.cn/random/10.jpg' class='lazy' /></a>
+								</div>
+								<div class="imgr">
+									<h2><a href="https://jinmengqiang.cn/a/202107/42.html"
+											title="dede只调用当天发布的文档">dede只调用当天发布的文档</a>
+									</h2>
+									<p>dede只调用当天发布的文档 dede文章的调用 我需要织梦的模板分别调用,一天内发布的文章,三天内发布的文章,和七天内发布的文章,请问是代码是怎么写的,如何调用,如图所示. 点一天内,显...
+									</p>
+									<div class="info">
+										<span><a href="https://jinmengqiang.cn/a/web/" title="建站经验"><i class="fa fa-columns"></i>建站经验</a></span>
+										<span><i class="fa fa-clock-o"></i>2021-07-31</span>
+										<span><i class="fa fa-eye"></i>161</span>
+										<span class="tag"><a href=/tags.php?/dedecms target=_blank>dedecms</a></span>
+									</div>
+								</div>
+							</li>
+<li>
+								<div class="img">
+									<a href='https://jinmengqiang.cn/a/202107/44.html'><img src='https://jinmengqiang.cn/upload/2107/1-210I1151P2964-lp.jpg' class='lazy'/></a>
+								</div>
+								<div class="imgr">
+									<h2><a href="https://jinmengqiang.cn/a/202107/44.html"
+											title="dede tag不以关键词作为url以数字作为url方法修改">dede tag不以关键词作为url以数字作为url方法修改</a>
+									</h2>
+									<p>dede tag不以关键词作为url以数字作为url方法修改 打开/include/taglib/tag.lib.php 查找以下代码： $row[link] = $cfg_cmsurl./tags.php?/.urlencode($row[keyword])./; 替换为： $row[link] = $cfg_cmsurl./tags.php?/.urlenco...
+									</p>
+									<div class="info">
+										<span><a href="https://jinmengqiang.cn/a/web/" title="建站经验"><i class="fa fa-columns"></i>建站经验</a></span>
+										<span><i class="fa fa-clock-o"></i>2021-07-31</span>
+										<span><i class="fa fa-eye"></i>71</span>
+										<span class="tag"><a href=/tags.php?/dedecms target=_blank>dedecms</a></span>
+									</div>
+								</div>
+							</li>
+<li>
+								<div class="img">
+									<a href='https://jinmengqiang.cn/a/202107/43.html'><img src='https://jinmengqiang.cn/upload/2107/1-210I115163c20-lp.jpg' class='lazy'/></a>
+								</div>
+								<div class="imgr">
+									<h2><a href="https://jinmengqiang.cn/a/202107/43.html"
+											title="dede tag彩色随机大小的样式修改方法">dede tag彩色随机大小的样式修改方法</a>
+									</h2>
+									<p>dede tag彩色随机大小的样式修改方法，打开include/common.func.php 在最下面添加以下代码： //TAG彩色 jinmengqiang.cnfunction getTagStyle() { $minFontSize=8; //最小字体大小,可根据需要自行更改 $maxFontSi...
+									</p>
+									<div class="info">
+										<span><a href="https://jinmengqiang.cn/a/web/" title="建站经验"><i class="fa fa-columns"></i>建站经验</a></span>
+										<span><i class="fa fa-clock-o"></i>2021-07-31</span>
+										<span><i class="fa fa-eye"></i>161</span>
+										<span class="tag"><a href=/tags.php?/dedecms target=_blank>dedecms</a></span>
+									</div>
+								</div>
+							</li>
+<li>
+								<div class="img">
+									<a href='https://jinmengqiang.cn/a/202107/41.html'><img src='//i.jinmengqiang.cn/random/1.jpg' class='lazy' /></a>
+								</div>
+								<div class="imgr">
+									<h2><a href="https://jinmengqiang.cn/a/202107/41.html"
+											title="PHPnow开启PHP扩展里openssl支持的方法">PHPnow开启PHP扩展里openssl支持的方法</a>
+									</h2>
+									<p>PHPnow 是 Win32 下绿色的 Apache + PHP + MySQL 环境套件包。简易安装、快速搭建支持虚拟主机的 PHP 环境。更多介绍《PHP服务套件 PHPnow1.5.6》及安装《PHPnow 快速搭建Apache+PHP+MySQL环境 》。下面将...
+									</p>
+									<div class="info">
+										<span><a href="https://jinmengqiang.cn/a/web/" title="建站经验"><i class="fa fa-columns"></i>建站经验</a></span>
+										<span><i class="fa fa-clock-o"></i>2021-07-31</span>
+										<span><i class="fa fa-eye"></i>101</span>
+										<span class="tag"><a href=/tags.php?/PHPnow target=_blank>PHPnow</a> 
+<a href=/tags.php?/openssl target=_blank>openssl</a> 
+<a href=/tags.php?/PHP扩展 target=_blank>PHP扩展</a></span>
+									</div>
+								</div>
+							</li>
+<li>
+								<div class="img">
+									<a href='https://jinmengqiang.cn/a/202107/40.html'><img src='//i.jinmengqiang.cn/random/10.jpg' class='lazy' /></a>
+								</div>
+								<div class="imgr">
+									<h2><a href="https://jinmengqiang.cn/a/202107/40.html"
+											title="dede检测重复自定义字段禁止发布">dede检测重复自定义字段禁止发布</a>
+									</h2>
+									<p>织梦文档重复，要怎么实现标题重复时不允许发文章，其实后台是有个重复检测功能，但是添加文章的时候都能添加成，这显然没什么用原来的检测功能，现在我们要做的是在点击添加...
+									</p>
+									<div class="info">
+										<span><a href="https://jinmengqiang.cn/a/web/" title="建站经验"><i class="fa fa-columns"></i>建站经验</a></span>
+										<span><i class="fa fa-clock-o"></i>2021-07-31</span>
+										<span><i class="fa fa-eye"></i>174</span>
+										<span class="tag"><a href=/tags.php?/dedecms target=_blank>dedecms</a></span>
+									</div>
+								</div>
+							</li>
+<li>
+								<div class="img">
+									<a href='https://jinmengqiang.cn/a/202107/39.html'><img src='//i.jinmengqiang.cn/random/10.jpg' class='lazy' /></a>
+								</div>
+								<div class="imgr">
+									<h2><a href="https://jinmengqiang.cn/a/202107/39.html"
+											title="dede列表页修改子栏目列表名称中/符号">dede列表页修改子栏目列表名称中/符号</a>
+									</h2>
+									<p>我们知道，在使用DEDECMS时，创建的子栏目列表名称是这样的例子：顶级栏目名称 / 子栏目名称 网站名称．于是我们由于SEO或者用于美观方面，都是想去掉顶级栏目名称与子栏目名称中...
+									</p>
+									<div class="info">
+										<span><a href="https://jinmengqiang.cn/a/web/" title="建站经验"><i class="fa fa-columns"></i>建站经验</a></span>
+										<span><i class="fa fa-clock-o"></i>2021-07-31</span>
+										<span><i class="fa fa-eye"></i>127</span>
+										<span class="tag"><a href=/tags.php?/dedecms target=_blank>dedecms</a></span>
+									</div>
+								</div>
+							</li>
+<li>
+								<div class="img">
+									<a href='https://jinmengqiang.cn/a/202107/38.html'><img src='https://jinmengqiang.cn/upload/2107/1-210I11503422P-lp.jpg' class='lazy'/></a>
+								</div>
+								<div class="imgr">
+									<h2><a href="https://jinmengqiang.cn/a/202107/38.html"
+											title="dede编辑器修改成纯文本编辑器的方法">dede编辑器修改成纯文本编辑器的方法</a>
+									</h2>
+									<p>我在做优秀啦网站大全的时候需要的正文内容都不需要设置什么文字样式，所以我需要把编辑器上的工具全部取消掉，包括会员投稿中的编辑器工具栏全部取消掉或者屏蔽隐藏掉，所以...
+									</p>
+									<div class="info">
+										<span><a href="https://jinmengqiang.cn/a/web/" title="建站经验"><i class="fa fa-columns"></i>建站经验</a></span>
+										<span><i class="fa fa-clock-o"></i>2021-07-31</span>
+										<span><i class="fa fa-eye"></i>183</span>
+										<span class="tag"><a href=/tags.php?/dedecms target=_blank>dedecms</a></span>
+									</div>
+								</div>
+							</li>
+
 						</ul>
+						<div>
+						</div>
 					</div>
-				</section>
-				<footer id="footer" class="main-content-wrap">
-					<span class="copyrights"> Copyrights &copy; 2018 Simple. All Rights Reserved. </span>
-				</footer>
-			</div>
-		</div>
-		<div id="about">
-			<div id="about-card">
-				<div id="about-btn-close">
-					<i class="fa fa-remove"></i>
-				</div>
-				<img id="about-card-picture" src="/assets/images/avatar.jpeg" alt="作者的图片" />
-				<h4 id="about-card-name">Simple</h4>
-				<div id="about-card-bio">
-					<p>爱读历史的渣渣前端</p>
-				</div>
-				<div id="about-card-job">
-					<i class="fa fa-briefcase"></i>
-					<br />
-					<p>前端切图仔</p>
-				</div>
-				<div id="about-card-location">
-					<i class="fa fa-map-marker"></i>
-					<br /> 浙江杭州
 				</div>
 			</div>
 		</div>
-		<div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
-		<!--SCRIPTS-->
-		<script src="/assets/js/script-yhuo2grt8r7qkqumzgjoglkfbicl1thukjgmla6jopu56zpcowfedi5zjcor.min.js"></script>
-		<!--SCRIPTS END-->
-	</body>
+
+		<div class="mainr page_speeder_868406279">
+
+			<div class="widget widget_controlpanel">
+				<h4>网站信息</h4>
+				<div class="widget_div"><span class="cp-login">好东西分享(jinmengqiang.cn)：汇集建站、源码、教程以及各类优秀资源和实用软件分享，旨在免费为广大网友推荐有价值的互联网资源！</span></div>
+			</div>
+			
+			<div class="widget widget_statistics">
+				<h4>站点信息</h4>
+				<ul>
+					<li>阅读资源：46</li>
+					<li>下载资源：8</li>
+				</ul>
+			</div>
+			
+			<div class="widget widget_catalog">
+				<h4>网站分类</h4>
+				<ul>
+					
+					<li><a href='https://jinmengqiang.cn/a/web/' >建站经验</a></li>
+					
+					<li><a href='https://jinmengqiang.cn/a/note/' >常用笔记</a></li>
+					
+					<li><a href='https://jinmengqiang.cn/a/free/' >福利经验</a></li>
+					
+					<li><a href='https://jinmengqiang.cn/a/soft/' >电脑软件</a></li>
+					
+					<li><a href='https://jinmengqiang.cn/a/code/' >源码下载</a></li>
+					
+					<li><a href='https://jinmengqiang.cn/a/mobile/' >手机资源</a></li>
+					
+					<li><a href='https://jinmengqiang.cn/a/down/' >其它资源</a></li>
+					
+					<!--
+					<li><a href="/images/id.php">苹果各区ID</a></li>
+					<li><a href="/images/qun.php">微信群分享</a></li>
+					<li><a href="/images/message.php">留言本</a></li>
+					-->
+				</ul>
+			</div>
+
+			<div class="widget widget_hotpost">
+				<h4>推荐内容</h4>
+				<ul>
+					<li><i class="">1</i><a href="https://jinmengqiang.cn/a/202108/51.html" title="Youtube解析youtube下载视频转换为mp4&mp3源码下载">Youtube解析youtube下载视频转换为mp4&mp3源码下载</a></li>
+<li><i class="">2</i><a href="https://jinmengqiang.cn/a/202108/50.html" title="一指禅自动跳过广告v3.1.101pro无广告版">一指禅自动跳过广告v3.1.101pro无广告版</a></li>
+<li><i class="">3</i><a href="https://jinmengqiang.cn/a/202107/14.html" title="windows Server 2008 R2服务器IIS环境启用TLS 1.2">windows Server 2008 R2服务器IIS环境启用TLS 1.2</a></li>
+<li><i class="">4</i><a href="https://jinmengqiang.cn/a/202107/8.html" title="360浏览器为什么在打开子网页时不直接弹出新窗">360浏览器为什么在打开子网页时不直接弹出新窗</a></li>
+<li><i class="">5</i><a href="https://jinmengqiang.cn/a/202107/11.html" title="局域网内怎么链接远程控制别人的电脑桌面">局域网内怎么链接远程控制别人的电脑桌面</a></li>
+
+				</ul>
+			</div>
+			
+			<div class="widget widget_hotpost">
+				<h4>随便看看</h4>
+				<ul>
+					<li><i>1</i><a href="https://jinmengqiang.cn/a/202108/51.html" title="Youtube解析youtube下载视频转换为mp">Youtube解析youtube下载视频转换为mp</a></li>
+<li><i>2</i><a href="https://jinmengqiang.cn/a/202108/50.html" title="一指禅自动跳过广告v3.1.101pro无广告">一指禅自动跳过广告v3.1.101pro无广告</a></li>
+<li><i>3</i><a href="https://jinmengqiang.cn/a/202108/49.html" title="钉钉打卡助手2021.8.3无需root 支持鸿">钉钉打卡助手2021.8.3无需root 支持鸿</a></li>
+<li><i>4</i><a href="https://jinmengqiang.cn/a/202107/46.html" title="dede调用调用当前栏目下所有文档总">dede调用调用当前栏目下所有文档总</a></li>
+<li><i>5</i><a href="https://jinmengqiang.cn/a/202108/48.html" title="dede开启网站绝对路径后软件下载地">dede开启网站绝对路径后软件下载地</a></li>
+
+				</ul>
+			</div>
+			
+			<div class="widget widget_hotpost">
+				<h4>阅读排行</h4>
+				<ul>
+					<li><i>1</i><a href="https://jinmengqiang.cn/a/202107/16.html" title="dede会员中心投稿编辑器修改成纯文字投稿方式">dede会员中心投稿编辑器修改成纯文字投稿方式</a></li>
+<li><i>2</i><a href="https://jinmengqiang.cn/a/202107/10.html" title="360浏览器10是不是把默认字体改成了微软雅黑？怎">360浏览器10是不是把默认字体改成了微软雅黑？怎</a></li>
+<li><i>3</i><a href="https://jinmengqiang.cn/a/202107/13.html" title="修改dede文档默认点击数 dedecms设置随机数范围">修改dede文档默认点击数 dedecms设置随机数范围</a></li>
+<li><i>4</i><a href="https://jinmengqiang.cn/a/202107/19.html" title="dede不能添加新变量,变量名不能为空">dede不能添加新变量,变量名不能为空</a></li>
+<li><i>5</i><a href="https://jinmengqiang.cn/a/202107/20.html" title="dede首页调用指定顶级栏目下的子栏目列表">dede首页调用指定顶级栏目下的子栏目列表</a></li>
+<li><i>6</i><a href="https://jinmengqiang.cn/a/202107/11.html" title="局域网内怎么链接远程控制别人的电脑桌面">局域网内怎么链接远程控制别人的电脑桌面</a></li>
+<li><i>7</i><a href="https://jinmengqiang.cn/a/202107/6.html" title="windows怎么删除远程登录连接的ip">windows怎么删除远程登录连接的ip</a></li>
+<li><i>8</i><a href="https://jinmengqiang.cn/a/202107/14.html" title="windows Server 2008 R2服务器IIS环境启用TLS 1.2">windows Server 2008 R2服务器IIS环境启用TLS 1.2</a></li>
+<li><i>9</i><a href="https://jinmengqiang.cn/a/202107/18.html" title="dede共用同一个文章ID展示多个不同的模板页面">dede共用同一个文章ID展示多个不同的模板页面</a></li>
+<li><i>10</i><a href="https://jinmengqiang.cn/a/202107/15.html" title="dede ckeditor编辑器让上传图片自动使用绝对地址显">dede ckeditor编辑器让上传图片自动使用绝对地址显</a></li>
+
+				</ul>
+			</div>
+			
+			<div class="widget widget_hotpost">
+				<h4>下载排行</h4>
+				<ul>
+					<li><i>1</i><a href="https://jinmengqiang.cn/a/202108/50.html" title="一指禅自动跳过广告v3.1.101pro无广告版">一指禅自动跳过广告v3.1.101pro无广告版</a></li>
+<li><i>2</i><a href="https://jinmengqiang.cn/a/202108/49.html" title="钉钉打卡助手2021.8.3无需root 支持鸿蒙2.0.145">钉钉打卡助手2021.8.3无需root 支持鸿蒙2.0.145</a></li>
+<li><i>3</i><a href="https://jinmengqiang.cn/a/202108/51.html" title="Youtube解析youtube下载视频转换为mp4&mp3源码下载">Youtube解析youtube下载视频转换为mp4&mp3源码下载</a></li>
+<li><i>4</i><a href="https://jinmengqiang.cn/a/202107/22.html" title="餐饮业小本创业项目视频和配方教程">餐饮业小本创业项目视频和配方教程</a></li>
+<li><i>5</i><a href="https://jinmengqiang.cn/a/202108/47.html" title="Office Tool Plus 8.2.3.2 office部署工具">Office Tool Plus 8.2.3.2 office部署工具</a></li>
+
+				</ul>
+			</div>
+
+			<div class="widget widget_htagcelan">
+				<h4>热门标签</h4>
+				<ul>
+					
+					<li> <a href='/tags.php?/dedecms/' title="dedecms">dedecms</span></a>（28）</li>
+					
+					<li> <a href='/tags.php?/windows/' title="windows">windows</span></a>（6）</li>
+					
+					<li> <a href='/tags.php?/网站截图/' title="网站截图">网站截图</span></a>（3）</li>
+					
+					<li> <a href='/tags.php?/360/' title="360">360</span></a>（2）</li>
+					
+					<li> <a href='/tags.php?/远程/' title="远程">远程</span></a>（2）</li>
+					
+					<li> <a href='/tags.php?/PHPnow/' title="PHPnow">PHPnow</span></a>（1）</li>
+					
+					<li> <a href='/tags.php?/openssl/' title="openssl">openssl</span></a>（1）</li>
+					
+					<li> <a href='/tags.php?/PHP扩展/' title="PHP扩展">PHP扩展</span></a>（1）</li>
+					
+					<li> <a href='/tags.php?/dsicuz/' title="dsicuz">dsicuz</span></a>（1）</li>
+					
+					<li> <a href='/tags.php?/钉钉打卡/' title="钉钉打卡">钉钉打卡</span></a>（1）</li>
+					
+					<li> <a href='/tags.php?/office/' title="office">office</span></a>（1）</li>
+					
+					<li> <a href='/tags.php?/鸿蒙/' title="鸿蒙">鸿蒙</span></a>（1）</li>
+					
+					<li> <a href='/tags.php?/安卓/' title="安卓">安卓</span></a>（1）</li>
+					
+					<li> <a href='/tags.php?/android/' title="android">android</span></a>（1）</li>
+					
+					<li> <a href='/tags.php?/httpd.ini/' title="httpd.ini">httpd.ini</span></a>（1）</li>
+					
+					<li> <a href='/tags.php?/windows服务器/' title="windows服务器">windows服务器</span></a>（1）</li>
+					
+					<li> <a href='/tags.php?/php解密/' title="php解密">php解密</span></a>（1）</li>
+					
+					<li> <a href='/tags.php?/iis环境/' title="iis环境">iis环境</span></a>（1）</li>
+					
+					<li> <a href='/tags.php?/电信/' title="电信">电信</span></a>（1）</li>
+					
+					<li> <a href='/tags.php?/餐饮配方/' title="餐饮配方">餐饮配方</span></a>（1）</li>
+					
+					<li> <a href='/tags.php?/搜索引擎/' title="搜索引擎">搜索引擎</span></a>（1）</li>
+					
+					<li> <a href='/tags.php?/wdcp/' title="wdcp">wdcp</span></a>（1）</li>
+					
+					<li> <a href='/tags.php?/linux/' title="linux">linux</span></a>（1）</li>
+					
+					<li> <a href='/tags.php?/linux服务器/' title="linux服务器">linux服务器</span></a>（1）</li>
+					
+					<li> <a href='/tags.php?/Dreamweaver/' title="Dreamweaver">Dreamweaver</span></a>（1）</li>
+					
+					<li> <a href='/tags.php?/youtube/' title="youtube">youtube</span></a>（1）</li>
+					
+				</ul>
+			</div>
+
+<!--
+			<div class="widget widget_htagcelan">
+				<h4>赞助商</h4>
+				<ul>
+				    
+<script type="text/javascript">
+var sogou_ad_id=1160465;
+var sogou_ad_height=250;
+var sogou_ad_width=250;
+</script>
+<script type='text/javascript' src='http://theta.sogoucdn.com/pc/js/c.js'></script>
+
+				</ul>
+			</div>
+-->  
+
+		</div>
+
+	</div>
+</div>
+
+<div id="main">
+	<div class="main container">
+		<div class="qk_index_yqlj">
+			<div class="qk_ibox3_z_bt">
+				<em></em>
+				<p>友情链接 <i>友链条件：正规站不限内容，纯采集站勿扰。</i><!-- --></p>
+			</div>
+			<div class="qk_index_yqlj_nr">
+				<ul ><li><a href='https://jinmengqiang.cn/' target='_blank' title='好东西分享'><img width='16' height='16' src='/images/ico/cache/jinmengqiang.cn.ico'>好东西分享</a> </li></ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript"> 
+// JavaScript Document
+function goTopEx(){
+        var obj=document.getElementById("goTopBtn");
+        function getScrollTop(){
+                return document.documentElement.scrollTop || document.body.scrollTop;
+            }
+        function setScrollTop(value){
+            if(document.documentElement.scrollTop){
+                    document.documentElement.scrollTop=value;
+                }else{
+                    document.body.scrollTop=value;
+                }
+                
+            }    
+        window.onscroll=function(){getScrollTop()>0?obj.style.display="":obj.style.display="none";
+                    var h=document.body.scrollHeight - getScrollTop() - obj.offsetTop - obj.offsetHeight;
+                    obj.style.bottom=0+"px";
+                    if(h<350){
+                        obj.style.bottom=340+"px";
+                        obj.style.top="auto";
+                    }
+
+        
+        }
+        obj.onclick=function(){
+
+            var goTop=setInterval(scrollMove,10);
+            function scrollMove(){
+                    setScrollTop(getScrollTop()/1.1);
+                    if(getScrollTop()<1)clearInterval(goTop);
+
+                }
+        }
+    }
+    
+</script> 
+
+<!-- 引入pre highlight.js -->
+<link rel="stylesheet" href="/images/ueditor/default.min.css">
+<script src="/images/ueditor/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script type="text/javascript">
+	var allpre = document.getElementsByTagName("pre");
+	for(i = 0; i < allpre.length; i++) 
+	{
+		var onepre = document.getElementsByTagName("pre")[i];
+		var mycode = document.getElementsByTagName("pre")[i].innerHTML;
+		onepre.innerHTML = '<code id="mycode">'+mycode+'</code>';
+	}
+</script>
+
+<div id="footer">
+	<div class="footer container">
+		<div class="fnav">Copyright &copy; 2010-2021<a href="https://jinmengqiang.cn/" title="好东西分享">好东西分享</a> All Rights Reserved.<br />程序内核：<a href="http://www.dedecms.com/" rel="nofollow" title="DedeCMS_V57SP2" target="_blank">DedeCMS_V57SP2</a>&nbsp;&nbsp;<a href="/images/url.php?url=http://beian.miit.gov.cn" rel="nofollow" target="_blank" title="鄂ICP备15010942号-14"><img src="/images/icp.png">鄂ICP备15010942号</a><a target="_blank" href="/images/url.php?url=http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42092302000030"><img src="/images/beian.png" alt="鄂公网安备42092302000030号">鄂公网安备42092302000030号</a><br />好东西分享(jinmengqiang.cn)：汇集建站、源码、教程以及各类优秀资源和实用软件分享，旨在免费为广大网友推荐有价值的互联网资源！
+		</div>
+	</div>
+</div>
+
+
+<script src="/images/js/common.min.js" type="text/javascript"></script>
+<script language="javascript" type="text/javascript" src="https://jinmengqiang.cn/plus/autohtml.php?type=index"></script>
+<div style="display:none"><script type="text/javascript" src="/images/tongji.js"></script></div>
+
+<script>
+//360自动收录提交入口
+(function(){
+var src = "https://s.ssl.qhres2.com/ssl/ab77b6ea7f3fbf79.js";
+document.write('<script src="' + src + '" id="sozz"><\/script>');
+})();
+</script>
+
+</body>
 </html>
+<!-- 
+安全运行<span id="iday"></span>天
+<script>
+	function siteRun(d) {
+		var nowD = new Date();
+		return parseInt((nowD.getTime() - Date.parse(d)) / 24 / 60 / 60 / 1000)
+	}
+	document.getElementById("iday").innerHTML = siteRun("2014/06/27");
+</script></span>
+-->
